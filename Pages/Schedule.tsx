@@ -61,8 +61,33 @@ export default function Schedule() {
             filter(Boolean)
     )].sort();
 
-    // Get unique base course codes (without group numbers)
-    const allCourses = [...new Set(blocks.map((b) => b.code.split('/')[0]))].sort();
+    // Get unique base course codes (without group numbers) and sort by semester
+    const allCourses = [...new Set(blocks.map((b) => b.code.split('/')[0]))].sort((a, b) => {
+        // Extract semester number from course codes
+        // E2-LP -> 2, IE3-AD -> 3, E7-WP -> 7, etc.
+        const getSemester = (code: string): number => {
+            const match = code.match(/^(?:IE|E)(\d+)/);
+            return match ? parseInt(match[1]) : 999;
+        };
+        
+        const semesterA = getSemester(a);
+        const semesterB = getSemester(b);
+        
+        // First sort by semester number
+        if (semesterA !== semesterB) {
+            return semesterA - semesterB;
+        }
+        
+        // Within same semester, put IE courses before E courses
+        const isIE_A = a.startsWith('IE');
+        const isIE_B = b.startsWith('IE');
+        
+        if (isIE_A && !isIE_B) return -1;
+        if (!isIE_A && isIE_B) return 1;
+        
+        // Finally, sort alphabetically
+        return a.localeCompare(b);
+    });
 
     return (
         <div className="min-h-screen p-4 md:p-8" style={{ backgroundColor: "#F5F5F5" }}>
