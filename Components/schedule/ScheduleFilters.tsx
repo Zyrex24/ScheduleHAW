@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -45,6 +45,27 @@ export default function ScheduleFilters({
     ...Array.from({ length: 4 }, (_, i) => i + 1)     // Weeks 1-4
   ];
   const currentWeek = 40;
+
+  // Pagination state for course selection
+  const [coursePage, setCoursePage] = useState(0);
+
+  // Split courses by semester (1-4 on page 0, 5-7 on page 1)
+  const getSemester = (code: string): number => {
+    const match = code.match(/^(?:IE|E)(\d+)/);
+    return match ? parseInt(match[1]) : 999;
+  };
+
+  const page1Courses = allCourses.filter(course => {
+    const sem = getSemester(course);
+    return sem >= 1 && sem <= 4;
+  });
+
+  const page2Courses = allCourses.filter(course => {
+    const sem = getSemester(course);
+    return sem >= 5 && sem <= 7;
+  });
+
+  const displayedCourses = coursePage === 0 ? page1Courses : page2Courses;
 
   const toggleCourse = (courseCode: string) => {
     if (selectedCourses.includes(courseCode)) {
@@ -187,8 +208,44 @@ export default function ScheduleFilters({
           boxShadow: "6px 6px 0px #000000",
         }}
       >
-        <h3 className="text-lg font-black mb-3 uppercase">My Courses</h3>
-        <p className="text-xs font-bold mb-4">Select courses you're enrolled in to create your personalized schedule</p>
+        <div className="flex items-center justify-between mb-3">
+          <div>
+            <h3 className="text-lg font-black uppercase">My Courses</h3>
+            <p className="text-xs font-bold">
+              {coursePage === 0 ? 'Semesters 1-4' : 'Semesters 5-7'}
+            </p>
+          </div>
+          
+          {/* Dot Navigation */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setCoursePage(0)}
+              className="transition-all"
+              style={{
+                width: coursePage === 0 ? '12px' : '8px',
+                height: coursePage === 0 ? '12px' : '8px',
+                borderRadius: '50%',
+                backgroundColor: coursePage === 0 ? '#000000' : '#666666',
+                border: '2px solid #000000',
+              }}
+              aria-label="Page 1: Semesters 1-4"
+            />
+            <button
+              onClick={() => setCoursePage(1)}
+              className="transition-all"
+              style={{
+                width: coursePage === 1 ? '12px' : '8px',
+                height: coursePage === 1 ? '12px' : '8px',
+                borderRadius: '50%',
+                backgroundColor: coursePage === 1 ? '#000000' : '#666666',
+                border: '2px solid #000000',
+              }}
+              aria-label="Page 2: Semesters 5-7"
+            />
+          </div>
+        </div>
+        
+        <p className="text-xs font-bold mb-4">Select courses you&apos;re enrolled in to create your personalized schedule</p>
         
         {selectedCourses.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
@@ -212,7 +269,7 @@ export default function ScheduleFilters({
         )}
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {allCourses.map(course => (
+          {displayedCourses.map(course => (
             <label
               key={course}
               className="flex items-center gap-2 p-2 cursor-pointer font-bold text-sm hover:bg-black hover:text-white transition-colors"
