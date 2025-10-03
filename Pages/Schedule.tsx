@@ -141,7 +141,9 @@ export default function Schedule() {
                                             boxShadow: "8px 8px 0px #000000"
                                         }}>
 
-                                        No classes match your filters
+                                        {(selectedWeek === "52" || selectedWeek === "1") 
+                                            ? "🎄 Christmas Break 🎄" 
+                                            : "No classes match your filters"}
                                     </div>
                                 </div> :
                                 
