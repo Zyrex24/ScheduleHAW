@@ -121,8 +121,7 @@ export default function ScheduleFilters({
               {semesterWeeks.map(week => (
                 <SelectItem key={week} value={week.toString()}>
                   Week {week}
-                  {week === 52 && ' (Before Break)'}
-                  {week === 1 && ' (After Break)'}
+                  {(week === 52 || week === 1) && ' 🎄 (Christmas Break)'}
                 </SelectItem>
               ))}
             </SelectContent>
