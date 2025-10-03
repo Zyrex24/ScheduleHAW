@@ -93,8 +93,9 @@ export default function Schedule() {
                             SCHEDULE
                         </h1>
                     </div>
-                    <p className="text-xl font-bold uppercase" style={{ color: "#8AC926" }}>WINTER SEMESTER 2025/26
-
+                    <p className="text-xl font-bold uppercase" style={{ color: "#8AC926" }}>WINTER SEMESTER 2025/26</p>
+                    <p className="text-sm font-bold mt-2" style={{ color: "#FFBE0B" }}>
+                        Weeks 41-52 (2025) • 🎄 Christmas Break • Weeks 1-4 (2026)
                     </p>
                 </div>
 
@@ -143,8 +144,32 @@ export default function Schedule() {
                                         No classes match your filters
                                     </div>
                                 </div> :
-
-                                <ScheduleGrid blocks={filteredBlocks} showWeekFilter={!!selectedWeek} />
+                                
+                                <>
+                                    {/* Christmas Break Notice */}
+                                    {(selectedWeek === "52" || selectedWeek === "1" || !selectedWeek) && (
+                                        <div 
+                                            className="mb-6 p-4 text-center"
+                                            style={{
+                                                backgroundColor: "#FFBE0B",
+                                                border: "4px solid #000000",
+                                                boxShadow: "8px 8px 0px #000000"
+                                            }}
+                                        >
+                                            <div className="text-2xl font-black uppercase mb-2">
+                                                🎄 Christmas Break 🎄
+                                            </div>
+                                            <div className="font-bold">
+                                                December 23, 2025 - January 6, 2026
+                                            </div>
+                                            <div className="text-sm mt-1">
+                                                No classes scheduled during this period
+                                            </div>
+                                        </div>
+                                    )}
+                                    
+                                    <ScheduleGrid blocks={filteredBlocks} showWeekFilter={!!selectedWeek} />
+                                </>
                             }
                         </div>
                     </>

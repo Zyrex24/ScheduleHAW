@@ -2,8 +2,8 @@ import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
 // Helper function to convert week number to actual date in 2025/2026
 function getDateFromWeek(weekNumber: number, dayName: string, year: number = 2025): Date {
-  // Week 41-52 are in 2024, weeks 1-4 are in 2025
-  const actualYear = weekNumber >= 41 ? 2024 : 2025;
+  // Week 41-52 are in 2025, weeks 1-4 are in 2026 (winter semester 2025/2026)
+  const actualYear = weekNumber >= 41 ? 2025 : 2026;
   
   // Create a date for week 1 of the year
   const jan1 = new Date(actualYear, 0, 1);
@@ -66,10 +66,22 @@ export function generateICS(blocks: ScheduleBlockType[]): string {
     'PRODID:-//HAW Hamburg//Schedule//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
-    'X-WR-CALNAME:HAW Schedule',
+    'X-WR-CALNAME:HAW Schedule Winter 2025/2026',
     'X-WR-TIMEZONE:Europe/Berlin',
-    'X-WR-CALDESC:HAW Hamburg Course Schedule'
+    'X-WR-CALDESC:HAW Hamburg Course Schedule - Winter Semester 2025/2026'
   ];
+  
+  // Add Christmas Break event (between week 52 and week 1)
+  // Christmas break typically runs from Dec 23, 2025 to Jan 6, 2026
+  icsLines.push('BEGIN:VEVENT');
+  icsLines.push('UID:christmas-break-2025@haw-schedule.local');
+  icsLines.push('DTSTART;VALUE=DATE:20251223');
+  icsLines.push('DTEND;VALUE=DATE:20260106');
+  icsLines.push('SUMMARY:🎄 Christmas Break - No Classes');
+  icsLines.push('DESCRIPTION:Winter break - University closed for holidays');
+  icsLines.push('CATEGORIES:Holiday');
+  icsLines.push('TRANSP:TRANSPARENT');
+  icsLines.push('END:VEVENT');
   
   // Generate events for each block and each week it occurs
   blocks.forEach(block => {

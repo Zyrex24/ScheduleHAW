@@ -39,7 +39,11 @@ export default function ScheduleFilters({
   setSelectedCourses: (value: string[]) => void;
   filteredBlocks: ScheduleBlockType[];
 }) {
-  const weeks = Array.from({ length: 52 }, (_, i) => i + 1);
+  // Semester weeks: 41-52 (fall 2025) then 1-4 (winter 2026)
+  const semesterWeeks = [
+    ...Array.from({ length: 12 }, (_, i) => i + 41), // Weeks 41-52
+    ...Array.from({ length: 4 }, (_, i) => i + 1)     // Weeks 1-4
+  ];
   const currentWeek = 40;
 
   const toggleCourse = (courseCode: string) => {
@@ -114,9 +118,11 @@ export default function ScheduleFilters({
             <SelectContent style={{ border: "4px solid #000000" }}>
               <SelectItem value="all">All Weeks</SelectItem>
               <SelectItem value={currentWeek.toString()}>Current Week ({currentWeek})</SelectItem>
-              {weeks.map(week => (
+              {semesterWeeks.map(week => (
                 <SelectItem key={week} value={week.toString()}>
                   Week {week}
+                  {week === 52 && ' (Before Break)'}
+                  {week === 1 && ' (After Break)'}
                 </SelectItem>
               ))}
             </SelectContent>
