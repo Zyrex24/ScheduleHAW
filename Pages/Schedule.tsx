@@ -118,7 +118,8 @@ export default function Schedule() {
                             setSelectedInstructor={setSelectedInstructor}
                             allCourses={allCourses}
                             selectedCourses={selectedCourses}
-                            setSelectedCourses={setSelectedCourses} />
+                            setSelectedCourses={setSelectedCourses}
+                            filteredBlocks={filteredBlocks} />
 
 
                         <div

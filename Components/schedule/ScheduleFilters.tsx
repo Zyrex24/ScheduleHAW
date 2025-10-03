@@ -4,7 +4,9 @@ import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { X } from "lucide-react";
+import { X, Download, Calendar } from "lucide-react";
+import { downloadICS } from "@/lib/icsGenerator";
+import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
 export default function ScheduleFilters({ 
   semester, 
@@ -19,17 +21,40 @@ export default function ScheduleFilters({
   setSelectedInstructor,
   allCourses,
   selectedCourses,
-  setSelectedCourses
+  setSelectedCourses,
+  filteredBlocks
+}: {
+  semester: string;
+  setSemester: (value: string) => void;
+  selectedWeek: string | null;
+  setSelectedWeek: (value: string | null) => void;
+  groups: string[];
+  selectedGroup: string | null;
+  setSelectedGroup: (value: string | null) => void;
+  instructors: string[];
+  selectedInstructor: string | null;
+  setSelectedInstructor: (value: string | null) => void;
+  allCourses: string[];
+  selectedCourses: string[];
+  setSelectedCourses: (value: string[]) => void;
+  filteredBlocks: ScheduleBlockType[];
 }) {
   const weeks = Array.from({ length: 52 }, (_, i) => i + 1);
   const currentWeek = 40;
 
-  const toggleCourse = (courseCode) => {
+  const toggleCourse = (courseCode: string) => {
     if (selectedCourses.includes(courseCode)) {
       setSelectedCourses(selectedCourses.filter(c => c !== courseCode));
     } else {
       setSelectedCourses([...selectedCourses, courseCode]);
     }
+  };
+
+  const handleExportCalendar = () => {
+    const filename = semester !== 'ALL' 
+      ? `HAW_Schedule_${semester}.ics` 
+      : 'HAW_Schedule.ics';
+    downloadICS(filteredBlocks, filename);
   };
 
   return (
@@ -199,24 +224,42 @@ export default function ScheduleFilters({
         </div>
       </div>
 
-      {(selectedWeek || selectedGroup || selectedInstructor) && (
+      <div className="flex gap-4 mt-4 flex-wrap">
+        {(selectedWeek || selectedGroup || selectedInstructor) && (
+          <Button
+            onClick={() => {
+              setSelectedWeek(null);
+              setSelectedGroup(null);
+              setSelectedInstructor(null);
+            }}
+            className="font-bold uppercase"
+            style={{
+              border: "4px solid #000000",
+              boxShadow: "4px 4px 0px #000000",
+              backgroundColor: "#FB5607",
+              color: "#FFFFFF",
+            }}
+          >
+            <X className="w-4 h-4 mr-2" />
+            Clear Filters
+          </Button>
+        )}
+        
         <Button
-          onClick={() => {
-            setSelectedWeek(null);
-            setSelectedGroup(null);
-            setSelectedInstructor(null);
-          }}
-          className="mt-4 font-bold uppercase"
+          onClick={handleExportCalendar}
+          className="font-bold uppercase"
           style={{
             border: "4px solid #000000",
             boxShadow: "4px 4px 0px #000000",
-            backgroundColor: "#FB5607",
+            backgroundColor: "#7209B7",
             color: "#FFFFFF",
           }}
+          disabled={filteredBlocks.length === 0}
         >
-          Clear Filters
+          <Calendar className="w-4 h-4 mr-2" />
+          Export to Calendar
         </Button>
-      )}
+      </div>
     </div>
   );
 }
