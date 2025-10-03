@@ -13,9 +13,6 @@ export default function ScheduleFilters({
   setSemester, 
   selectedWeek, 
   setSelectedWeek,
-  groups,
-  selectedGroup,
-  setSelectedGroup,
   instructors,
   selectedInstructor,
   setSelectedInstructor,
@@ -28,9 +25,6 @@ export default function ScheduleFilters({
   setSemester: (value: string) => void;
   selectedWeek: string | null;
   setSelectedWeek: (value: string | null) => void;
-  groups: string[];
-  selectedGroup: string | null;
-  setSelectedGroup: (value: string | null) => void;
   instructors: string[];
   selectedInstructor: string | null;
   setSelectedInstructor: (value: string | null) => void;
@@ -95,7 +89,7 @@ export default function ScheduleFilters({
         FILTERS
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
         <div>
           <label className="block text-sm font-bold mb-2 uppercase">Semester</label>
           <Select value={semester} onValueChange={setSemester}>
@@ -143,30 +137,6 @@ export default function ScheduleFilters({
                 <SelectItem key={week} value={week.toString()}>
                   Week {week}
                   {(week === 52 || week === 1) && ' 🎄 (Christmas Break)'}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
-
-        <div>
-          <label className="block text-sm font-bold mb-2 uppercase">Group</label>
-          <Select value={selectedGroup || "all"} onValueChange={(val) => setSelectedGroup(val === "all" ? null : val)}>
-            <SelectTrigger 
-              className="w-full font-bold"
-              style={{
-                border: "4px solid #000000",
-                boxShadow: "4px 4px 0px #000000",
-                backgroundColor: "#8AC926",
-              }}
-            >
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent style={{ border: "4px solid #000000" }}>
-              <SelectItem value="all">All Groups</SelectItem>
-              {groups.map(group => (
-                <SelectItem key={group} value={group}>
-                  Group {group}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -287,11 +257,10 @@ export default function ScheduleFilters({
       </div>
 
       <div className="flex gap-4 mt-4 flex-wrap">
-        {(selectedWeek || selectedGroup || selectedInstructor) && (
+        {(selectedWeek || selectedInstructor) && (
           <Button
             onClick={() => {
               setSelectedWeek(null);
-              setSelectedGroup(null);
               setSelectedInstructor(null);
             }}
             className="font-bold uppercase"

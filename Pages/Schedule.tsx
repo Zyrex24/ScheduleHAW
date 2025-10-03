@@ -1,20 +1,19 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ScheduleBlock as ScheduleBlockEntity } from "@/Entities/ScheduleBlock";
+import { ScheduleBlock as ScheduleBlockEntity, ScheduleBlockType } from "@/Entities/ScheduleBlock";
 import ScheduleFilters from "../Components/schedule/ScheduleFilters";
 import ScheduleGrid from "../Components/schedule/ScheduleGrid";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/Components/ui/skeleton";
 import { Calendar } from "lucide-react";
 
 export default function Schedule() {
-    const [blocks, setBlocks] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [semester, setSemester] = useState("ALL");
-    const [selectedWeek, setSelectedWeek] = useState(null);
-    const [selectedGroup, setSelectedGroup] = useState(null);
-    const [selectedInstructor, setSelectedInstructor] = useState(null);
-    const [selectedCourses, setSelectedCourses] = useState([]);
+    const [blocks, setBlocks] = useState<ScheduleBlockType[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [semester, setSemester] = useState<string>("ALL");
+    const [selectedWeek, setSelectedWeek] = useState<string | null>(null);
+    const [selectedInstructor, setSelectedInstructor] = useState<string | null>(null);
+    const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
 
     useEffect(() => {
         loadSchedule();
@@ -34,18 +33,13 @@ export default function Schedule() {
             return false;
         }
 
-        if (selectedGroup && block.group !== selectedGroup) {
-            return false;
-        }
-
         if (selectedInstructor && !block.instructors?.toLowerCase().includes(selectedInstructor.toLowerCase())) {
             return false;
         }
 
-        // Course filter - extract base course code (without group)
+        // Course filter - match full course code (including group if present)
         if (selectedCourses.length > 0) {
-            const baseCourse = block.code.split('/')[0];
-            if (!selectedCourses.includes(baseCourse)) {
+            if (!selectedCourses.includes(block.code)) {
                 return false;
             }
         }
@@ -53,18 +47,20 @@ export default function Schedule() {
         return true;
     });
 
-    const allGroups = [...new Set(blocks.filter((b) => b.group).map((b) => b.group))].sort();
-    const allInstructors = [...new Set(
-        blocks.
-            map((b) => b.instructors?.split(",").map((i) => i.trim())).
-            flat().
-            filter(Boolean)
-    )].sort();
+    const instructorSet = new Set<string>();
+    blocks.forEach((b) => {
+        b.instructors?.split(",").forEach((i: string) => {
+            const trimmed = i.trim();
+            if (trimmed) instructorSet.add(trimmed);
+        });
+    });
+    const allInstructors = Array.from(instructorSet).sort();
 
-    // Get unique base course codes (without group numbers) and sort by semester
-    const allCourses = [...new Set(blocks.map((b) => b.code.split('/')[0]))].sort((a, b) => {
-        // Extract semester number from course codes
-        // E2-LP -> 2, IE3-AD -> 3, E7-WP -> 7, etc.
+    // Get unique full course codes (including groups) and sort by semester
+    const courseSet = new Set<string>();
+    blocks.forEach((b) => courseSet.add(b.code));
+    const allCourses = Array.from(courseSet).sort((a, b) => {
+        // Extract semester number and base code from course codes
         const getSemester = (code: string): number => {
             const match = code.match(/^(?:IE|E)(\d+)/);
             return match ? parseInt(match[1]) : 999;
@@ -136,9 +132,6 @@ export default function Schedule() {
                             setSemester={setSemester}
                             selectedWeek={selectedWeek}
                             setSelectedWeek={setSelectedWeek}
-                            groups={allGroups}
-                            selectedGroup={selectedGroup}
-                            setSelectedGroup={setSelectedGroup}
                             instructors={allInstructors}
                             selectedInstructor={selectedInstructor}
                             setSelectedInstructor={setSelectedInstructor}
