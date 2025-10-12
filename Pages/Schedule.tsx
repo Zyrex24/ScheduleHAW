@@ -28,6 +28,16 @@ export default function Schedule() {
     };
 
     const filteredBlocks = blocks.filter((block) => {
+        // MUST select courses from "My Courses" - show nothing if none selected
+        if (selectedCourses.length === 0) {
+            return false;
+        }
+
+        // Only show courses that are explicitly selected
+        if (!selectedCourses.includes(block.code)) {
+            return false;
+        }
+
         if (semester !== "ALL" && block.semester !== semester) return false;
 
         // Always filter by selected week (no "All Weeks" option anymore)
@@ -37,13 +47,6 @@ export default function Schedule() {
 
         if (selectedInstructor && !block.instructors?.toLowerCase().includes(selectedInstructor.toLowerCase())) {
             return false;
-        }
-
-        // Course filter - match full course code (including group if present)
-        if (selectedCourses.length > 0) {
-            if (!selectedCourses.includes(block.code)) {
-                return false;
-            }
         }
 
         return true;
@@ -154,16 +157,30 @@ export default function Schedule() {
                             {filteredBlocks.length === 0 ?
                                 <div className="text-center py-20">
                                     <div
-                                        className="inline-block p-8 font-black text-2xl uppercase"
+                                        className="inline-block p-8"
                                         style={{
                                             backgroundColor: "#FFBE0B",
                                             border: "4px solid #000000",
                                             boxShadow: "8px 8px 0px #000000"
                                         }}>
-
-                                        {(selectedWeek === "52" || selectedWeek === "1") 
-                                            ? "🎄 Christmas Break 🎄" 
-                                            : "No classes match your filters"}
+                                        {selectedCourses.length === 0 ? (
+                                            <>
+                                                <div className="font-black text-2xl uppercase mb-3">
+                                                    📚 Select Your Courses
+                                                </div>
+                                                <div className="font-bold text-lg">
+                                                    Choose courses from "My Courses" section above to view your schedule
+                                                </div>
+                                            </>
+                                        ) : (selectedWeek === "52" || selectedWeek === "1") ? (
+                                            <div className="font-black text-2xl uppercase">
+                                                🎄 Christmas Break 🎄
+                                            </div>
+                                        ) : (
+                                            <div className="font-black text-2xl uppercase">
+                                                No classes match your filters
+                                            </div>
+                                        )}
                                     </div>
                                 </div> :
                                 
