@@ -43,7 +43,7 @@ export default function ScheduleFilters({
   // Pagination state for course selection
   const [coursePage, setCoursePage] = useState(0);
 
-  // Split courses by semester (1-4 on page 0, 5-7 on page 1)
+  // Split courses by semester into 4 pages for better organization
   const getSemester = (code: string): number => {
     const match = code.match(/^(?:IE|E)(\d+)/);
     return match ? parseInt(match[1]) : 999;
@@ -51,15 +51,31 @@ export default function ScheduleFilters({
 
   const page1Courses = allCourses.filter(course => {
     const sem = getSemester(course);
-    return sem >= 1 && sem <= 4;
+    return sem >= 1 && sem <= 2;
   });
 
   const page2Courses = allCourses.filter(course => {
     const sem = getSemester(course);
-    return sem >= 5 && sem <= 7;
+    return sem >= 3 && sem <= 4;
   });
 
-  const displayedCourses = coursePage === 0 ? page1Courses : page2Courses;
+  const page3Courses = allCourses.filter(course => {
+    const sem = getSemester(course);
+    return sem >= 5 && sem <= 6;
+  });
+
+  const page4Courses = allCourses.filter(course => {
+    const sem = getSemester(course);
+    return sem === 7;
+  });
+
+  const displayedCourses = 
+    coursePage === 0 ? page1Courses :
+    coursePage === 1 ? page2Courses :
+    coursePage === 2 ? page3Courses :
+    page4Courses;
+  
+  const totalPages = 4;
 
   const toggleCourse = (courseCode: string) => {
     if (selectedCourses.includes(courseCode)) {
@@ -198,7 +214,7 @@ export default function ScheduleFilters({
                 backgroundColor: coursePage === 0 ? '#000000' : '#666666',
                 border: '2px solid #000000',
               }}
-              aria-label="Page 1: Semesters 1-4"
+              aria-label="Page 1: Semesters 1-2"
             />
             <button
               onClick={() => setCoursePage(1)}
@@ -210,7 +226,31 @@ export default function ScheduleFilters({
                 backgroundColor: coursePage === 1 ? '#000000' : '#666666',
                 border: '2px solid #000000',
               }}
-              aria-label="Page 2: Semesters 5-7"
+              aria-label="Page 2: Semesters 3-4"
+            />
+            <button
+              onClick={() => setCoursePage(2)}
+              className="transition-all"
+              style={{
+                width: coursePage === 2 ? '12px' : '8px',
+                height: coursePage === 2 ? '12px' : '8px',
+                borderRadius: '50%',
+                backgroundColor: coursePage === 2 ? '#000000' : '#666666',
+                border: '2px solid #000000',
+              }}
+              aria-label="Page 3: Semesters 5-6"
+            />
+            <button
+              onClick={() => setCoursePage(3)}
+              className="transition-all"
+              style={{
+                width: coursePage === 3 ? '12px' : '8px',
+                height: coursePage === 3 ? '12px' : '8px',
+                borderRadius: '50%',
+                backgroundColor: coursePage === 3 ? '#000000' : '#666666',
+                border: '2px solid #000000',
+              }}
+              aria-label="Page 4: Semester 7 (Electives)"
             />
           </div>
         </div>
