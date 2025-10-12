@@ -332,12 +332,25 @@ export default function ScheduleFilters({
       </div>
 
       <div className="flex gap-4 mt-4 flex-wrap">
-        {(selectedWeek || selectedInstructor) && (
+        {selectedCourses.length > 0 && (
           <Button
-            onClick={() => {
-              setSelectedWeek(null);
-              setSelectedInstructor(null);
+            onClick={() => setSelectedCourses([])}
+            className="font-bold uppercase"
+            style={{
+              border: "4px solid #000000",
+              boxShadow: "4px 4px 0px #000000",
+              backgroundColor: "#FF006E",
+              color: "#FFFFFF",
             }}
+          >
+            <X className="w-4 h-4 mr-2" />
+            Clear Courses ({selectedCourses.length})
+          </Button>
+        )}
+
+        {selectedInstructor && (
+          <Button
+            onClick={() => setSelectedInstructor(null)}
             className="font-bold uppercase"
             style={{
               border: "4px solid #000000",
@@ -347,7 +360,7 @@ export default function ScheduleFilters({
             }}
           >
             <X className="w-4 h-4 mr-2" />
-            Clear Filters
+            Clear Instructor
           </Button>
         )}
         
