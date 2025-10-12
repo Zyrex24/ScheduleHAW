@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { ScheduleBlock as ScheduleBlockEntity, ScheduleBlockType } from "@/Entities/ScheduleBlock";
 import ScheduleFilters from "../Components/schedule/ScheduleFilters";
 import ScheduleGrid from "../Components/schedule/ScheduleGrid";
+import ConflictDetector from "../Components/schedule/ConflictDetector";
 import { Skeleton } from "@/Components/ui/skeleton";
 import { Calendar } from "lucide-react";
 
@@ -192,6 +193,11 @@ export default function Schedule() {
                                 </>
                             }
                         </div>
+
+                        {/* Conflict Detector - Show only when user has selected courses */}
+                        {selectedCourses.length > 0 && filteredBlocks.length > 0 && (
+                            <ConflictDetector blocks={filteredBlocks} />
+                        )}
                     </>
                 }
             </div>

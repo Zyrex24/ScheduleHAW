@@ -38,7 +38,6 @@ export default function ScheduleFilters({
     ...Array.from({ length: 12 }, (_, i) => i + 41), // Weeks 41-52
     ...Array.from({ length: 4 }, (_, i) => i + 1)     // Weeks 1-4
   ];
-  const currentWeek = 40;
 
   // Pagination state for course selection
   const [coursePage, setCoursePage] = useState(0);
@@ -148,7 +147,6 @@ export default function ScheduleFilters({
             </SelectTrigger>
             <SelectContent style={{ border: "4px solid #000000" }}>
               <SelectItem value="all">All Weeks</SelectItem>
-              <SelectItem value={currentWeek.toString()}>Current Week ({currentWeek})</SelectItem>
               {semesterWeeks.map(week => (
                 <SelectItem key={week} value={week.toString()}>
                   Week {week}
