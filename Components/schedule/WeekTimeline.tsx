@@ -2,9 +2,9 @@
 
 import React from "react";
 
-export default function WeekTimeline({ weeks }) {
+export default function WeekTimeline({ weeks }: { weeks: number[] }) {
   // Semester weeks: 41-52 (fall 2024) + 1-4 (winter/spring 2025)
-  const allWeeks = [...Array(12).keys()].map(i => i + 41).concat([1, 2, 3, 4]);
+  const allWeeks = Array.from(Array(12).keys()).map(i => i + 41).concat([1, 2, 3, 4]);
 
   return (
     <div className="flex gap-[2px] h-2">

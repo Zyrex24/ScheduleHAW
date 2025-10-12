@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/Components/ui/select";
+import { Button } from "@/Components/ui/button";
+import { Checkbox } from "@/Components/ui/checkbox";
 import { X, Download, Calendar, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
 import { downloadICS } from "@/lib/icsGenerator";
 import { ScheduleBlockType } from "@/Entities/ScheduleBlock";

@@ -169,7 +169,7 @@ export default function Schedule() {
                                                     📚 Select Your Courses
                                                 </div>
                                                 <div className="font-bold text-lg">
-                                                    Choose courses from "My Courses" section above to view your schedule
+                                                    Choose courses from &quot;My Courses&quot; section above to view your schedule
                                                 </div>
                                             </>
                                         ) : (selectedWeek === "52" || selectedWeek === "1") ? (

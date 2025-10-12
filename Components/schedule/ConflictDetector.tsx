@@ -63,7 +63,7 @@ export default function ConflictDetector({ blocks }: ConflictDetectorProps) {
             return 'Lecture';
           });
           
-          const uniqueTypes = [...new Set(types)];
+          const uniqueTypes = Array.from(new Set(types));
           let conflictType = '';
           
           if (uniqueTypes.length === 1) {
