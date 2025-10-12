@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { X, Download, Calendar } from "lucide-react";
+import { X, Download, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import { downloadICS } from "@/lib/icsGenerator";
 import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
@@ -198,60 +198,98 @@ export default function ScheduleFilters({
           <div>
             <h3 className="text-lg font-black uppercase">My Courses</h3>
             <p className="text-xs font-bold">
-              {coursePage === 0 ? 'Semesters 1-4' : 'Semesters 5-7'}
+              {coursePage === 0 ? 'Semesters 1-2' : 
+               coursePage === 1 ? 'Semesters 3-4' : 
+               coursePage === 2 ? 'Semesters 5-6' : 
+               'Semester 7 (Electives)'}
             </p>
           </div>
           
-          {/* Dot Navigation */}
-          <div className="flex items-center gap-2">
+          {/* Dot Navigation with Arrows */}
+          <div className="flex items-center gap-3">
+            {/* Left Arrow */}
             <button
-              onClick={() => setCoursePage(0)}
-              className="transition-all"
+              onClick={() => setCoursePage(Math.max(0, coursePage - 1))}
+              disabled={coursePage === 0}
+              className="transition-all hover:scale-110 disabled:opacity-30 disabled:cursor-not-allowed"
               style={{
-                width: coursePage === 0 ? '12px' : '8px',
-                height: coursePage === 0 ? '12px' : '8px',
-                borderRadius: '50%',
-                backgroundColor: coursePage === 0 ? '#000000' : '#666666',
                 border: '2px solid #000000',
+                backgroundColor: coursePage === 0 ? '#CCCCCC' : '#FFBE0B',
+                padding: '4px',
+                borderRadius: '4px',
               }}
-              aria-label="Page 1: Semesters 1-2"
-            />
+              aria-label="Previous page"
+            >
+              <ChevronLeft className="w-4 h-4" style={{ strokeWidth: 3 }} />
+            </button>
+            
+            {/* Dots */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setCoursePage(0)}
+                className="transition-all"
+                style={{
+                  width: coursePage === 0 ? '12px' : '8px',
+                  height: coursePage === 0 ? '12px' : '8px',
+                  borderRadius: '50%',
+                  backgroundColor: coursePage === 0 ? '#000000' : '#666666',
+                  border: '2px solid #000000',
+                }}
+                aria-label="Page 1: Semesters 1-2"
+              />
+              <button
+                onClick={() => setCoursePage(1)}
+                className="transition-all"
+                style={{
+                  width: coursePage === 1 ? '12px' : '8px',
+                  height: coursePage === 1 ? '12px' : '8px',
+                  borderRadius: '50%',
+                  backgroundColor: coursePage === 1 ? '#000000' : '#666666',
+                  border: '2px solid #000000',
+                }}
+                aria-label="Page 2: Semesters 3-4"
+              />
+              <button
+                onClick={() => setCoursePage(2)}
+                className="transition-all"
+                style={{
+                  width: coursePage === 2 ? '12px' : '8px',
+                  height: coursePage === 2 ? '12px' : '8px',
+                  borderRadius: '50%',
+                  backgroundColor: coursePage === 2 ? '#000000' : '#666666',
+                  border: '2px solid #000000',
+                }}
+                aria-label="Page 3: Semesters 5-6"
+              />
+              <button
+                onClick={() => setCoursePage(3)}
+                className="transition-all"
+                style={{
+                  width: coursePage === 3 ? '12px' : '8px',
+                  height: coursePage === 3 ? '12px' : '8px',
+                  borderRadius: '50%',
+                  backgroundColor: coursePage === 3 ? '#000000' : '#666666',
+                  border: '2px solid #000000',
+                }}
+                aria-label="Page 4: Semester 7 (Electives)"
+              />
+            </div>
+            
+            {/* Right Arrow */}
             <button
-              onClick={() => setCoursePage(1)}
-              className="transition-all"
+              onClick={() => setCoursePage(Math.min(3, coursePage + 1))}
+              disabled={coursePage === 3}
+              className="transition-all hover:scale-110 disabled:opacity-30 disabled:cursor-not-allowed"
               style={{
-                width: coursePage === 1 ? '12px' : '8px',
-                height: coursePage === 1 ? '12px' : '8px',
-                borderRadius: '50%',
-                backgroundColor: coursePage === 1 ? '#000000' : '#666666',
                 border: '2px solid #000000',
+                backgroundColor: coursePage === 3 ? '#CCCCCC' : '#FFBE0B',
+                padding: '4px',
+                borderRadius: '4px',
               }}
-              aria-label="Page 2: Semesters 3-4"
-            />
-            <button
-              onClick={() => setCoursePage(2)}
-              className="transition-all"
-              style={{
-                width: coursePage === 2 ? '12px' : '8px',
-                height: coursePage === 2 ? '12px' : '8px',
-                borderRadius: '50%',
-                backgroundColor: coursePage === 2 ? '#000000' : '#666666',
-                border: '2px solid #000000',
-              }}
-              aria-label="Page 3: Semesters 5-6"
-            />
-            <button
-              onClick={() => setCoursePage(3)}
-              className="transition-all"
-              style={{
-                width: coursePage === 3 ? '12px' : '8px',
-                height: coursePage === 3 ? '12px' : '8px',
-                borderRadius: '50%',
-                backgroundColor: coursePage === 3 ? '#000000' : '#666666',
-                border: '2px solid #000000',
-              }}
-              aria-label="Page 4: Semester 7 (Electives)"
-            />
+              aria-label="Next page"
+            >
+              <ChevronRight className="w-4 h-4" style={{ strokeWidth: 3 }} />
+            </button>
           </div>
         </div>
         
