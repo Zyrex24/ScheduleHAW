@@ -2,6 +2,7 @@
 
 import React from "react";
 import ScheduleBlock from "./ScheduleBlock";
+import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
 const timeSlots = [
   "08:00-08:10",
@@ -21,17 +22,31 @@ const timeSlots = [
 
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-export default function ScheduleGrid({ blocks, showWeekFilter }) {
-  const getBlockPosition = (block) => {
+interface ScheduleGridProps {
+  blocks: ScheduleBlockType[];
+  showWeekFilter: boolean;
+}
+
+export default function ScheduleGrid({ blocks, showWeekFilter }: ScheduleGridProps) {
+  const getBlockPosition = (block: ScheduleBlockType) => {
     const startIndex = timeSlots.findIndex(slot => slot.startsWith(block.start_time));
     const endIndex = timeSlots.findIndex(slot => slot.includes(block.end_time)) + 1;
     return { start: startIndex, span: endIndex - startIndex };
   };
 
-  const getBlocksForDayAndTime = (day, timeIndex) => {
+  // Get all blocks that START at a specific time slot for a specific day
+  const getBlocksStartingAt = (day: string, timeIndex: number): ScheduleBlockType[] => {
     return blocks.filter(block => {
       const pos = getBlockPosition(block);
-      return block.day === day && timeIndex >= pos.start && timeIndex < pos.start + pos.span;
+      return block.day === day && timeIndex === pos.start;
+    });
+  };
+
+  // Check if a cell is occupied by a block that started earlier
+  const isOccupiedByPreviousBlock = (day: string, timeIndex: number): boolean => {
+    return blocks.some(block => {
+      const pos = getBlockPosition(block);
+      return block.day === day && timeIndex > pos.start && timeIndex < pos.start + pos.span;
     });
   };
 
@@ -67,6 +82,7 @@ export default function ScheduleGrid({ blocks, showWeekFilter }) {
             
             return (
               <React.Fragment key={slot}>
+                {/* Time column - always rendered */}
                 <div 
                   className={`p-2 text-xs font-bold border-2 border-black flex items-center justify-center ${
                     isBreak ? 'bg-gray-200' : 'bg-white'
@@ -79,28 +95,52 @@ export default function ScheduleGrid({ blocks, showWeekFilter }) {
                   {slot}
                 </div>
                 
+                {/* Day cells */}
                 {days.map(day => {
-                  const dayBlocks = getBlocksForDayAndTime(day, timeIndex);
-                  const firstBlock = dayBlocks.find(b => {
-                    const pos = getBlockPosition(b);
-                    return timeIndex === pos.start;
-                  });
+                  const startingBlocks = getBlocksStartingAt(day, timeIndex);
+                  const isOccupied = isOccupiedByPreviousBlock(day, timeIndex);
 
-                  if (firstBlock) {
-                    const pos = getBlockPosition(firstBlock);
+                  // If blocks start at this time slot, render them
+                  if (startingBlocks.length > 0) {
+                    const maxSpan = Math.max(...startingBlocks.map(b => getBlockPosition(b).span));
+                    const blockCount = startingBlocks.length;
+                    
                     return (
                       <div
                         key={`${day}-${timeIndex}`}
                         className="border-4 border-black relative"
                         style={{
-                          gridRow: `span ${pos.span}`,
-                          minHeight: `${pos.span * 80}px`
+                          gridRow: `span ${maxSpan}`,
+                          minHeight: `${maxSpan * 80}px`,
+                          display: 'flex',
+                          gap: '0',
                         }}
                       >
-                        <ScheduleBlock block={firstBlock} showWeekFilter={showWeekFilter} />
+                        {startingBlocks.map((block, idx) => (
+                          <div
+                            key={`${block.code}-${block.start_time}-${idx}`}
+                            style={{
+                              flex: 1,
+                              minWidth: 0, // Allow flex items to shrink below content size
+                              borderRight: idx < blockCount - 1 ? '2px solid #000' : 'none',
+                            }}
+                          >
+                            <ScheduleBlock 
+                              block={block} 
+                              showWeekFilter={showWeekFilter}
+                              isCompact={blockCount > 1}
+                            />
+                          </div>
+                        ))}
                       </div>
                     );
-                  } else if (dayBlocks.length === 0) {
+                  }
+                  // If occupied by a previous block, don't render anything (the previous cell spans over this)
+                  else if (isOccupied) {
+                    return null;
+                  }
+                  // Empty cell
+                  else {
                     return (
                       <div
                         key={`${day}-${timeIndex}`}
@@ -112,7 +152,6 @@ export default function ScheduleGrid({ blocks, showWeekFilter }) {
                       />
                     );
                   }
-                  return null;
                 })}
               </React.Fragment>
             );
