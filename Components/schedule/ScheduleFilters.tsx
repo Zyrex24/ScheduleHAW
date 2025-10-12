@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { X, Download, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Download, Calendar, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
 import { downloadICS } from "@/lib/icsGenerator";
 import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
@@ -41,6 +41,9 @@ export default function ScheduleFilters({
 
   // Pagination state for course selection
   const [coursePage, setCoursePage] = useState(0);
+  
+  // Collapse state for My Courses section
+  const [isCoursesCollapsed, setIsCoursesCollapsed] = useState(false);
 
   // Split courses by semester into 4 pages for better organization
   const getSemester = (code: string): number => {
@@ -192,18 +195,40 @@ export default function ScheduleFilters({
         }}
       >
         <div className="flex items-center justify-between mb-3">
-          <div>
-            <h3 className="text-lg font-black uppercase">My Courses</h3>
-            <p className="text-xs font-bold">
-              {coursePage === 0 ? 'Semesters 1-2' : 
-               coursePage === 1 ? 'Semesters 3-4' : 
-               coursePage === 2 ? 'Semesters 5-6' : 
-               'Semester 7 (Electives)'}
-            </p>
+          <div className="flex items-center gap-3">
+            <div>
+              <h3 className="text-lg font-black uppercase">My Courses</h3>
+              <p className="text-xs font-bold">
+                {coursePage === 0 ? 'Semesters 1-2' : 
+                 coursePage === 1 ? 'Semesters 3-4' : 
+                 coursePage === 2 ? 'Semesters 5-6' : 
+                 'Semester 7 (Electives)'}
+              </p>
+            </div>
+            
+            {/* Collapse/Expand Button */}
+            <button
+              onClick={() => setIsCoursesCollapsed(!isCoursesCollapsed)}
+              className="transition-all hover:scale-110"
+              style={{
+                border: '3px solid #000000',
+                backgroundColor: '#FFFFFF',
+                padding: '6px',
+                borderRadius: '4px',
+              }}
+              aria-label={isCoursesCollapsed ? "Expand courses" : "Collapse courses"}
+            >
+              {isCoursesCollapsed ? (
+                <ChevronDown className="w-5 h-5" style={{ strokeWidth: 3 }} />
+              ) : (
+                <ChevronUp className="w-5 h-5" style={{ strokeWidth: 3 }} />
+              )}
+            </button>
           </div>
           
-          {/* Dot Navigation with Arrows */}
-          <div className="flex items-center gap-3">
+          {/* Dot Navigation with Arrows - Only show when not collapsed */}
+          {!isCoursesCollapsed && (
+            <div className="flex items-center gap-3">
             {/* Left Arrow */}
             <button
               onClick={() => setCoursePage(Math.max(0, coursePage - 1))}
@@ -287,48 +312,54 @@ export default function ScheduleFilters({
             >
               <ChevronRight className="w-4 h-4" style={{ strokeWidth: 3 }} />
             </button>
-          </div>
+            </div>
+          )}
         </div>
         
-        <p className="text-xs font-bold mb-4">Select courses you&apos;re enrolled in to create your personalized schedule</p>
-        
-        {selectedCourses.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            {selectedCourses.map(course => (
-              <div
-                key={course}
-                className="px-3 py-1 font-bold text-sm flex items-center gap-2"
-                style={{
-                  backgroundColor: "#000000",
-                  color: "#FFBE0B",
-                  border: "2px solid #000000",
-                }}
-              >
-                {course}
-                <button onClick={() => toggleCourse(course)}>
-                  <X className="w-3 h-3" />
-                </button>
+        {/* Collapsible Course Content */}
+        {!isCoursesCollapsed && (
+          <>
+            <p className="text-xs font-bold mb-4">Select courses you&apos;re enrolled in to create your personalized schedule</p>
+            
+            {selectedCourses.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {selectedCourses.map(course => (
+                  <div
+                    key={course}
+                    className="px-3 py-1 font-bold text-sm flex items-center gap-2"
+                    style={{
+                      backgroundColor: "#000000",
+                      color: "#FFBE0B",
+                      border: "2px solid #000000",
+                    }}
+                  >
+                    {course}
+                    <button onClick={() => toggleCourse(course)}>
+                      <X className="w-3 h-3" />
+                    </button>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        )}
+            )}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {displayedCourses.map(course => (
-            <label
-              key={course}
-              className="flex items-center gap-2 p-2 cursor-pointer font-bold text-sm hover:bg-black hover:text-white transition-colors"
-              style={{ border: "2px solid #000000" }}
-            >
-              <Checkbox
-                checked={selectedCourses.includes(course)}
-                onCheckedChange={() => toggleCourse(course)}
-                style={{ border: "2px solid #000000" }}
-              />
-              {course}
-            </label>
-          ))}
-        </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {displayedCourses.map(course => (
+                <label
+                  key={course}
+                  className="flex items-center gap-2 p-2 cursor-pointer font-bold text-sm hover:bg-black hover:text-white transition-colors"
+                  style={{ border: "2px solid #000000" }}
+                >
+                  <Checkbox
+                    checked={selectedCourses.includes(course)}
+                    onCheckedChange={() => toggleCourse(course)}
+                    style={{ border: "2px solid #000000" }}
+                  />
+                  {course}
+                </label>
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="flex gap-4 mt-4 flex-wrap">
