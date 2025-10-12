@@ -12,7 +12,7 @@ export default function Schedule() {
     const [blocks, setBlocks] = useState<ScheduleBlockType[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [semester, setSemester] = useState<string>("ALL");
-    const [selectedWeek, setSelectedWeek] = useState<string | null>("41"); // Default to week 41
+    const [selectedWeek, setSelectedWeek] = useState<string>("41"); // Default to week 41
     const [selectedInstructor, setSelectedInstructor] = useState<string | null>(null);
     const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
 
@@ -30,7 +30,8 @@ export default function Schedule() {
     const filteredBlocks = blocks.filter((block) => {
         if (semester !== "ALL" && block.semester !== semester) return false;
 
-        if (selectedWeek && !block.weeks_array?.includes(parseInt(selectedWeek))) {
+        // Always filter by selected week (no "All Weeks" option anymore)
+        if (!block.weeks_array?.includes(parseInt(selectedWeek))) {
             return false;
         }
 
@@ -168,7 +169,7 @@ export default function Schedule() {
                                 
                                 <>
                                     {/* Christmas Break Notice */}
-                                    {(selectedWeek === "52" || selectedWeek === "1" || !selectedWeek) && (
+                                    {(selectedWeek === "52" || selectedWeek === "1") && (
                                         <div 
                                             className="mb-6 p-4 text-center"
                                             style={{
@@ -189,7 +190,7 @@ export default function Schedule() {
                                         </div>
                                     )}
                                     
-                                    <ScheduleGrid blocks={filteredBlocks} showWeekFilter={!!selectedWeek} />
+                                    <ScheduleGrid blocks={filteredBlocks} showWeekFilter={true} />
                                 </>
                             }
                         </div>

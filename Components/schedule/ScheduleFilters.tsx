@@ -8,10 +8,10 @@ import { X, Download, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import { downloadICS } from "@/lib/icsGenerator";
 import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
 
-export default function ScheduleFilters({ 
-  semester, 
-  setSemester, 
-  selectedWeek, 
+export default function ScheduleFilters({
+  semester,
+  setSemester,
+  selectedWeek,
   setSelectedWeek,
   instructors,
   selectedInstructor,
@@ -23,8 +23,8 @@ export default function ScheduleFilters({
 }: {
   semester: string;
   setSemester: (value: string) => void;
-  selectedWeek: string | null;
-  setSelectedWeek: (value: string | null) => void;
+  selectedWeek: string;
+  setSelectedWeek: (value: string) => void;
   instructors: string[];
   selectedInstructor: string | null;
   setSelectedInstructor: (value: string | null) => void;
@@ -133,7 +133,7 @@ export default function ScheduleFilters({
 
         <div>
           <label className="block text-sm font-bold mb-2 uppercase">Week</label>
-          <Select value={selectedWeek || "41"} onValueChange={(val) => setSelectedWeek(val)}>
+          <Select value={selectedWeek} onValueChange={setSelectedWeek}>
             <SelectTrigger 
               className="w-full font-bold"
               style={{
