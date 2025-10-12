@@ -133,7 +133,7 @@ export default function ScheduleFilters({
 
         <div>
           <label className="block text-sm font-bold mb-2 uppercase">Week</label>
-          <Select value={selectedWeek || "all"} onValueChange={(val) => setSelectedWeek(val === "all" ? null : val)}>
+          <Select value={selectedWeek || "41"} onValueChange={(val) => setSelectedWeek(val)}>
             <SelectTrigger 
               className="w-full font-bold"
               style={{
@@ -146,7 +146,6 @@ export default function ScheduleFilters({
               <SelectValue />
             </SelectTrigger>
             <SelectContent style={{ border: "4px solid #000000" }}>
-              <SelectItem value="all">All Weeks</SelectItem>
               {semesterWeeks.map(week => (
                 <SelectItem key={week} value={week.toString()}>
                   Week {week}

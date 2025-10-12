@@ -12,7 +12,7 @@ export default function Schedule() {
     const [blocks, setBlocks] = useState<ScheduleBlockType[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [semester, setSemester] = useState<string>("ALL");
-    const [selectedWeek, setSelectedWeek] = useState<string | null>(null);
+    const [selectedWeek, setSelectedWeek] = useState<string | null>("41"); // Default to week 41
     const [selectedInstructor, setSelectedInstructor] = useState<string | null>(null);
     const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
 
