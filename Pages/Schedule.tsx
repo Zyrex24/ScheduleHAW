@@ -22,7 +22,7 @@ export default function Schedule() {
 
     const loadSchedule = async () => {
         setLoading(true);
-        const data = await ScheduleBlockEntity.list();
+        const data = await ScheduleBlockEntity.get();
         setBlocks(data);
         setLoading(false);
     };
