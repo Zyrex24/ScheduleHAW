@@ -137,6 +137,11 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE2', day: 'Monday', start_time: '09:55', end_time: '11:25', code: 'IE2-SOL2/03', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'software', group: '03' },
   { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE2-SOL2/03', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'software', group: '03' },
   
+  // IE2 - Software Construction 2 Lab Group 4
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '09:40', code: 'IE2-SOL2/04', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '04' },
+  { semester: 'IE2', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE2-SOL2/04', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'software', group: '04' },
+  { semester: 'IE2', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE2-SOL2/04', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '4', weeks_array: expandWeeks('4'), module_type: 'software', group: '04' },
+
   // IE2 - Electrical Engineering 2 (EE2) - Lecture
   // weekly, Thursday, 10/16/25 - 12/18/25 from 12:10 until 15:40 + Thursday, 1/8/26 from 12:10 to 15:40
   { semester: 'IE2', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE2-EE2', full_name: 'Electrical Engineering 2', location: 'Stein94 0.02', instructors: 'Lehmann', weeks: '42-51', weeks_array: expandWeeks('42-51'), module_type: 'electronics' },
@@ -263,6 +268,11 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE4', day: 'Wednesday', start_time: '14:10', end_time: '15:40', code: 'IE4-DSL/03', full_name: 'Digital Systems Lab', location: 'BT7 8.01', instructors: 'Herster', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'digital', group: '03' },
   { semester: 'IE4', day: 'Wednesday', start_time: '08:10', end_time: '11:25', code: 'IE4-DSL/03', full_name: 'Digital Systems Lab', location: 'BT7 8.01', instructors: 'Herster', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'digital', group: '03' },
   
+  // IE4 - Digital Systems Lab Group 4
+  { semester: 'IE4', day: 'Thursday', start_time: '08:10', end_time: '09:40', code: 'IE4-DSL/04', full_name: 'Digital Systems Lab', location: 'BT7 8.01', instructors: 'Gassinez, Schulz', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'digital', group: '04' },
+  { semester: 'IE4', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE4-DSL/04', full_name: 'Digital Systems Lab', location: 'BT7 8.01', instructors: 'Gassinez, Schulz', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'digital', group: '04' },
+  { semester: 'IE4', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE4-DSL/04', full_name: 'Digital Systems Lab', location: 'BT7 8.01', instructors: 'Gassinez, Schulz', weeks: '3', weeks_array: expandWeeks('3'), module_type: 'digital', group: '04' },
+
   // IE4 - Microcontrollers (MC) - Lecture
   { semester: 'IE4', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE4-MC', full_name: 'Microcontrollers', location: 'Stift69 110', instructors: 'Schulz', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'digital' },
   
@@ -274,6 +284,9 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE4', day: 'Friday', start_time: '14:10', end_time: '15:40', code: 'IE4-MCL/03', full_name: 'Microcontrollers Lab', location: 'BT7 8.04', instructors: 'Schulz', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'digital', group: '03' },
   { semester: 'IE4', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE4-MCL/03', full_name: 'Microcontrollers Lab', location: 'BT7 8.04', instructors: 'Schulz', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'digital', group: '03' },
   
+  // IE4 - Microcontrollers Lab Group 4
+  { semester: 'IE4', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE4-MCL/04', full_name: 'Microcontrollers Lab', location: 'BT7 8.80', instructors: 'Schröder, Haarring', weeks: '46,48,50,2,4', weeks_array: expandWeeks('46,48,50,2,4'), module_type: 'digital', group: '04' },
+  
   // IE4 - Software Engineering (SE) - Lecture
   { semester: 'IE4', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE4-SE', full_name: 'Software Engineering', location: 'BT7 12.60', instructors: 'Antosch', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'software' },
   
@@ -284,6 +297,11 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE4', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE4-SEL/02', full_name: 'Software Engineering Lab', location: 'BT7 13.65', instructors: 'Antosch', weeks: '46,49,3', weeks_array: expandWeeks('46,49,3'), module_type: 'software', group: '02' },
   { semester: 'IE4', day: 'Wednesday', start_time: '12:10', end_time: '13:40', code: 'IE4-SEL/03', full_name: 'Software Engineering Lab', location: 'BT7 13.60', instructors: 'Antosch', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '03' },
   { semester: 'IE4', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE4-SEL/03', full_name: 'Software Engineering Lab', location: 'BT7 13.65', instructors: 'Antosch', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'software', group: '03' },
+  
+  // IE4 - Software Engineering Lab Group 4
+  { semester: 'IE4', day: 'Tuesday', start_time: '12:10', end_time: '13:40', code: 'IE4-SEL/04', full_name: 'Software Engineering Lab', location: 'BT7 5.65', instructors: 'Eger', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '04' },
+  { semester: 'IE4', day: 'Thursday', start_time: '15:55', end_time: '19:10', code: 'IE4-SEL/04', full_name: 'Software Engineering Lab', location: 'BT7 13.65', instructors: 'Eger', weeks: '48,51', weeks_array: expandWeeks('48,51'), module_type: 'software', group: '04' },
+  { semester: 'IE4', day: 'Thursday', start_time: '15:55', end_time: '19:10', code: 'IE4-SEL/04', full_name: 'Software Engineering Lab', location: 'BT7 13.65', instructors: 'Eger', weeks: '3', weeks_array: expandWeeks('3'), module_type: 'software', group: '04' },
   
   // IE4 - Databases (DB) - Lecture
   { semester: 'IE4', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE4-DB', full_name: 'Databases', location: 'BT7 10.60', instructors: 'Roose', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'database' },
@@ -333,6 +351,11 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE6-BUL/02', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'electronics', group: '02' },
   { semester: 'IE6', day: 'Wednesday', start_time: '12:10', end_time: '13:40', code: 'IE6-BUL/03', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '03' },
   { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE6-BUL/03', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'electronics', group: '03' },
+  
+  // IE6 - Bus Systems and Sensors Lab Group 4
+  { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '13:40', code: 'IE6-BUL/04', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '04' },
+  { semester: 'IE6', day: 'Tuesday', start_time: '15:55', end_time: '19:10', code: 'IE6-BUL/04', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'electronics', group: '04' },
+  { semester: 'IE6', day: 'Tuesday', start_time: '15:55', end_time: '19:10', code: 'IE6-BUL/04', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '2', weeks_array: expandWeeks('2'), module_type: 'electronics', group: '04' },
   
   // IE6 - Digital Signal Processing (DP)
   { semester: 'IE6', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE6-DP', full_name: 'Digital Signal Processing', location: 'BT7 8.61', instructors: 'Kronauge', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'signals' },
