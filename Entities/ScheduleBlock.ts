@@ -295,6 +295,122 @@ const realSchedule: ScheduleBlockType[] = [
   { semester: 'IE4', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE4-DBL/02', full_name: 'Databases Lab', location: 'BT7 13.65', instructors: 'Köpcke, Roose', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'database', group: '02' },
   { semester: 'IE4', day: 'Thursday', start_time: '12:10', end_time: '13:40', code: 'IE4-DBL/03', full_name: 'Databases Lab', location: 'BT7 13.65', instructors: 'Herster', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'database', group: '03' },
   { semester: 'IE4', day: 'Wednesday', start_time: '08:10', end_time: '11:25', code: 'IE4-DBL/03', full_name: 'Databases Lab', location: 'BT7 13.60', instructors: 'Herster', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'database', group: '03' },
+
+  // ============ IE5 - Semester 5 ============
+  
+  // IE5 - Scientific and Project Work (SP)
+  { semester: 'IE5', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE5-SP', full_name: 'Scientific and Project Work', location: 'BT7 14.86', instructors: 'Becker', weeks: '45-48', weeks_array: expandWeeks('45-48'), module_type: 'intercultural' },
+  { semester: 'IE5', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE5-SP', full_name: 'Scientific and Project Work', location: 'BT7 14.86', instructors: 'Becker', weeks: '45-48', weeks_array: expandWeeks('45-48'), module_type: 'intercultural' },
+  
+  // IE5 - Elective: Architectures of Digital Signal Processing (WP-Rust)
+  { semester: 'IE5', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'E5-WP-Rust', full_name: 'Elective: Architectures of Digital Signal Processing', location: 'BT7 12.81', instructors: 'Rust', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'signals' },
+  { semester: 'IE5', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'E5-WPP-Rust', full_name: 'Architectures of Digital Signal Processing Lab', location: 'BT7 12.81', instructors: 'Rust', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'signals' },
+  
+  // IE5 - Industrial Placement (IP) - typically done off-campus (25.0 Credits)
+  // No schedule entries as it's an internship/praktikum
+
+  // ============ IE6 - Semester 6 ============
+  
+  // IE6 - Operating Systems (OS)
+  { semester: 'IE6', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE6-OS', full_name: 'Operating Systems', location: 'BT7 8.61', instructors: 'Buczek', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'software' },
+  { semester: 'IE6', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE6-OS', full_name: 'Operating Systems', location: 'BT7 8.62', instructors: 'Buczek', weeks: '42-51', weeks_array: expandWeeks('42-51'), module_type: 'software' },
+  
+  // IE6 - Operating Systems Lab (OSL)
+  { semester: 'IE6', day: 'Thursday', start_time: '14:10', end_time: '15:40', code: 'IE6-OSL/01', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'software', group: '01' },
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE6-OSL/01', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'software', group: '01' },
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '13:40', code: 'IE6-OSL/02', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'software', group: '02' },
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE6-OSL/02', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '46,49,3', weeks_array: expandWeeks('46,49,3'), module_type: 'software', group: '02' },
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '13:40', code: 'IE6-OSL/03', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '03' },
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE6-OSL/03', full_name: 'Operating Systems Lab', location: 'BT7 8.80', instructors: 'Gassinez, Westerkamp', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'software', group: '03' },
+  
+  // IE6 - Bus Systems and Sensors (BU)
+  { semester: 'IE6', day: 'Wednesday', start_time: '08:10', end_time: '11:25', code: 'IE6-BU', full_name: 'Bus Systems and Sensors', location: 'Stift69 110', instructors: 'Rettig', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'electronics' },
+  
+  // IE6 - Bus Systems and Sensors Lab (BUL)
+  { semester: 'IE6', day: 'Thursday', start_time: '08:10', end_time: '09:40', code: 'IE6-BUL/01', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '01' },
+  { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE6-BUL/01', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '46,49,3', weeks_array: expandWeeks('46,49,3'), module_type: 'electronics', group: '01' },
+  { semester: 'IE6', day: 'Thursday', start_time: '09:55', end_time: '11:25', code: 'IE6-BUL/02', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '02' },
+  { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE6-BUL/02', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'electronics', group: '02' },
+  { semester: 'IE6', day: 'Wednesday', start_time: '12:10', end_time: '13:40', code: 'IE6-BUL/03', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '03' },
+  { semester: 'IE6', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE6-BUL/03', full_name: 'Bus Systems and Sensors Lab', location: 'BT7 8.04, 8.65', instructors: 'Rettig', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'electronics', group: '03' },
+  
+  // IE6 - Digital Signal Processing (DP)
+  { semester: 'IE6', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE6-DP', full_name: 'Digital Signal Processing', location: 'BT7 8.61', instructors: 'Kronauge', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'signals' },
+  
+  // IE6 - Digital Signal Processing Lab (DPL)
+  { semester: 'IE6', day: 'Thursday', start_time: '12:10', end_time: '13:40', code: 'IE6-DPL/01', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'signals', group: '01' },
+  { semester: 'IE6', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE6-DPL/01', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '47,50,4', weeks_array: expandWeeks('47,50,4'), module_type: 'signals', group: '01' },
+  { semester: 'IE6', day: 'Monday', start_time: '12:10', end_time: '13:40', code: 'IE6-DPL/02', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'signals', group: '02' },
+  { semester: 'IE6', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE6-DPL/02', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'signals', group: '02' },
+  { semester: 'IE6', day: 'Monday', start_time: '14:10', end_time: '15:40', code: 'IE6-DPL/03', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'signals', group: '03' },
+  { semester: 'IE6', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE6-DPL/03', full_name: 'Digital Signal Processing Lab', location: 'BT7 8.85', instructors: 'Kronauge, Kupke', weeks: '46,49,3', weeks_array: expandWeeks('46,49,3'), module_type: 'signals', group: '03' },
+  
+  // IE6 - Digital Communication Systems (DC)
+  { semester: 'IE6', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE6-DC', full_name: 'Digital Communication Systems', location: 'BT7 14.05', instructors: 'Schoenen', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'digital' },
+  
+  // IE6 - Digital Communication Systems Lab (DCL)
+  { semester: 'IE6', day: 'Monday', start_time: '12:10', end_time: '13:40', code: 'IE6-DCL/01', full_name: 'Digital Communication Systems Lab', location: 'BT7 14.85', instructors: 'Neugebauer, Schoenen', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'digital', group: '01' },
+  { semester: 'IE6', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE6-DCL/01', full_name: 'Digital Communication Systems Lab', location: 'BT7 14.85', instructors: 'Neugebauer, Schoenen', weeks: '45,48,2', weeks_array: expandWeeks('45,48,2'), module_type: 'digital', group: '01' },
+  { semester: 'IE6', day: 'Monday', start_time: '14:10', end_time: '15:40', code: 'IE6-DCL/02', full_name: 'Digital Communication Systems Lab', location: 'BT7 14.85', instructors: 'Neugebauer, Schoenen', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'digital', group: '02' },
+  { semester: 'IE6', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE6-DCL/02', full_name: 'Digital Communication Systems Lab', location: 'BT7 14.85', instructors: 'Neugebauer, Schoenen', weeks: '46,49,3', weeks_array: expandWeeks('46,49,3'), module_type: 'digital', group: '02' },
+
+  // ============ IE7 - Semester 7 - Electives and Projects ============
+  
+  // IE7 - Elective: Elektroenergiesysteme (WP-Winzenick)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP13-Winzenick', full_name: 'Elektroenergiesysteme', location: 'Stift69 107', instructors: 'Winzenick', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'electronics' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP13-Winzenick', full_name: 'Elektroenergiesysteme Lab', location: 'Stift69 107', instructors: 'Winzenick', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'electronics' },
+  
+  // IE7 - Elective: Embedded Systems Verification and Test (WP-Schulz)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP22-Schulz', full_name: 'Embedded Systems Verification and Test', location: 'BT7 14.65', instructors: 'Schulz', weeks: '41,45,46', weeks_array: expandWeeks('41,45,46'), module_type: 'software' },
+  { semester: 'IE7', day: 'Thursday', start_time: '15:55', end_time: '19:10', code: 'E7-WP22-Schulz', full_name: 'Embedded Systems Verification and Test', location: 'BT7 8.04', instructors: 'Schulz', weeks: '48,49', weeks_array: expandWeeks('48,49'), module_type: 'software' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP22-Schulz', full_name: 'Embedded Systems Verification and Test', location: 'BT7 14.65', instructors: 'Schulz', weeks: '2', weeks_array: expandWeeks('2'), module_type: 'software' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP22-Schulz', full_name: 'Embedded Systems Verification and Test Lab', location: 'BT7 8.04', instructors: 'Schulz', weeks: '42-51,3-4', weeks_array: expandWeeks('42-51,3-4'), module_type: 'software' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP22-Schulz', full_name: 'Embedded Systems Verification and Test Lab', location: 'BT7 8.04', instructors: 'Schulz', weeks: '3', weeks_array: expandWeeks('3'), module_type: 'software' },
+  
+  // IE7 - Elective: Solar Energy (WP-Titova)
+  { semester: 'IE7', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'E7-WP25-Titova', full_name: 'Solar Energy', location: 'BT7 8.61', instructors: 'Titova', weeks: '41-51,2-3', weeks_array: expandWeeks('41-51,2-3'), module_type: 'electronics' },
+  { semester: 'IE7', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'E7-WPP25-Titova', full_name: 'Solar Energy Lab', location: 'BT7 8.61', instructors: 'Titova', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'electronics' },
+  
+  // IE7 - Elective: On-board Data Handling (WP-Buczek)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP33-Buczek', full_name: 'On-board Data Handling for Highly Autonomous Systems', location: 'BT7 13.60', instructors: 'Buczek, Meß', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'software' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP33-Buczek', full_name: 'On-board Data Handling Lab', location: 'BT7 13.60', instructors: 'Buczek, Meß', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'software' },
+  
+  // IE7 - Elective: Peer Leaders (WP-Radt)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP34-Radt', full_name: 'Peer Leaders', location: 'BT7 10.65', instructors: 'Radt', weeks: '41-50,2-3', weeks_array: expandWeeks('41-50,2-3'), module_type: 'intercultural' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:00', end_time: '14:00', code: 'E7-WPP34-Radt', full_name: 'Peer Leaders Lab', location: '', instructors: 'Radt', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'intercultural' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP34-Radt', full_name: 'Peer Leaders Lab', location: 'BT7 10.65', instructors: 'Radt', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'intercultural' },
+  
+  // IE7 - Elective: LED Technik (WP-Noack)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP36-Noack', full_name: 'LED Technik', location: 'BT7 8.61', instructors: 'Noack', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'electronics' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP36-Noack', full_name: 'LED Technik Lab', location: 'BT7 8.61', instructors: 'Noack', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'electronics' },
+  
+  // IE7 - Elective: Introduction to Cryptography (WP-Neumann)
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WP37-Neumann', full_name: 'Introduction to Cryptography', location: 'Stift69 106', instructors: 'Neumann', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'software' },
+  { semester: 'IE7', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'E7-WPP37-Neumann', full_name: 'Introduction to Cryptography Lab', location: 'Stift69 106', instructors: 'Neumann', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'software' },
+  
+  // IE7 - Project: Entwicklung einer Partysimulation (WPJ01)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ01-Gottfried', full_name: 'Projekt: Entwicklung einer Partysimulation', location: 'BT7 13.60', instructors: 'Gottfried-Krambeer', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'software' },
+  
+  // IE7 - Project: Raspberry Pi (WPJ02)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ02-Noack', full_name: 'Projekt: Raspberry Pi', location: 'BT7 8.62', instructors: 'Noack', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'electronics' },
+  
+  // IE7 - Project: Automatisierung eines Stückgutprozesses (WPJ03)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ03-Meiners', full_name: 'Projekt: Automatisierung eines Stückgutprozesses', location: 'BT7 6.06', instructors: 'Huß, Meiners', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'electronics' },
+  
+  // IE7 - Project: Hydroponics (WPJ11)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ11-Heß', full_name: 'Projekt: Hydroponics', location: 'Stift69 107', instructors: 'Heß', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'intercultural' },
+  
+  // IE7 - Project: Generative and Agentic AI (WPJ15)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ15-Conjeti', full_name: 'Projekt: Generative and Agentic AI', location: 'BT7 10.65', instructors: 'Conjeti', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'software' },
+  
+  // IE7 - Project: One World Engineering (WPJ16)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ16-Schoenen', full_name: 'Projekt: One World Engineering', location: 'BT7 14.05', instructors: 'Schoenen', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'intercultural' },
+  
+  // IE7 - Project: Automatic Code Generation using MATLAB/Simulink (WPJ17)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ17-Ginzel', full_name: 'Projekt: Automatic Code Generation using MATLAB/Simulink', location: 'BT7 14.65', instructors: 'Ginzel', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'software' },
+  
+  // IE7 - Project: Cosmic Discoveries & their Techniques (WPJ18)
+  { semester: 'IE7', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'E7-WPJ18-Trivedi', full_name: 'Projekt: Cosmic Discoveries & their Techniques', location: 'Stift69 106', instructors: 'Trivedi', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'intercultural' },
 ];
 
 export class ScheduleBlock {
