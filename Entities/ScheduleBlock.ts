@@ -150,8 +150,171 @@ function getFullName(code: string): string {
   return baseName;
 }
 
-// Real schedule data from PDFs
+// Real schedule data - Updated from newschedule.md
 const realSchedule: ScheduleBlockType[] = [
+  
+  // ============ IE1 - Semester 1 ============
+  
+  // IE1 - Mathematics 1 (MA1) - Lectures
+  { semester: 'IE1', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE1-MA1', full_name: 'Mathematics 1', location: 'BT7 12.60', instructors: 'Nieder', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'math' },
+  { semester: 'IE1', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE1-MA1', full_name: 'Mathematics 1', location: 'BT5 1.13', instructors: 'Nieder', weeks: '43,45,47,49,51', weeks_array: expandWeeks('43,45,47,49,51'), module_type: 'math' },
+  
+  // IE1 - Mathematics 1 Exercises (MAE1)
+  { semester: 'IE1', day: 'Thursday', start_time: '08:10', end_time: '09:40', code: 'IE1-MAE1/01', full_name: 'Mathematics 1 Exercises', location: 'BT7 10.65', instructors: 'Nieder', weeks: '43,45,47,49,51,3', weeks_array: expandWeeks('43,45,47,49,51,3'), module_type: 'math', group: '01' },
+  { semester: 'IE1', day: 'Thursday', start_time: '09:55', end_time: '11:25', code: 'IE1-MAE1/02', full_name: 'Mathematics 1 Exercises', location: 'BT7 10.65', instructors: 'Nieder', weeks: '43,45,47,49,51,3', weeks_array: expandWeeks('43,45,47,49,51,3'), module_type: 'math', group: '02' },
+  
+  // IE1 - Electrical Engineering 1 (EE1) - Lecture
+  { semester: 'IE1', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE1-EE1', full_name: 'Electrical Engineering 1', location: 'BT5 1.13', instructors: 'Hansen', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'electronics' },
+  
+  // IE1 - Electrical Engineering 1 Lab (EEL1)
+  { semester: 'IE1', day: 'Monday', start_time: '14:10', end_time: '15:40', code: 'IE1-EEL1/01', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '01' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE1-EEL1/01', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'electronics', group: '01' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '13:40', code: 'IE1-EEL1/02', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '02' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE1-EEL1/02', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'electronics', group: '02' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '13:40', code: 'IE1-EEL1/03', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '03' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE1-EEL1/03', full_name: 'Electrical Engineering 1 Lab', location: 'BT7 5.01', instructors: 'Hansen, Wittmar', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'electronics', group: '03' },
+  
+  // IE1 - Software Construction 1 (SO1) - Lecture
+  { semester: 'IE1', day: 'Wednesday', start_time: '15:55', end_time: '19:10', code: 'IE1-SO1', full_name: 'Software Construction 1', location: 'BT5 1.13', instructors: 'Hensel', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'software' },
+  
+  // IE1 - Software Construction 1 Lab (SOL1)
+  { semester: 'IE1', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'IE1-SOL1/01', full_name: 'Software Construction 1 Lab', location: 'BT7 13.65', instructors: 'Hensel', weeks: '45,47,49,51,3', weeks_array: expandWeeks('45,47,49,51,3'), module_type: 'software', group: '01' },
+  { semester: 'IE1', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'IE1-SOL1/02', full_name: 'Software Construction 1 Lab', location: 'BT7 13.65', instructors: 'Schüthe, Orychshenko', weeks: '46,48,50,2,4', weeks_array: expandWeeks('46,48,50,2,4'), module_type: 'software', group: '02' },
+  { semester: 'IE1', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'IE1-SOL1/03', full_name: 'Software Construction 1 Lab', location: 'BT7 13.60', instructors: 'Orychshenko, Schüthe', weeks: '45,47,49,51,3', weeks_array: expandWeeks('45,47,49,51,3'), module_type: 'software', group: '03' },
+  { semester: 'IE1', day: 'Monday', start_time: '15:55', end_time: '19:10', code: 'IE1-SOL1/04', full_name: 'Software Construction 1 Lab', location: 'BT7 13.60', instructors: 'Orychshenko, Schüthe', weeks: '46,48,50,2,4', weeks_array: expandWeeks('46,48,50,2,4'), module_type: 'software', group: '04' },
+  
+  // IE1 - German (GE)
+  { semester: 'IE1', day: 'Thursday', start_time: '09:55', end_time: '11:25', code: 'IE1-GE/01', full_name: 'German', location: 'BT7 14.65', instructors: 'Appel', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'intercultural', group: '01' },
+  { semester: 'IE1', day: 'Thursday', start_time: '12:10', end_time: '13:40', code: 'IE1-GE/02', full_name: 'German', location: 'BT7 12.81', instructors: 'Appel', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'intercultural', group: '02' },
+  
+  // IE1 - Learning and Study Methods Exercises (LSE1)
+  { semester: 'IE1', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE1-LSE/01', full_name: 'Learning and Study Methods Exercises', location: 'BT7 14.86', instructors: 'McCabe', weeks: '42', weeks_array: expandWeeks('42'), module_type: 'intercultural', group: '01' },
+  { semester: 'IE1', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE1-LSE/01', full_name: 'Learning and Study Methods Exercises', location: 'BT7 14.65', instructors: 'McCabe', weeks: '43,45,47,49,51,3', weeks_array: expandWeeks('43,45,47,49,51,3'), module_type: 'intercultural', group: '01' },
+  { semester: 'IE1', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE1-LSE/02', full_name: 'Learning and Study Methods Exercises', location: 'BT7 14.65', instructors: 'McCabe', weeks: '42,44,46,48,50,2,4', weeks_array: expandWeeks('42,44,46,48,50,2,4'), module_type: 'intercultural', group: '02' },
+  
+  // IE1 - Learning and Study Methods Lab (LSL1)
+  { semester: 'IE1', day: 'Thursday', start_time: '15:55', end_time: '19:10', code: 'IE1-LSL/01', full_name: 'Learning and Study Methods Lab', location: 'BT7 12.60', instructors: 'Lapke, Leutelt, Radt', weeks: '43,3', weeks_array: expandWeeks('43,3'), module_type: 'intercultural', group: '01' },
+  { semester: 'IE1', day: 'Thursday', start_time: '14:10', end_time: '17:25', code: 'IE1-LSL/02', full_name: 'Learning and Study Methods Lab', location: 'BT7 8.61', instructors: 'Lapke', weeks: '45,47,49,51', weeks_array: expandWeeks('45,47,49,51'), module_type: 'intercultural', group: '02' },
+  { semester: 'IE1', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE1-LSL/03', full_name: 'Learning and Study Methods Lab', location: 'Stift69 106', instructors: 'Leutelt', weeks: '45,47,49,51', weeks_array: expandWeeks('45,47,49,51'), module_type: 'intercultural', group: '03' },
+  { semester: 'IE1', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE1-LSL/04', full_name: 'Learning and Study Methods Lab', location: 'BT7 14.86', instructors: 'Radt', weeks: '45,47,49,51', weeks_array: expandWeeks('45,47,49,51'), module_type: 'intercultural', group: '04' },
+  
+  // IE1 - Learning and Study Methods Intro Week (LSL2) - Oct 6-11
+  { semester: 'IE1', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT5 1.13', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Monday', start_time: '12:10', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT7 8.85', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Tuesday', start_time: '08:10', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT7 8.85', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Wednesday', start_time: '08:10', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT7 8.85', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Thursday', start_time: '08:10', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT7 8.85', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Friday', start_time: '08:10', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT7 8.85', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+  { semester: 'IE1', day: 'Saturday', start_time: '08:00', end_time: '18:00', code: 'IE1-LSL2', full_name: 'Learning and Study Methods Intro Week', location: 'BT5 1.13', instructors: '', weeks: '41', weeks_array: expandWeeks('41'), module_type: 'intercultural' },
+
+  // ============ IE2 - Semester 2 ============
+  
+  // IE2 - Mathematics 2 (MA2) - Lectures
+  { semester: 'IE2', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE2-MA2', full_name: 'Mathematics 2', location: 'BT5 1.13', instructors: 'Neumann', weeks: '42-51,2-4', weeks_array: expandWeeks('42-51,2-4'), module_type: 'math' },
+  { semester: 'IE2', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE2-MA2', full_name: 'Mathematics 2', location: 'Stein94 0.02', instructors: 'Neumann', weeks: '46,48,50,2', weeks_array: expandWeeks('46,48,50,2'), module_type: 'math' },
+  
+  // IE2 - Mathematics 2 Exercises (MAE2)
+  { semester: 'IE2', day: 'Tuesday', start_time: '17:40', end_time: '19:10', code: 'IE2-MAE2/01', full_name: 'Mathematics 2 Exercises', location: 'BT7 8.61', instructors: 'Maesaka', weeks: '43,45,47,49,51,3', weeks_array: expandWeeks('43,45,47,49,51,3'), module_type: 'math', group: '01' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '15:55', end_time: '17:25', code: 'IE2-MAE2/02', full_name: 'Mathematics 2 Exercises', location: 'BT7 8.61', instructors: 'Maesaka', weeks: '43,45,47,49,51,3', weeks_array: expandWeeks('43,45,47,49,51,3'), module_type: 'math', group: '02' },
+  
+  // IE2 - Electrical Engineering 2 (EE2) - Lecture  
+  { semester: 'IE2', day: 'Wednesday', start_time: '09:55', end_time: '11:25', code: 'IE2-EE2', full_name: 'Electrical Engineering 2', location: 'Stein94 0.02', instructors: 'Lehmann', weeks: '42-51,2', weeks_array: expandWeeks('42-51,2'), module_type: 'electronics' },
+  
+  // IE2 - Electrical Engineering 2 Lab (EEL2)
+  { semester: 'IE2', day: 'Wednesday', start_time: '12:10', end_time: '13:40', code: 'IE2-EEL2/01', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '01' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE2-EEL2/01', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'electronics', group: '01' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '14:10', end_time: '15:40', code: 'IE2-EEL2/02', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '02' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '14:10', end_time: '17:25', code: 'IE2-EEL2/02', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'electronics', group: '02' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '15:55', end_time: '17:25', code: 'IE2-EEL2/03', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '03' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '15:55', end_time: '19:10', code: 'IE2-EEL2/03', full_name: 'Electrical Engineering 2 Lab', location: 'BT7 5.01', instructors: 'Lehmann, Wittmar', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'electronics', group: '03' },
+  
+  // IE2 - Electronics 1 (EL1) - Lecture
+  { semester: 'IE2', day: 'Wednesday', start_time: '08:10', end_time: '09:40', code: 'IE2-EL1', full_name: 'Electronics 1', location: 'Stein94 0.02', instructors: 'Haase', weeks: '42-51,2', weeks_array: expandWeeks('42-51,2'), module_type: 'electronics' },
+  
+  // IE2 - Electronics 1 Lab (ELL1)
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '09:40', code: 'IE2-ELL1/01', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Kruse', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '01' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE2-ELL1/01', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Kruse', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'electronics', group: '01' },
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '09:40', code: 'IE2-ELL1/02', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Lehmann', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'electronics', group: '02' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '09:55', end_time: '13:00', code: 'IE2-ELL1/02', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Lehmann', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'electronics', group: '02' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '13:40', code: 'IE2-ELL1/03', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Lehmann', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'electronics', group: '03' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-ELL1/03', full_name: 'Electronics 1 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Lehmann', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'electronics', group: '03' },
+  
+  // IE2 - Software Construction 2 (SO2) - Lecture
+  { semester: 'IE2', day: 'Wednesday', start_time: '15:55', end_time: '19:10', code: 'IE2-SO2', full_name: 'Software Construction 2', location: 'BT7 12.60', instructors: 'Antosch', weeks: '42-51', weeks_array: expandWeeks('42-51'), module_type: 'software' },
+  { semester: 'IE2', day: 'Wednesday', start_time: '15:55', end_time: '19:10', code: 'IE2-SO2', full_name: 'Software Construction 2', location: 'BT7 12.60', instructors: 'Antosch', weeks: '2', weeks_array: expandWeeks('2'), module_type: 'software' },
+  
+  // IE2 - Software Construction 2 Lab (SOL2)
+  { semester: 'IE2', day: 'Monday', start_time: '09:55', end_time: '11:25', code: 'IE2-SOL2/01', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '01' },
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE2-SOL2/01', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'software', group: '01' },
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '09:40', code: 'IE2-SOL2/02', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'software', group: '02' },
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE2-SOL2/02', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'software', group: '02' },
+  { semester: 'IE2', day: 'Monday', start_time: '09:55', end_time: '11:25', code: 'IE2-SOL2/03', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'software', group: '03' },
+  { semester: 'IE2', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE2-SOL2/03', full_name: 'Software Construction 2 Lab', location: 'BT7 13.60', instructors: 'Yildirim, Moldenhauer', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'software', group: '03' },
+  
+  // IE2 - Intercultural Competence (IC)
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/01', full_name: 'Intercultural Competence', location: 'BT7 8.61', instructors: 'Shook', weeks: '43,45,47,49,51', weeks_array: expandWeeks('43,45,47,49,51'), module_type: 'economics', group: '01' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/01', full_name: 'Intercultural Competence', location: 'BT7 6.60', instructors: 'Shook', weeks: '48', weeks_array: expandWeeks('48'), module_type: 'economics', group: '01' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/01', full_name: 'Intercultural Competence', location: 'BT7 6.60', instructors: 'Shook', weeks: '3-4', weeks_array: expandWeeks('3-4'), module_type: 'economics', group: '01' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/02', full_name: 'Intercultural Competence', location: 'BT7 8.61', instructors: 'Shook', weeks: '42,44,46,50,2', weeks_array: expandWeeks('42,44,46,50,2'), module_type: 'economics', group: '02' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/02', full_name: 'Intercultural Competence', location: 'BT7 6.60', instructors: 'Shook', weeks: '48', weeks_array: expandWeeks('48'), module_type: 'economics', group: '02' },
+  { semester: 'IE2', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE2-IC/02', full_name: 'Intercultural Competence', location: 'BT7 6.60', instructors: 'Shook', weeks: '3-4', weeks_array: expandWeeks('3-4'), module_type: 'economics', group: '02' },
+
+  // ============ IE3 - Semester 3 ============
+  
+  // IE3 - Signals and Systems 1 (SS1) - Lecture
+  { semester: 'IE3', day: 'Monday', start_time: '12:10', end_time: '15:40', code: 'IE3-SS1', full_name: 'Signals and Systems 1', location: 'Stift69 106', instructors: 'Lehmann', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'signals' },
+  
+  // IE3 - Signals and Systems 1 Lab (SSL1)
+  { semester: 'IE3', day: 'Wednesday', start_time: '08:10', end_time: '09:40', code: 'IE3-SSL1/01', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'signals', group: '01' },
+  { semester: 'IE3', day: 'Thursday', start_time: '08:10', end_time: '11:25', code: 'IE3-SSL1/01', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'signals', group: '01' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '09:55', end_time: '11:25', code: 'IE3-SSL1/02', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '44', weeks_array: expandWeeks('44'), module_type: 'signals', group: '02' },
+  { semester: 'IE3', day: 'Thursday', start_time: '08:10', end_time: '11:25', code: 'IE3-SSL1/02', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'signals', group: '02' },
+  { semester: 'IE3', day: 'Thursday', start_time: '09:55', end_time: '11:25', code: 'IE3-SSL1/03', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'signals', group: '03' },
+  { semester: 'IE3', day: 'Thursday', start_time: '08:10', end_time: '11:25', code: 'IE3-SSL1/03', full_name: 'Signals and Systems 1 Lab', location: 'BT7 13.60', instructors: 'Lehmann', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'signals', group: '03' },
+  
+  // IE3 - Electronics 2 (EL2) - Lecture
+  { semester: 'IE3', day: 'Tuesday', start_time: '15:55', end_time: '19:10', code: 'IE3-EL2', full_name: 'Electronics 2', location: 'BT7 6.60', instructors: 'Radt', weeks: '41-51,2-4', weeks_array: expandWeeks('41-51,2-4'), module_type: 'electronics' },
+  
+  // IE3 - Electronics 2 Lab (ELL2)
+  { semester: 'IE3', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE3-ELL2/01', full_name: 'Electronics 2 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Radt', weeks: '45,47,49', weeks_array: expandWeeks('45,47,49'), module_type: 'electronics', group: '01' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE3-ELL2/01', full_name: 'Electronics 2 Lab', location: 'BT7 8.04', instructors: 'Al Hajsaeed, Radt', weeks: '51,3', weeks_array: expandWeeks('51,3'), module_type: 'electronics', group: '01' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '08:10', end_time: '11:25', code: 'IE3-ELL2/02', full_name: 'Electronics 2 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Radt', weeks: '46,48,50', weeks_array: expandWeeks('46,48,50'), module_type: 'electronics', group: '02' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE3-ELL2/02', full_name: 'Electronics 2 Lab', location: 'BT7 8.04', instructors: 'Al Hajsaeed, Radt', weeks: '2,4', weeks_array: expandWeeks('2,4'), module_type: 'electronics', group: '02' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '12:10', end_time: '15:40', code: 'IE3-ELL2/03', full_name: 'Electronics 2 Lab', location: 'BT7 5.05', instructors: 'Al Hajsaeed, Radt', weeks: '46,48,50', weeks_array: expandWeeks('46,48,50'), module_type: 'electronics', group: '03' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '08:10', end_time: '11:25', code: 'IE3-ELL2/03', full_name: 'Electronics 2 Lab', location: 'BT7 8.04', instructors: 'Al Hajsaeed, Radt', weeks: '2,4', weeks_array: expandWeeks('2,4'), module_type: 'electronics', group: '03' },
+  
+  // IE3 - Digital Circuits (DI) - Lecture
+  { semester: 'IE3', day: 'Tuesday', start_time: '08:10', end_time: '11:25', code: 'IE3-DI', full_name: 'Digital Circuits', location: 'Stein94 0.02', instructors: 'Rust', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'digital' },
+  
+  // IE3 - Digital Circuits Lab (DIL)
+  { semester: 'IE3', day: 'Friday', start_time: '08:10', end_time: '09:40', code: 'IE3-DIL/01', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'digital', group: '01' },
+  { semester: 'IE3', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE3-DIL/01', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'digital', group: '01' },
+  { semester: 'IE3', day: 'Friday', start_time: '12:10', end_time: '13:40', code: 'IE3-DIL/02', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'digital', group: '02' },
+  { semester: 'IE3', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE3-DIL/02', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'digital', group: '02' },
+  { semester: 'IE3', day: 'Friday', start_time: '14:10', end_time: '15:40', code: 'IE3-DIL/03', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'digital', group: '03' },
+  { semester: 'IE3', day: 'Friday', start_time: '08:10', end_time: '11:25', code: 'IE3-DIL/03', full_name: 'Digital Circuits Lab', location: 'BT7 8.01', instructors: 'Rust, Al-Mohamed Zein', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'digital', group: '03' },
+  
+  // IE3 - Algorithms and Data Structures (AD) - Lecture
+  { semester: 'IE3', day: 'Tuesday', start_time: '12:10', end_time: '15:40', code: 'IE3-AD', full_name: 'Algorithms and Data Structures', location: 'BT7 10.60', instructors: 'Gottfried-Krambeer', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'software' },
+  
+  // IE3 - Algorithms and Data Structures Lab (ADL)
+  { semester: 'IE3', day: 'Friday', start_time: '12:10', end_time: '13:40', code: 'IE3-ADL/01', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.65', instructors: 'Gottfried-Krambeer', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '01' },
+  { semester: 'IE3', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE3-ADL/01', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.65', instructors: 'Gottfried-Krambeer', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'software', group: '01' },
+  { semester: 'IE3', day: 'Friday', start_time: '14:10', end_time: '15:40', code: 'IE3-ADL/02', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.65', instructors: 'Gottfried-Krambeer', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '02' },
+  { semester: 'IE3', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE3-ADL/02', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.65', instructors: 'Gottfried-Krambeer', weeks: '47,50,3', weeks_array: expandWeeks('47,50,3'), module_type: 'software', group: '02' },
+  { semester: 'IE3', day: 'Wednesday', start_time: '14:10', end_time: '15:40', code: 'IE3-ADL/03', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.60', instructors: 'Gottfried-Krambeer', weeks: '45', weeks_array: expandWeeks('45'), module_type: 'software', group: '03' },
+  { semester: 'IE3', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE3-ADL/03', full_name: 'Algorithms and Data Structures Lab', location: 'BT7 13.65', instructors: 'Gottfried-Krambeer', weeks: '48,51,4', weeks_array: expandWeeks('48,51,4'), module_type: 'software', group: '03' },
+  
+  // IE3 - Economics and Management (EM) - Lecture
+  { semester: 'IE3', day: 'Thursday', start_time: '12:10', end_time: '15:40', code: 'IE3-EM', full_name: 'Economics and Management', location: 'BT7 12.60', instructors: 'Shook', weeks: '42-51,2', weeks_array: expandWeeks('42-51,2'), module_type: 'economics' },
+  
+  // IE3 - Economics and Management Exercises (EME)
+  { semester: 'IE3', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE3-EME/01', full_name: 'Economics and Management Exercises', location: 'BT7 14.86', instructors: 'Shook', weeks: '44,47,50', weeks_array: expandWeeks('44,47,50'), module_type: 'economics', group: '01' },
+  { semester: 'IE3', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE3-EME/02', full_name: 'Economics and Management Exercises', location: 'BT7 14.86', instructors: 'Shook', weeks: '45,48,51', weeks_array: expandWeeks('45,48,51'), module_type: 'economics', group: '02' },
+  { semester: 'IE3', day: 'Monday', start_time: '08:10', end_time: '11:25', code: 'IE3-EME/03', full_name: 'Economics and Management Exercises', location: 'BT7 14.86', instructors: 'Shook', weeks: '46,49,2', weeks_array: expandWeeks('46,49,2'), module_type: 'economics', group: '03' },
+
+  // ============ IE4 - Semester 4 ============
+  
   // IE4 - Signals and Systems 2 (SS2) - Lecture
   { semester: 'IE4', day: 'Friday', start_time: '12:10', end_time: '15:40', code: 'IE4-SS2', full_name: 'Signals and Systems 2', location: 'BT7 6.60', instructors: 'Lange', weeks: '41-51', weeks_array: expandWeeks('41-51'), module_type: 'signals' },
   
