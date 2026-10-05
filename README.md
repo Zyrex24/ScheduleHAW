@@ -1,5 +1,7 @@
 # ScheduleHAW V2
 
+[Open the live app](https://schedule-haw.vercel.app/advisor) · [Verified release report](docs/IMPLEMENTATION_REPORT.md)
+
 A local academic planner for HAW Hamburg Information Engineering. Enter component progress, generate deterministic Safe/Balanced/Aggressive alternatives, choose exact parallel groups, inspect the timetable and export a calendar. English and German are supported throughout the core flows.
 
 **Academic profiles stay in this browser.** Grades, failures, transcript contents, selected groups and personal schedules have no server API. The core requires no account, database, inference service or API key.
