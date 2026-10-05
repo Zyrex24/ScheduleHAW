@@ -10,6 +10,8 @@ No inference API, analytics, transcript upload, academic server action or profil
 
 ## Data and implementation decisions
 
+Linux CI/Vercel initially rejected a Windows-derived lockfile because optional WASM dependency entries were missing. The lock was regenerated without installed-package state, followed by a clean Windows install and successful npm 10 Linux-resolution dry run; final remote gate results are recorded in the release verification section.
+
 The public historical package accounts for all 212 source rows/123 codes, 47 module/teaching-opportunity identities, 69 components, 212 session series and 877 actual occurrences. Migration reads allowlisted public timetable fields, never personal markdown outcomes. Five same-code overlap pairs yield seven dated review cases; affected bundles are excluded from ready plans and inspectable manually. No current 2026/27 timetable was available.
 
 The public first-year roster is ten modules/60 ECTS; the eleven-module recovery fixture is explicitly synthetic. Study Methods completion, elective credit/slot crosswalks and applicable regulation still need confirmation. WPP33/WP33 have different observed titles and remain separate uncertain opportunities without inferred credit. Unverified prerequisites remain advisory. Unknown exam dates are preparation warnings, never fabricated sessions. Workload estimates and potential credits are conditional, not certified workload or guaranteed attainment.

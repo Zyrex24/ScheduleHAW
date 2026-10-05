@@ -37,4 +37,5 @@ next-env.d.ts
 /playwright-report/
 /test-results/
 /public/sw.js
+/supabase/.temp/
 
