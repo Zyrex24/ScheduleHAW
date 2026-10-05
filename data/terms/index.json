@@ -1,0 +1,21 @@
+[
+  {
+    "id": "2026-ws",
+    "label": {
+      "en": "WS 2026/27 · Timetable unavailable",
+      "de": "WS 2026/27 · Stundenplan nicht verfügbar"
+    },
+    "status": "unavailable"
+  },
+  {
+    "id": "2025-ws",
+    "label": {
+      "en": "WS 2025/26 · Historical timetable",
+      "de": "WS 2025/26 · Historischer Stundenplan"
+    },
+    "status": "published",
+    "version": "legacy-public-v1",
+    "packageUrl": "/data/2025-ws.json",
+    "sha256": "38f106ecd2ca155d48af50a628197bcff6fa238d103adec0ad4701a0326a66e8"
+  }
+]

@@ -1,116 +1,65 @@
-# Schedule HAW
+# ScheduleHAW V2
 
-A modern schedule management application for HAW Hamburg, featuring a bold brutalist design aesthetic and comprehensive filtering capabilities for managing academic schedules.
+A local academic planner for HAW Hamburg Information Engineering. Enter component progress, generate deterministic Safe/Balanced/Aggressive alternatives, choose exact parallel groups, inspect the timetable and export a calendar. English and German are supported throughout the core flows.
 
-## Overview
+**Academic profiles stay in this browser.** Grades, failures, transcript contents, selected groups and personal schedules have no server API. The core requires no account, database, inference service or API key.
 
-Schedule HAW is a web application designed to help students at HAW Hamburg visualize and organize their course schedules. The application allows users to select courses from their enrolled programs and view them in a weekly timetable format, with support for multiple semesters and detailed filtering options.
+## Using the app
 
-## Key Features
+1. **My progress:** review exams, labs, exercises and other components. Unknown progress never means passed. A passed lab/exercise with an outstanding exam becomes Exam only and consumes no new lab capacity. Optional grades, attempts and notes remain local.
+2. **Advisor:** select goal, lab/workload limits and schedule preferences. Compare real group/date combinations, workload charts, potential credits, milestone previews, omissions and deterministic explanations. Internship priorities outrank social preferences. Budget-limited searches and identical alternatives are labelled. A separate bounded conflict preview cannot be applied.
+3. **Schedule:** use a feasible plan to populate its exact groups and sessions. Manual course/group selection, weeks, course/type/instructor filters, full-term conflicts, mobile agenda and whole-selection/current-view ICS exports remain available. Calendar dates derive from the term and use Europe/Berlin daylight-saving conversion.
+4. **Degree map:** inspect components, prerequisites, offerings, sources and future dependencies in the graph or accessible list. Actions open progress, planning priorities and group comparison.
 
-**Course Selection System**
-The application provides an intuitive course catalog organized by semester, allowing students to select specific courses and course groups they are enrolled in. The catalog spans all seven semesters of the Information Engineering program, including compulsory courses, electives, and project work.
+My progress also offers local JSON export, reviewed replacement import and reset. Export before clearing site data or switching origin/device; there is no cross-device sync. A browser storage failure is visibly memory-only, so export before closing.
 
-**Interactive Schedule Grid**
-Courses are displayed in a color-coded weekly grid format, showing time slots from Monday through Saturday. Each course block displays comprehensive information including course code, full name, location, instructor, and applicable weeks throughout the semester.
+## Data, PDF and offline limits
 
-**Advanced Filtering**
-Multiple filter options enable precise schedule customization:
-- Week-by-week navigation through the semester (weeks 41-52 and 1-4)
-- Semester-based filtering (IE1 through IE7)
-- Instructor-based filtering
-- Selected course filtering
+- WS 2025/26 is explicitly historical: 212 source rows expand to 877 actual occurrences. Five same-code overlap pairs yield seven dated review cases; quarantined bundles are excluded from ready plans and remain inspectable manually.
+- WS 2026/27 has no supplied timetable and is unavailable. Curriculum-only priorities still work; historical dates are never presented as current.
+- The versioned public curriculum is provisional. Applicable regulation, Study Methods completion, elective credit/slot allocation and assessment dates require confirmation. Unknown facts remain issues and unverified prerequisite edges remain advisory. The ten-module public first-year roster differs from the eleven-module synthetic test fixture.
+- Local PDF import is **Preview — check every match**. PDF.js and its same-origin worker run locally; each accepted row is reviewed/corrected before saving. Limits: 10 MiB, 80 pages, 50,000 text items. Unsupported/corrupt/encrypted/scanned documents use manual fallback. No remote OCR/upload exists. A permitted representative anonymized HAW transcript is still needed to certify real-format coverage.
+- The PWA caches public code/static documents, never academic payloads or API responses. After online installation, full reloads and academic tools work offline. Updates activate on explicit reload; failed installs preserve the previous release. Historical warnings remain visible offline.
 
-**Conflict Detection**
-The built-in conflict detector analyzes selected courses and identifies scheduling conflicts, showing specific details about overlapping time slots, conflicting weeks, and course types. This helps students make informed decisions when planning their schedules.
+## Development and validation
 
-**Calendar Export**
-Users can export their customized schedules to ICS format, compatible with most calendar applications including Google Calendar, Apple Calendar, and Outlook.
+Use Node.js 22:
 
-## Technical Architecture
+```sh
+npm ci
+npm run dev
+```
 
-**Frontend Framework**
-Built with Next.js 14 using the App Router architecture, providing server-side rendering capabilities and optimized performance. The application is written entirely in TypeScript for type safety and enhanced developer experience.
+Open `http://localhost:3000`. Release commands:
 
-**UI Components**
-The interface utilizes shadcn/ui components built on Radix UI primitives, ensuring accessibility and consistent behavior. Custom components are styled with Tailwind CSS, following a brutalist design philosophy with bold borders, vibrant colors, and strong shadows.
+```sh
+npm run validate:data
+npm run validate:i18n
+npm run lint
+npm run typecheck
+npm test
+npm audit --omit=dev
+npm run build
+npx playwright install chromium
+npm run test:e2e
+```
 
-**State Management**
-The application uses React hooks for local state management, with course selection, filter states, and UI preferences managed through controlled components.
+`npm run start` serves the built app; `TEST_BASE_URL` selects an already running local/deployed build. Tests use invented local data and do not submit community votes. GitHub Actions runs the validation gate. Next.js 16 explicitly uses webpack for the planner worker; postinstall copies the PDF worker and postbuild creates the public offline cache.
 
-**Data Structure**
-Schedule data is organized into typed entities representing course blocks, with each block containing:
-- Course identification (code, full name, module type)
-- Timing information (day, start time, end time)
-- Location and instructor details
-- Week applicability (as both ranges and arrays)
-- Semester and group associations
+## Optional Community Pulse
 
-## Design System
+Course-only intent, recommendation when eligible and workload; no comments or professor ratings. It is **off by default** because no suitable configured Supabase backend was available. See [.env.example](.env.example), [migration](supabase/migrations/20261005214317_community_pulse_private.sql), [hourly maintenance](supabase/maintenance.sql), and [activation steps](docs/IMPLEMENTATION_REPORT.md#community-pulse-activation).
 
-**Color Coding**
-Courses are color-coded by module type for visual distinction:
-- Cyan (`#00D9FF`): Database and Digital Systems
-- Purple (`#7209B7`): Microcontroller and Signal Processing
-- Green (`#8AC926`): Electronics and Electrical Engineering
-- Pink (`#FF006E`): Software Engineering and Mathematics
-- Orange (`#FB5607`): Economics and Management
-- Yellow (`#FFBE0B`): Intercultural Competence and General courses
+Secrets stay server-only. Activation requires a dedicated PostgreSQL role, RLS, distributed limits, retention scheduling and live verification. Signals below five responses are hidden; planner tie-breaks require twenty fresh responses and cannot override academic priorities. Academic changes never automatically request or submit community data.
 
-**Visual Language**
-The brutalist design aesthetic features:
-- Bold 4-6px black borders on all elements
-- Prominent drop shadows with solid black offsets
-- High contrast color combinations
-- Geometric layouts with grid-based positioning
-- Strong typography with uppercase headings
+## Deployment
 
-## Project Structure
+The existing Vercel project is `schedule-haw` under `zyrex24s-projects`, for [Zyrex24/ScheduleHAW](https://github.com/Zyrex24/ScheduleHAW). The requested domain is [schedulehaw.ahulir.com](https://schedulehaw.ahulir.com). Its external DNS must set `A schedulehaw → 76.76.21.21`, exactly as Vercel requested. Verified production/fallback addresses and results are in the [implementation report](docs/IMPLEMENTATION_REPORT.md).
 
-The codebase is organized into distinct layers:
+Vercel requires its [GitHub App](https://github.com/apps/vercel) installation/access before this repository can connect for automatic main-branch deployments. Connect Git in this existing project after installation; do not create another project. `.vercelignore` excludes the original local academic markdown notes from uploads, and `.gitignore` excludes secrets/generated assets.
 
-**Components Layer**
-Schedule-specific React components handle visualization and user interaction, including the schedule grid, course filters, individual schedule blocks, and conflict detection displays.
-
-**Entities Layer**
-Data models and business logic define the structure of schedule information and provide methods for data retrieval and manipulation.
-
-**Pages Layer**
-Top-level page components orchestrate the application layout and coordinate between filters, data, and display components.
-
-**Library Utilities**
-Helper functions handle specialized tasks such as ICS file generation for calendar exports.
-
-## Data Management
-
-**Course Data**
-The application maintains comprehensive course information for all Information Engineering semesters, including:
-- Lecture schedules with full timing details
-- Laboratory and exercise sessions with group divisions
-- Project work and elective courses
-- Instructor assignments and room locations
-- Week-by-week occurrence patterns
-
-**Week Calculations**
-The academic year is divided into week numbers (41-52 for fall semester, 1-4 for winter semester), with the Christmas break period (weeks 52 and 1) specially indicated. The application automatically filters courses based on selected weeks and highlights schedule-free periods.
-
-## User Workflow
-
-Students interact with the application through a structured workflow:
-
-1. Browse the course catalog organized by semester
-2. Select relevant courses and course groups
-3. View the personalized schedule in the weekly grid
-4. Adjust filters to focus on specific weeks or semesters
-5. Review any detected conflicts between selected courses
-6. Export the finalized schedule to a calendar application
-
-The interface provides clear visual feedback throughout the process, with selected courses displayed as removable tags and empty states guiding users to take appropriate actions.
-
-## Browser Compatibility
-
-The application is compatible with modern web browsers supporting ES6+ JavaScript and CSS Grid layouts. Recommended browsers include the latest versions of Chrome, Firefox, Safari, and Edge.
+Further documentation: [product](docs/PRODUCT_SPEC.md), [architecture](docs/ARCHITECTURE.md), [privacy](docs/PRIVACY.md), [data model](docs/DATA_MODEL.md), [algorithm](docs/PLANNER_ALGORITHM.md), [task acceptance](TASKS.md), and [implementation report](docs/IMPLEMENTATION_REPORT.md).
 
 ## License
 
-This project is licensed under the MIT License.
+MIT.

@@ -1,0 +1,14 @@
+import source from '@/data/curriculum/haw-ie-bsc/portal-20192-v1/curriculum.json';
+import term from '@/data/terms/2025-ws/term.json';
+import offerings from '@/data/terms/2025-ws/offerings.json';
+import sessions from '@/data/terms/2025-ws/sessions.json';
+import aliases from '@/data/curriculum/haw-ie-bsc/portal-20192-v1/aliases.json';
+import catalog from '@/data/terms/index.json';
+import type { Curriculum, TermDataset, SessionSeries, AcademicAlias, TermCatalogEntry } from '@/lib/domain/types';
+export const curriculum=source as Curriculum;
+export type HistoricalSession=SessionSeries&{sourceCode:string;quarantinedDates:string[]};
+export const historicalSessions=sessions as HistoricalSession[];
+export const historicalDataset={term,curriculumVersion:curriculum.version,offerings,sessions,issues:[]} as TermDataset;
+export const academicAliases=aliases as AcademicAlias[];
+export const termCatalog=catalog as TermCatalogEntry[];
+export const getDataset=(id:string):TermDataset|null=>id===term.id?historicalDataset:null;

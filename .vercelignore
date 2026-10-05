@@ -1,0 +1,14 @@
+# Local academic/source notes must never enter a deployment upload.
+Courses.md
+newschedule.md
+Legacy/
+tests/
+test-results/
+playwright-report/
+docs/
+.github/
+.git/
+node_modules/
+.next/
+*.tsbuildinfo
+.env*

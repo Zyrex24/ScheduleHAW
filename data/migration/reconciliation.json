@@ -1,0 +1,51 @@
+[
+  {
+    "code": "IE2-SOL2/04",
+    "date": "2026-01-23",
+    "rowA": "2025-ws:row-45",
+    "rowB": "2025-ws:row-46",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "IE6-BUL/04",
+    "date": "2026-01-06",
+    "rowA": "2025-ws:row-172",
+    "rowB": "2025-ws:row-173",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "IE6-DCL/01",
+    "date": "2025-11-03",
+    "rowA": "2025-ws:row-182",
+    "rowB": "2025-ws:row-183",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "E7-WPP22-Schulz",
+    "date": "2026-01-16",
+    "rowA": "2025-ws:row-191",
+    "rowB": "2025-ws:row-192",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "E7-WPP34-Radt",
+    "date": "2026-01-23",
+    "rowA": "2025-ws:row-198",
+    "rowB": "2025-ws:row-199",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "E7-WPP34-Radt",
+    "date": "2025-11-28",
+    "rowA": "2025-ws:row-198",
+    "rowB": "2025-ws:row-199",
+    "resolution": "quarantined from advisor; retained for historical display"
+  },
+  {
+    "code": "E7-WPP34-Radt",
+    "date": "2025-12-19",
+    "rowA": "2025-ws:row-198",
+    "rowB": "2025-ws:row-199",
+    "resolution": "quarantined from advisor; retained for historical display"
+  }
+]

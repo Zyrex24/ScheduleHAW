@@ -1,0 +1,1770 @@
+[
+  {
+    "value": "MAE1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma1.exercise"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MAE1.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma1.exercise"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "MA1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma1.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MA1.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma1.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "MAE2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma2.exercise"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MAE2.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma2.exercise"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "MA2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma2.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MA2.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ma2.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EEL1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee1.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EEL1.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee1.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EE1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee1.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EE1.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee1.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EEL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee2.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EEL2.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee2.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EE2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee2.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EE2.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ee2.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "ELL1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el1.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-ELL1.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el1.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EL1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el1.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EL1.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el1.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SOL1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so1.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SOL1.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so1.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SO1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so1.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SO1.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so1.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SOL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so2.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SOL2.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so2.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SO2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so2.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SO2.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "so2.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "GE",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ge.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-GE.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ge.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "IC",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ic.presentation"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-IC.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ic.presentation"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "LSE",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.study"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-LSE1.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.study"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SSL1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss1.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SSL1.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss1.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SS1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss1.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SS1.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss1.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SSL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss2.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SSL2.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss2.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SS2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss2.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SS2.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ss2.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "ELL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el2.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-ELL2.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el2.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el2.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EL2.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "el2.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DIL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "di.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DIL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "di.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DI",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "di.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DI.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "di.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DSL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ds.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DSL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ds.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DS",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ds.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DS.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ds.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "MCL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "mc.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MCL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "mc.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "MC",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "mc.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-MC.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "mc.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "ADL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ad.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-ADL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ad.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "AD",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ad.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-AD.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ad.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SEL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "se.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SEL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "se.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SE",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "se.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SE.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "se.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DBL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "db.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DBL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "db.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DB",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "db.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DB.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "db.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EME",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "em.exercise"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EME.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "em.exercise"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "EM",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "em.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-EM.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "em.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "SP",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "sp.presentation"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-SP.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "sp.presentation"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "IP",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ip.project"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-IP.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ip.project"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "BUL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "bu.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-BUL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "bu.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "BU",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "bu.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-BU.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "bu.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "OSL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "os.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-OSL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "os.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "OS",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "os.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-OS.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "os.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DPL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dp.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DPL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dp.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DP",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dp.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DP.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dp.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DCL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dc.lab"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DCL.VL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dc.lab"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "DC",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dc.exam"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-DC.PL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "dc.exam"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "CJ1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "cj1.project"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-CJ1.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "cj1.project"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "CJ2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "cj2.project"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-CJ2.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "cj2.project"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "AB",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "thesis.project"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-AB.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "thesis.project"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "LSL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.presentation1"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-LSL1.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.presentation1"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "LSL2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.presentation2"
+    },
+    "scope": "legacy_schedule_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "value": "1IE-LSL2.SL",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "component",
+      "componentId": "ls.presentation2"
+    },
+    "scope": "official_code",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  }
+]

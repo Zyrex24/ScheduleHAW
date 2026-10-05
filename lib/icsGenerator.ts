@@ -1,152 +1,124 @@
-import { ScheduleBlockType } from "@/Entities/ScheduleBlock";
-
-// Helper function to convert week number to actual date in 2025/2026
-function getDateFromWeek(weekNumber: number, dayName: string, year: number = 2025): Date {
-  // Week 41-52 are in 2025, weeks 1-4 are in 2026 (winter semester 2025/2026)
-  const actualYear = weekNumber >= 41 ? 2025 : 2026;
-  
-  // Create a date for week 1 of the year
-  const jan1 = new Date(actualYear, 0, 1);
-  const daysOffset = (jan1.getDay() <= 4) ? 1 - jan1.getDay() : 8 - jan1.getDay();
-  const firstMonday = new Date(actualYear, 0, 1 + daysOffset);
-  
-  // Calculate the date for the given week
-  const targetDate = new Date(firstMonday);
-  targetDate.setDate(firstMonday.getDate() + (weekNumber - 1) * 7);
-  
-  // Adjust for the specific day of week
-  const dayMap: { [key: string]: number } = {
-    'Monday': 0,
-    'Tuesday': 1,
-    'Wednesday': 2,
-    'Thursday': 3,
-    'Friday': 4,
-    'Saturday': 5,
-    'Sunday': 6
-  };
-  
-  const dayOffset = dayMap[dayName] || 0;
-  targetDate.setDate(targetDate.getDate() + dayOffset);
-  
-  return targetDate;
+import { Temporal } from "@js-temporal/polyfill";
+import type {
+  Curriculum,
+  Locale,
+  SessionSeries,
+  TermDataset,
+} from "@/lib/domain/types";
+import { curriculum, historicalDataset } from "@/lib/data/loaders";
+import type { ScheduleBlockType } from "@/Entities/ScheduleBlock";
+import { downloadFile } from "@/lib/download";
+import { translate, dynamicKey } from "@/lib/i18n";
+const escape = (text: string) =>
+  text
+    .replace(/\\/g, "\\\\")
+    .replace(/\r?\n/g, "\\n")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,");
+export function foldLine(line: string) {
+  const out: string[] = [];
+  let part = "",
+    bytes = 0;
+  for (const char of line) {
+    const size = new TextEncoder().encode(char).length;
+    if (bytes + size > 75) {
+      out.push(part);
+      part = " ";
+      bytes = 1;
+    }
+    part += char;
+    bytes += size;
+  }
+  out.push(part);
+  return out.join("\r\n");
 }
-
-// Helper to format date for ICS (YYYYMMDDTHHMMSS)
-function formatICSDate(date: Date, time: string): string {
-  const [hours, minutes] = time.split(':').map(Number);
-  const eventDate = new Date(date);
-  eventDate.setHours(hours, minutes, 0, 0);
-  
-  const year = eventDate.getFullYear();
-  const month = String(eventDate.getMonth() + 1).padStart(2, '0');
-  const day = String(eventDate.getDate()).padStart(2, '0');
-  const hour = String(eventDate.getHours()).padStart(2, '0');
-  const minute = String(eventDate.getMinutes()).padStart(2, '0');
-  
-  return `${year}${month}${day}T${hour}${minute}00`;
-}
-
-// Helper to generate a unique ID for the event
-function generateUID(block: ScheduleBlockType, weekNum: number): string {
-  return `${block.code}-${block.day}-${weekNum}-${block.start_time}@haw-schedule.local`;
-}
-
-// Escape special characters for ICS format
-function escapeICSText(text: string): string {
-  return text.replace(/\\/g, '\\\\')
-    .replace(/;/g, '\\;')
-    .replace(/,/g, '\\,')
-    .replace(/\n/g, '\\n');
-}
-
-export function generateICS(blocks: ScheduleBlockType[]): string {
-  const icsLines: string[] = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//HAW Hamburg//Schedule//EN',
-    'CALSCALE:GREGORIAN',
-    'METHOD:PUBLISH',
-    'X-WR-CALNAME:HAW Schedule Winter 2025/2026',
-    'X-WR-TIMEZONE:Europe/Berlin',
-    'X-WR-CALDESC:HAW Hamburg Course Schedule - Winter Semester 2025/2026'
-  ];
-  
-  // Add Christmas Break event (between week 52 and week 1)
-  // Christmas break typically runs from Dec 23, 2025 to Jan 6, 2026
-  icsLines.push('BEGIN:VEVENT');
-  icsLines.push('UID:christmas-break-2025@haw-schedule.local');
-  icsLines.push('DTSTART;VALUE=DATE:20251223');
-  icsLines.push('DTEND;VALUE=DATE:20260106');
-  icsLines.push('SUMMARY:🎄 Christmas Break - No Classes');
-  icsLines.push('DESCRIPTION:Winter break - University closed for holidays');
-  icsLines.push('CATEGORIES:Holiday');
-  icsLines.push('TRANSP:TRANSPARENT');
-  icsLines.push('END:VEVENT');
-  
-  // Generate events for each block and each week it occurs
-  blocks.forEach(block => {
-    // For each week the block occurs
-    block.weeks_array.forEach(weekNum => {
-      const eventDate = getDateFromWeek(weekNum, block.day);
-      const dtStart = formatICSDate(eventDate, block.start_time);
-      const dtEnd = formatICSDate(eventDate, block.end_time);
-      
-      // Create the event
-      icsLines.push('BEGIN:VEVENT');
-      icsLines.push(`UID:${generateUID(block, weekNum)}`);
-      icsLines.push(`DTSTART:${dtStart}`);
-      icsLines.push(`DTEND:${dtEnd}`);
-      icsLines.push(`SUMMARY:${escapeICSText(block.code + ' - ' + block.full_name)}`);
-      icsLines.push(`LOCATION:${escapeICSText(block.location)}`);
-      
-      // Add description with instructor and group info
-      let description = `Instructor: ${escapeICSText(block.instructors)}`;
-      if (block.group) {
-        description += `\\nGroup: ${block.group}`;
-      }
-      description += `\\nWeek: ${weekNum}`;
-      icsLines.push(`DESCRIPTION:${description}`);
-      
-      // Add categories based on module type
-      const categoryMap: { [key: string]: string } = {
-        'database': 'Database',
-        'digital': 'Digital Systems',
-        'microcontroller': 'Microcontroller',
-        'signals': 'Signals & Systems',
-        'electronics': 'Electronics',
-        'software': 'Software',
-        'math': 'Mathematics',
-        'economics': 'Economics',
-        'intercultural': 'General Studies'
-      };
-      const category = categoryMap[block.module_type] || 'Course';
-      icsLines.push(`CATEGORIES:${category}`);
-      
-      // Add alarm (15 minutes before)
-      icsLines.push('BEGIN:VALARM');
-      icsLines.push('TRIGGER:-PT15M');
-      icsLines.push('ACTION:DISPLAY');
-      icsLines.push(`DESCRIPTION:Reminder: ${escapeICSText(block.code)}`);
-      icsLines.push('END:VALARM');
-      
-      icsLines.push('END:VEVENT');
+export function berlinUTC(date: string, minute: number) {
+  const day = Temporal.PlainDate.from(date).add({
+      days: Math.floor(minute / 1440),
+    }),
+    time = Temporal.PlainTime.from({
+      hour: Math.floor((minute % 1440) / 60),
+      minute: minute % 60,
     });
-  });
-  
-  icsLines.push('END:VCALENDAR');
-  
-  return icsLines.join('\r\n');
+  return day
+    .toZonedDateTime({ timeZone: "Europe/Berlin", plainTime: time })
+    .toInstant()
+    .toString({ smallestUnit: "second" })
+    .replace(/[-:]/g, "");
 }
-
-export function downloadICS(blocks: ScheduleBlockType[], filename: string = 'HAW_Schedule.ics'): void {
-  const icsContent = generateICS(blocks);
-  const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = filename;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(link.href);
+export function generateCalendar(
+  sessions: SessionSeries[],
+  dataset: TermDataset,
+  c: Curriculum,
+  locale: Locale = "en",
+  stamp = new Date().toISOString(),
+) {
+  const lines = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//ScheduleHAW//Local Planner V2//EN",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      "X-WR-TIMEZONE:Europe/Berlin",
+      "X-WR-CALNAME:" + escape("ScheduleHAW · " + dataset.term.label[locale]),
+    ],
+    seen = new Set<string>();
+  for (const series of [...sessions].sort((a, b) => a.id.localeCompare(b.id))) {
+    const offering = dataset.offerings.find((o) => o.id === series.offeringId),
+      academicModule = c.modules.find((m) => m.id === offering?.moduleId);
+    for (const o of [...series.occurrences].sort((a, b) =>
+      a.date.localeCompare(b.date),
+    )) {
+      if (seen.has(o.id)) continue;
+      seen.add(o.id);
+      if (o.date < dataset.term.start || o.date >= dataset.term.endExclusive)
+        throw new Error("DATE_OUTSIDE_TERM");
+      lines.push(
+        "BEGIN:VEVENT",
+        "UID:" +
+          encodeURIComponent(dataset.term.id + "-" + o.id) +
+          "@schedulehaw.ahulir.com",
+        "DTSTAMP:" + stamp.replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z"),
+        "DTSTART:" + berlinUTC(o.date, o.startMinute),
+        "DTEND:" + berlinUTC(o.date, o.endMinute),
+        "SUMMARY:" +
+          escape(
+            (academicModule?.name[locale] || series.id) +
+              " · " +
+              translate(locale, dynamicKey("kind." + series.kind)),
+          ),
+        "LOCATION:" + escape(series.location),
+        "DESCRIPTION:" +
+          escape(
+            [
+              series.instructors.join(", "),
+              dataset.term.label[locale],
+              series.id,
+            ]
+              .filter(Boolean)
+              .join("\n"),
+          ),
+        "END:VEVENT",
+      );
+    }
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(foldLine).join("\r\n") + "\r\n";
 }
-
+// Archived component compatibility. All dates come from the explicit historical package.
+export function generateICS(blocks: ScheduleBlockType[]) {
+  const codes = new Set(blocks.map((b) => b.code));
+  return generateCalendar(
+    historicalDataset.sessions.filter((s) =>
+      codes.has((s as SessionSeries & { sourceCode: string }).sourceCode),
+    ),
+    historicalDataset,
+    curriculum,
+  );
+}
+export function downloadICS(
+  blocks: ScheduleBlockType[],
+  filename = "ScheduleHAW.ics",
+) {
+  downloadFile(generateICS(blocks), filename, "text/calendar;charset=utf-8");
+}

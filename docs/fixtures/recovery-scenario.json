@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "anonymous-recovery-v1",
+  "purpose": "Synthetic automated regression seed; not a real profile or published HAW timetable",
+  "datasetKind": "synthetic-test-only",
+  "termId": "fixture-2026-ws",
+  "subjectSemester": 6,
+  "goal": "internship",
+  "maxNewLabs": 4,
+  "firstYearRemaining": ["ma2", "ee1", "ee2", "el1"],
+  "otherFirstYearExplicitlyPassed": ["ma1", "so1", "so2", "ge", "ls1", "ls2", "ic"],
+  "progress": [
+    {"moduleId": "ma2", "components": {"exercise": "passed", "exam": "failed"}},
+    {"moduleId": "ee1", "components": {"lab": "passed", "exam": "failed"}},
+    {"moduleId": "ee2", "components": {"lab": "not_started", "exam": "not_started"}},
+    {"moduleId": "el1", "components": {"lab": "not_started", "exam": "not_started"}},
+    {"moduleId": "el2", "components": {"lab": "failed", "exam": "not_started"}},
+    {"moduleId": "ss1", "components": {"lab": "passed", "exam": "not_started"}},
+    {"moduleId": "di", "components": {"lab": "passed", "exam": "not_started"}},
+    {"moduleId": "ad", "components": {"lab": "passed", "exam": "not_started"}},
+    {"moduleId": "os", "components": {"lab": "passed", "exam": "not_started"}},
+    {"moduleId": "ds", "components": {"lab": "not_started", "exam": "not_started"}},
+    {"moduleId": "mc", "components": {"lab": "not_started", "exam": "not_started"}},
+    {"moduleId": "ss2", "components": {"lab": "not_started", "exam": "not_started"}}
+  ],
+  "expected": {
+    "topAcademicPrioritySet": ["ma2", "ee1", "ee2", "el1"],
+    "examOnlyModules": ["ma2", "ee1", "ss1", "di", "ad", "os"],
+    "newLabCandidates": ["ee2", "el1", "el2", "ds", "mc", "ss2"],
+    "examOnlyNewLabCount": 0,
+    "failedEl2LabConsumesCapacity": true,
+    "priorityDoesNotGuaranteeSelectionUnderSafeCap": true,
+    "allOtherFirstYearRequirementsMustRemainInMilestoneRoster": true
+  },
+  "syntheticGroupCases": [
+    {"id": "ee2:lab:01", "date": "2026-10-19", "start": "08:10", "end": "11:25"},
+    {"id": "el1:lab:01", "date": "2026-10-19", "start": "09:55", "end": "13:40"},
+    {"id": "el1:lab:02", "date": "2026-10-26", "start": "09:55", "end": "13:40"}
+  ],
+  "fixtureBuilderRules": [
+    "Internal module/component IDs are synthetic mappings, not certified HAW regulation IDs.",
+    "Define all otherFirstYearExplicitlyPassed modules with one synthetic completion component passed; never treat absent profile records as passed.",
+    "Define first-year milestone as all eleven listed first-year modules; recovered four are the only remaining first-year modules.",
+    "Use explicit fixture credits 6 per module and label them synthetic; test real published credit data separately.",
+    "Declare fixture exam availability offered but dates unknown for preparation tests; provide separate dated exams for ready-calendar tests.",
+    "Add public synthetic sessions/group options for all newLabCandidates when testing exploration; only the three collision cases above are fixed.",
+    "For the group trap, group 01 of EE2 plus group 01 of EL1 conflicts by 90 minutes; choosing EL1 group 02 removes the collision.",
+    "Do not use source repository personal statuses, identity or raw transcript excerpts."
+  ]
+}

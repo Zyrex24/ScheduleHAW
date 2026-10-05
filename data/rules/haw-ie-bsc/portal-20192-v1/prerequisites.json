@@ -1,0 +1,126 @@
+[
+  {
+    "id": "recommended-ma2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "module",
+      "id": "ma2"
+    },
+    "appliesTo": "participation",
+    "timing": "before_term",
+    "strength": "recommended",
+    "requirement": {
+      "kind": "all",
+      "items": [
+        {
+          "kind": "module",
+          "moduleId": "ma1"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "sourceId": "haw-handbook-2024",
+        "locator": "module descriptions; advisory cross-version knowledge guidance",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "recommended-ee2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "module",
+      "id": "ee2"
+    },
+    "appliesTo": "participation",
+    "timing": "before_term",
+    "strength": "recommended",
+    "requirement": {
+      "kind": "all",
+      "items": [
+        {
+          "kind": "module",
+          "moduleId": "ee1"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "sourceId": "haw-handbook-2024",
+        "locator": "module descriptions; advisory cross-version knowledge guidance",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "recommended-el1",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "module",
+      "id": "el1"
+    },
+    "appliesTo": "participation",
+    "timing": "before_term",
+    "strength": "recommended",
+    "requirement": {
+      "kind": "all",
+      "items": [
+        {
+          "kind": "module",
+          "moduleId": "ee1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ma1"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "sourceId": "haw-handbook-2024",
+        "locator": "module descriptions; advisory cross-version knowledge guidance",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "recommended-el2",
+    "curriculumVersion": "portal-20192-v1",
+    "target": {
+      "kind": "module",
+      "id": "el2"
+    },
+    "appliesTo": "participation",
+    "timing": "before_term",
+    "strength": "recommended",
+    "requirement": {
+      "kind": "all",
+      "items": [
+        {
+          "kind": "module",
+          "moduleId": "ee1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ee2"
+        },
+        {
+          "kind": "module",
+          "moduleId": "el1"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "sourceId": "haw-handbook-2024",
+        "locator": "module descriptions; advisory cross-version knowledge guidance",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  }
+]

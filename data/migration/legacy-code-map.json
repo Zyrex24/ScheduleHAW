@@ -1,0 +1,1698 @@
+[
+  {
+    "row": 0,
+    "code": "IE1-MA1",
+    "moduleId": "ma1",
+    "componentId": "ma1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-0"
+  },
+  {
+    "row": 1,
+    "code": "IE1-MA1",
+    "moduleId": "ma1",
+    "componentId": "ma1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-1"
+  },
+  {
+    "row": 2,
+    "code": "IE1-MAE1/01",
+    "moduleId": "ma1",
+    "componentId": "ma1.exercise",
+    "groupId": "2025-ws:ma1:ma1.exercise:01",
+    "sessionId": "2025-ws:row-2"
+  },
+  {
+    "row": 3,
+    "code": "IE1-MAE1/02",
+    "moduleId": "ma1",
+    "componentId": "ma1.exercise",
+    "groupId": "2025-ws:ma1:ma1.exercise:02",
+    "sessionId": "2025-ws:row-3"
+  },
+  {
+    "row": 4,
+    "code": "IE1-EE1",
+    "moduleId": "ee1",
+    "componentId": "ee1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-4"
+  },
+  {
+    "row": 5,
+    "code": "IE1-EEL1/01",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:01",
+    "sessionId": "2025-ws:row-5"
+  },
+  {
+    "row": 6,
+    "code": "IE1-EEL1/01",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:01",
+    "sessionId": "2025-ws:row-6"
+  },
+  {
+    "row": 7,
+    "code": "IE1-EEL1/02",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:02",
+    "sessionId": "2025-ws:row-7"
+  },
+  {
+    "row": 8,
+    "code": "IE1-EEL1/02",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:02",
+    "sessionId": "2025-ws:row-8"
+  },
+  {
+    "row": 9,
+    "code": "IE1-EEL1/03",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:03",
+    "sessionId": "2025-ws:row-9"
+  },
+  {
+    "row": 10,
+    "code": "IE1-EEL1/03",
+    "moduleId": "ee1",
+    "componentId": "ee1.lab",
+    "groupId": "2025-ws:ee1:ee1.lab:03",
+    "sessionId": "2025-ws:row-10"
+  },
+  {
+    "row": 11,
+    "code": "IE1-SO1",
+    "moduleId": "so1",
+    "componentId": "so1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-11"
+  },
+  {
+    "row": 12,
+    "code": "IE1-SOL1/01",
+    "moduleId": "so1",
+    "componentId": "so1.lab",
+    "groupId": "2025-ws:so1:so1.lab:01",
+    "sessionId": "2025-ws:row-12"
+  },
+  {
+    "row": 13,
+    "code": "IE1-SOL1/02",
+    "moduleId": "so1",
+    "componentId": "so1.lab",
+    "groupId": "2025-ws:so1:so1.lab:02",
+    "sessionId": "2025-ws:row-13"
+  },
+  {
+    "row": 14,
+    "code": "IE1-SOL1/03",
+    "moduleId": "so1",
+    "componentId": "so1.lab",
+    "groupId": "2025-ws:so1:so1.lab:03",
+    "sessionId": "2025-ws:row-14"
+  },
+  {
+    "row": 15,
+    "code": "IE1-SOL1/04",
+    "moduleId": "so1",
+    "componentId": "so1.lab",
+    "groupId": "2025-ws:so1:so1.lab:04",
+    "sessionId": "2025-ws:row-15"
+  },
+  {
+    "row": 16,
+    "code": "IE1-GE/01",
+    "moduleId": "ge",
+    "componentId": "ge.exam",
+    "groupId": "2025-ws:ge:ge.exam:01",
+    "sessionId": "2025-ws:row-16"
+  },
+  {
+    "row": 17,
+    "code": "IE1-GE/02",
+    "moduleId": "ge",
+    "componentId": "ge.exam",
+    "groupId": "2025-ws:ge:ge.exam:02",
+    "sessionId": "2025-ws:row-17"
+  },
+  {
+    "row": 18,
+    "code": "IE1-LSE/01",
+    "moduleId": "ls",
+    "componentId": "ls.study",
+    "groupId": "2025-ws:ls:ls.study:01",
+    "sessionId": "2025-ws:row-18"
+  },
+  {
+    "row": 19,
+    "code": "IE1-LSE/01",
+    "moduleId": "ls",
+    "componentId": "ls.study",
+    "groupId": "2025-ws:ls:ls.study:01",
+    "sessionId": "2025-ws:row-19"
+  },
+  {
+    "row": 20,
+    "code": "IE1-LSE/02",
+    "moduleId": "ls",
+    "componentId": "ls.study",
+    "groupId": "2025-ws:ls:ls.study:02",
+    "sessionId": "2025-ws:row-20"
+  },
+  {
+    "row": 21,
+    "code": "IE1-LSL/01",
+    "moduleId": "ls",
+    "componentId": "ls.presentation1",
+    "groupId": "2025-ws:ls:ls.presentation1:01",
+    "sessionId": "2025-ws:row-21"
+  },
+  {
+    "row": 22,
+    "code": "IE1-LSL/02",
+    "moduleId": "ls",
+    "componentId": "ls.presentation1",
+    "groupId": "2025-ws:ls:ls.presentation1:02",
+    "sessionId": "2025-ws:row-22"
+  },
+  {
+    "row": 23,
+    "code": "IE1-LSL/03",
+    "moduleId": "ls",
+    "componentId": "ls.presentation1",
+    "groupId": "2025-ws:ls:ls.presentation1:03",
+    "sessionId": "2025-ws:row-23"
+  },
+  {
+    "row": 24,
+    "code": "IE1-LSL/04",
+    "moduleId": "ls",
+    "componentId": "ls.presentation1",
+    "groupId": "2025-ws:ls:ls.presentation1:04",
+    "sessionId": "2025-ws:row-24"
+  },
+  {
+    "row": 25,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-25"
+  },
+  {
+    "row": 26,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-26"
+  },
+  {
+    "row": 27,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-27"
+  },
+  {
+    "row": 28,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-28"
+  },
+  {
+    "row": 29,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-29"
+  },
+  {
+    "row": 30,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-30"
+  },
+  {
+    "row": 31,
+    "code": "IE1-LSL2",
+    "moduleId": "ls",
+    "componentId": "ls.presentation2",
+    "groupId": null,
+    "sessionId": "2025-ws:row-31"
+  },
+  {
+    "row": 32,
+    "code": "IE2-MA2",
+    "moduleId": "ma2",
+    "componentId": "ma2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-32"
+  },
+  {
+    "row": 33,
+    "code": "IE2-MA2",
+    "moduleId": "ma2",
+    "componentId": "ma2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-33"
+  },
+  {
+    "row": 34,
+    "code": "IE2-MAE2/01",
+    "moduleId": "ma2",
+    "componentId": "ma2.exercise",
+    "groupId": "2025-ws:ma2:ma2.exercise:01",
+    "sessionId": "2025-ws:row-34"
+  },
+  {
+    "row": 35,
+    "code": "IE2-MAE2/02",
+    "moduleId": "ma2",
+    "componentId": "ma2.exercise",
+    "groupId": "2025-ws:ma2:ma2.exercise:02",
+    "sessionId": "2025-ws:row-35"
+  },
+  {
+    "row": 36,
+    "code": "IE2-SO2",
+    "moduleId": "so2",
+    "componentId": "so2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-36"
+  },
+  {
+    "row": 37,
+    "code": "IE2-SO2",
+    "moduleId": "so2",
+    "componentId": "so2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-37"
+  },
+  {
+    "row": 38,
+    "code": "IE2-SOL2/01",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:01",
+    "sessionId": "2025-ws:row-38"
+  },
+  {
+    "row": 39,
+    "code": "IE2-SOL2/01",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:01",
+    "sessionId": "2025-ws:row-39"
+  },
+  {
+    "row": 40,
+    "code": "IE2-SOL2/02",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:02",
+    "sessionId": "2025-ws:row-40"
+  },
+  {
+    "row": 41,
+    "code": "IE2-SOL2/02",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:02",
+    "sessionId": "2025-ws:row-41"
+  },
+  {
+    "row": 42,
+    "code": "IE2-SOL2/03",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:03",
+    "sessionId": "2025-ws:row-42"
+  },
+  {
+    "row": 43,
+    "code": "IE2-SOL2/03",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:03",
+    "sessionId": "2025-ws:row-43"
+  },
+  {
+    "row": 44,
+    "code": "IE2-SOL2/04",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:04",
+    "sessionId": "2025-ws:row-44"
+  },
+  {
+    "row": 45,
+    "code": "IE2-SOL2/04",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:04",
+    "sessionId": "2025-ws:row-45"
+  },
+  {
+    "row": 46,
+    "code": "IE2-SOL2/04",
+    "moduleId": "so2",
+    "componentId": "so2.lab",
+    "groupId": "2025-ws:so2:so2.lab:04",
+    "sessionId": "2025-ws:row-46"
+  },
+  {
+    "row": 47,
+    "code": "IE2-EE2",
+    "moduleId": "ee2",
+    "componentId": "ee2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-47"
+  },
+  {
+    "row": 48,
+    "code": "IE2-EE2",
+    "moduleId": "ee2",
+    "componentId": "ee2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-48"
+  },
+  {
+    "row": 49,
+    "code": "IE2-EEL2/01",
+    "moduleId": "ee2",
+    "componentId": "ee2.lab",
+    "groupId": "2025-ws:ee2:ee2.lab:01",
+    "sessionId": "2025-ws:row-49"
+  },
+  {
+    "row": 50,
+    "code": "IE2-EEL2/01",
+    "moduleId": "ee2",
+    "componentId": "ee2.lab",
+    "groupId": "2025-ws:ee2:ee2.lab:01",
+    "sessionId": "2025-ws:row-50"
+  },
+  {
+    "row": 51,
+    "code": "IE2-EEL2/02",
+    "moduleId": "ee2",
+    "componentId": "ee2.lab",
+    "groupId": "2025-ws:ee2:ee2.lab:02",
+    "sessionId": "2025-ws:row-51"
+  },
+  {
+    "row": 52,
+    "code": "IE2-EEL2/02",
+    "moduleId": "ee2",
+    "componentId": "ee2.lab",
+    "groupId": "2025-ws:ee2:ee2.lab:02",
+    "sessionId": "2025-ws:row-52"
+  },
+  {
+    "row": 53,
+    "code": "IE2-EL1",
+    "moduleId": "el1",
+    "componentId": "el1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-53"
+  },
+  {
+    "row": 54,
+    "code": "IE2-EL1",
+    "moduleId": "el1",
+    "componentId": "el1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-54"
+  },
+  {
+    "row": 55,
+    "code": "IE2-ELL1/01",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:01",
+    "sessionId": "2025-ws:row-55"
+  },
+  {
+    "row": 56,
+    "code": "IE2-ELL1/01",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:01",
+    "sessionId": "2025-ws:row-56"
+  },
+  {
+    "row": 57,
+    "code": "IE2-ELL1/02",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:02",
+    "sessionId": "2025-ws:row-57"
+  },
+  {
+    "row": 58,
+    "code": "IE2-ELL1/02",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:02",
+    "sessionId": "2025-ws:row-58"
+  },
+  {
+    "row": 59,
+    "code": "IE2-ELL1/03",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:03",
+    "sessionId": "2025-ws:row-59"
+  },
+  {
+    "row": 60,
+    "code": "IE2-ELL1/03",
+    "moduleId": "el1",
+    "componentId": "el1.lab",
+    "groupId": "2025-ws:el1:el1.lab:03",
+    "sessionId": "2025-ws:row-60"
+  },
+  {
+    "row": 61,
+    "code": "IE2-IC/01",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:01",
+    "sessionId": "2025-ws:row-61"
+  },
+  {
+    "row": 62,
+    "code": "IE2-IC/01",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:01",
+    "sessionId": "2025-ws:row-62"
+  },
+  {
+    "row": 63,
+    "code": "IE2-IC/01",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:01",
+    "sessionId": "2025-ws:row-63"
+  },
+  {
+    "row": 64,
+    "code": "IE2-IC/02",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:02",
+    "sessionId": "2025-ws:row-64"
+  },
+  {
+    "row": 65,
+    "code": "IE2-IC/02",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:02",
+    "sessionId": "2025-ws:row-65"
+  },
+  {
+    "row": 66,
+    "code": "IE2-IC/02",
+    "moduleId": "ic",
+    "componentId": "ic.presentation",
+    "groupId": "2025-ws:ic:ic.presentation:02",
+    "sessionId": "2025-ws:row-66"
+  },
+  {
+    "row": 67,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-67"
+  },
+  {
+    "row": 68,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-68"
+  },
+  {
+    "row": 69,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-69"
+  },
+  {
+    "row": 70,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-70"
+  },
+  {
+    "row": 71,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-71"
+  },
+  {
+    "row": 72,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-72"
+  },
+  {
+    "row": 73,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-73"
+  },
+  {
+    "row": 74,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-74"
+  },
+  {
+    "row": 75,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-75"
+  },
+  {
+    "row": 76,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-76"
+  },
+  {
+    "row": 77,
+    "code": "E2-LP",
+    "moduleId": "lab-practice",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-77"
+  },
+  {
+    "row": 78,
+    "code": "IE3-SS1",
+    "moduleId": "ss1",
+    "componentId": "ss1.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-78"
+  },
+  {
+    "row": 79,
+    "code": "IE3-SSL1/01",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:01",
+    "sessionId": "2025-ws:row-79"
+  },
+  {
+    "row": 80,
+    "code": "IE3-SSL1/01",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:01",
+    "sessionId": "2025-ws:row-80"
+  },
+  {
+    "row": 81,
+    "code": "IE3-SSL1/02",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:02",
+    "sessionId": "2025-ws:row-81"
+  },
+  {
+    "row": 82,
+    "code": "IE3-SSL1/02",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:02",
+    "sessionId": "2025-ws:row-82"
+  },
+  {
+    "row": 83,
+    "code": "IE3-SSL1/03",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:03",
+    "sessionId": "2025-ws:row-83"
+  },
+  {
+    "row": 84,
+    "code": "IE3-SSL1/03",
+    "moduleId": "ss1",
+    "componentId": "ss1.lab",
+    "groupId": "2025-ws:ss1:ss1.lab:03",
+    "sessionId": "2025-ws:row-84"
+  },
+  {
+    "row": 85,
+    "code": "IE3-EL2",
+    "moduleId": "el2",
+    "componentId": "el2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-85"
+  },
+  {
+    "row": 86,
+    "code": "IE3-ELL2/01",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:01",
+    "sessionId": "2025-ws:row-86"
+  },
+  {
+    "row": 87,
+    "code": "IE3-ELL2/01",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:01",
+    "sessionId": "2025-ws:row-87"
+  },
+  {
+    "row": 88,
+    "code": "IE3-ELL2/02",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:02",
+    "sessionId": "2025-ws:row-88"
+  },
+  {
+    "row": 89,
+    "code": "IE3-ELL2/02",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:02",
+    "sessionId": "2025-ws:row-89"
+  },
+  {
+    "row": 90,
+    "code": "IE3-ELL2/03",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:03",
+    "sessionId": "2025-ws:row-90"
+  },
+  {
+    "row": 91,
+    "code": "IE3-ELL2/03",
+    "moduleId": "el2",
+    "componentId": "el2.lab",
+    "groupId": "2025-ws:el2:el2.lab:03",
+    "sessionId": "2025-ws:row-91"
+  },
+  {
+    "row": 92,
+    "code": "IE3-DI",
+    "moduleId": "di",
+    "componentId": "di.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-92"
+  },
+  {
+    "row": 93,
+    "code": "IE3-DIL/01",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:01",
+    "sessionId": "2025-ws:row-93"
+  },
+  {
+    "row": 94,
+    "code": "IE3-DIL/01",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:01",
+    "sessionId": "2025-ws:row-94"
+  },
+  {
+    "row": 95,
+    "code": "IE3-DIL/02",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:02",
+    "sessionId": "2025-ws:row-95"
+  },
+  {
+    "row": 96,
+    "code": "IE3-DIL/02",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:02",
+    "sessionId": "2025-ws:row-96"
+  },
+  {
+    "row": 97,
+    "code": "IE3-DIL/03",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:03",
+    "sessionId": "2025-ws:row-97"
+  },
+  {
+    "row": 98,
+    "code": "IE3-DIL/03",
+    "moduleId": "di",
+    "componentId": "di.lab",
+    "groupId": "2025-ws:di:di.lab:03",
+    "sessionId": "2025-ws:row-98"
+  },
+  {
+    "row": 99,
+    "code": "IE3-AD",
+    "moduleId": "ad",
+    "componentId": "ad.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-99"
+  },
+  {
+    "row": 100,
+    "code": "IE3-ADL/01",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:01",
+    "sessionId": "2025-ws:row-100"
+  },
+  {
+    "row": 101,
+    "code": "IE3-ADL/01",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:01",
+    "sessionId": "2025-ws:row-101"
+  },
+  {
+    "row": 102,
+    "code": "IE3-ADL/02",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:02",
+    "sessionId": "2025-ws:row-102"
+  },
+  {
+    "row": 103,
+    "code": "IE3-ADL/02",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:02",
+    "sessionId": "2025-ws:row-103"
+  },
+  {
+    "row": 104,
+    "code": "IE3-ADL/03",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:03",
+    "sessionId": "2025-ws:row-104"
+  },
+  {
+    "row": 105,
+    "code": "IE3-ADL/03",
+    "moduleId": "ad",
+    "componentId": "ad.lab",
+    "groupId": "2025-ws:ad:ad.lab:03",
+    "sessionId": "2025-ws:row-105"
+  },
+  {
+    "row": 106,
+    "code": "IE3-EM",
+    "moduleId": "em",
+    "componentId": "em.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-106"
+  },
+  {
+    "row": 107,
+    "code": "IE3-EME/01",
+    "moduleId": "em",
+    "componentId": "em.exercise",
+    "groupId": "2025-ws:em:em.exercise:01",
+    "sessionId": "2025-ws:row-107"
+  },
+  {
+    "row": 108,
+    "code": "IE3-EME/02",
+    "moduleId": "em",
+    "componentId": "em.exercise",
+    "groupId": "2025-ws:em:em.exercise:02",
+    "sessionId": "2025-ws:row-108"
+  },
+  {
+    "row": 109,
+    "code": "IE3-EME/03",
+    "moduleId": "em",
+    "componentId": "em.exercise",
+    "groupId": "2025-ws:em:em.exercise:03",
+    "sessionId": "2025-ws:row-109"
+  },
+  {
+    "row": 110,
+    "code": "IE4-SS2",
+    "moduleId": "ss2",
+    "componentId": "ss2.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-110"
+  },
+  {
+    "row": 111,
+    "code": "IE4-SSL2/01",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:01",
+    "sessionId": "2025-ws:row-111"
+  },
+  {
+    "row": 112,
+    "code": "IE4-SSL2/01",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:01",
+    "sessionId": "2025-ws:row-112"
+  },
+  {
+    "row": 113,
+    "code": "IE4-SSL2/02",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:02",
+    "sessionId": "2025-ws:row-113"
+  },
+  {
+    "row": 114,
+    "code": "IE4-SSL2/02",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:02",
+    "sessionId": "2025-ws:row-114"
+  },
+  {
+    "row": 115,
+    "code": "IE4-SSL2/03",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:03",
+    "sessionId": "2025-ws:row-115"
+  },
+  {
+    "row": 116,
+    "code": "IE4-SSL2/03",
+    "moduleId": "ss2",
+    "componentId": "ss2.lab",
+    "groupId": "2025-ws:ss2:ss2.lab:03",
+    "sessionId": "2025-ws:row-116"
+  },
+  {
+    "row": 117,
+    "code": "IE4-DS",
+    "moduleId": "ds",
+    "componentId": "ds.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-117"
+  },
+  {
+    "row": 118,
+    "code": "IE4-DSL/01",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:01",
+    "sessionId": "2025-ws:row-118"
+  },
+  {
+    "row": 119,
+    "code": "IE4-DSL/01",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:01",
+    "sessionId": "2025-ws:row-119"
+  },
+  {
+    "row": 120,
+    "code": "IE4-DSL/02",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:02",
+    "sessionId": "2025-ws:row-120"
+  },
+  {
+    "row": 121,
+    "code": "IE4-DSL/02",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:02",
+    "sessionId": "2025-ws:row-121"
+  },
+  {
+    "row": 122,
+    "code": "IE4-DSL/03",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:03",
+    "sessionId": "2025-ws:row-122"
+  },
+  {
+    "row": 123,
+    "code": "IE4-DSL/03",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:03",
+    "sessionId": "2025-ws:row-123"
+  },
+  {
+    "row": 124,
+    "code": "IE4-DSL/04",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:04",
+    "sessionId": "2025-ws:row-124"
+  },
+  {
+    "row": 125,
+    "code": "IE4-DSL/04",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:04",
+    "sessionId": "2025-ws:row-125"
+  },
+  {
+    "row": 126,
+    "code": "IE4-DSL/04",
+    "moduleId": "ds",
+    "componentId": "ds.lab",
+    "groupId": "2025-ws:ds:ds.lab:04",
+    "sessionId": "2025-ws:row-126"
+  },
+  {
+    "row": 127,
+    "code": "IE4-MC",
+    "moduleId": "mc",
+    "componentId": "mc.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-127"
+  },
+  {
+    "row": 128,
+    "code": "IE4-MCL/01",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:01",
+    "sessionId": "2025-ws:row-128"
+  },
+  {
+    "row": 129,
+    "code": "IE4-MCL/01",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:01",
+    "sessionId": "2025-ws:row-129"
+  },
+  {
+    "row": 130,
+    "code": "IE4-MCL/02",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:02",
+    "sessionId": "2025-ws:row-130"
+  },
+  {
+    "row": 131,
+    "code": "IE4-MCL/02",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:02",
+    "sessionId": "2025-ws:row-131"
+  },
+  {
+    "row": 132,
+    "code": "IE4-MCL/03",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:03",
+    "sessionId": "2025-ws:row-132"
+  },
+  {
+    "row": 133,
+    "code": "IE4-MCL/03",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:03",
+    "sessionId": "2025-ws:row-133"
+  },
+  {
+    "row": 134,
+    "code": "IE4-MCL/04",
+    "moduleId": "mc",
+    "componentId": "mc.lab",
+    "groupId": "2025-ws:mc:mc.lab:04",
+    "sessionId": "2025-ws:row-134"
+  },
+  {
+    "row": 135,
+    "code": "IE4-SE",
+    "moduleId": "se",
+    "componentId": "se.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-135"
+  },
+  {
+    "row": 136,
+    "code": "IE4-SEL/01",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:01",
+    "sessionId": "2025-ws:row-136"
+  },
+  {
+    "row": 137,
+    "code": "IE4-SEL/01",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:01",
+    "sessionId": "2025-ws:row-137"
+  },
+  {
+    "row": 138,
+    "code": "IE4-SEL/02",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:02",
+    "sessionId": "2025-ws:row-138"
+  },
+  {
+    "row": 139,
+    "code": "IE4-SEL/02",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:02",
+    "sessionId": "2025-ws:row-139"
+  },
+  {
+    "row": 140,
+    "code": "IE4-SEL/03",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:03",
+    "sessionId": "2025-ws:row-140"
+  },
+  {
+    "row": 141,
+    "code": "IE4-SEL/03",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:03",
+    "sessionId": "2025-ws:row-141"
+  },
+  {
+    "row": 142,
+    "code": "IE4-SEL/04",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:04",
+    "sessionId": "2025-ws:row-142"
+  },
+  {
+    "row": 143,
+    "code": "IE4-SEL/04",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:04",
+    "sessionId": "2025-ws:row-143"
+  },
+  {
+    "row": 144,
+    "code": "IE4-SEL/04",
+    "moduleId": "se",
+    "componentId": "se.lab",
+    "groupId": "2025-ws:se:se.lab:04",
+    "sessionId": "2025-ws:row-144"
+  },
+  {
+    "row": 145,
+    "code": "IE4-DB",
+    "moduleId": "db",
+    "componentId": "db.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-145"
+  },
+  {
+    "row": 146,
+    "code": "IE4-DBL/01",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:01",
+    "sessionId": "2025-ws:row-146"
+  },
+  {
+    "row": 147,
+    "code": "IE4-DBL/01",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:01",
+    "sessionId": "2025-ws:row-147"
+  },
+  {
+    "row": 148,
+    "code": "IE4-DBL/02",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:02",
+    "sessionId": "2025-ws:row-148"
+  },
+  {
+    "row": 149,
+    "code": "IE4-DBL/02",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:02",
+    "sessionId": "2025-ws:row-149"
+  },
+  {
+    "row": 150,
+    "code": "IE4-DBL/03",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:03",
+    "sessionId": "2025-ws:row-150"
+  },
+  {
+    "row": 151,
+    "code": "IE4-DBL/03",
+    "moduleId": "db",
+    "componentId": "db.lab",
+    "groupId": "2025-ws:db:db.lab:03",
+    "sessionId": "2025-ws:row-151"
+  },
+  {
+    "row": 152,
+    "code": "IE5-SP",
+    "moduleId": "sp",
+    "componentId": "sp.presentation",
+    "groupId": null,
+    "sessionId": "2025-ws:row-152"
+  },
+  {
+    "row": 153,
+    "code": "IE5-SP",
+    "moduleId": "sp",
+    "componentId": "sp.presentation",
+    "groupId": null,
+    "sessionId": "2025-ws:row-153"
+  },
+  {
+    "row": 154,
+    "code": "E5-WP-Rust",
+    "moduleId": "elective-architectures-of-digital-signal-processing",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-154"
+  },
+  {
+    "row": 155,
+    "code": "E5-WPP-Rust",
+    "moduleId": "elective-architectures-of-digital-signal-processing",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-155"
+  },
+  {
+    "row": 156,
+    "code": "IE6-OS",
+    "moduleId": "os",
+    "componentId": "os.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-156"
+  },
+  {
+    "row": 157,
+    "code": "IE6-OS",
+    "moduleId": "os",
+    "componentId": "os.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-157"
+  },
+  {
+    "row": 158,
+    "code": "IE6-OSL/01",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:01",
+    "sessionId": "2025-ws:row-158"
+  },
+  {
+    "row": 159,
+    "code": "IE6-OSL/01",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:01",
+    "sessionId": "2025-ws:row-159"
+  },
+  {
+    "row": 160,
+    "code": "IE6-OSL/02",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:02",
+    "sessionId": "2025-ws:row-160"
+  },
+  {
+    "row": 161,
+    "code": "IE6-OSL/02",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:02",
+    "sessionId": "2025-ws:row-161"
+  },
+  {
+    "row": 162,
+    "code": "IE6-OSL/03",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:03",
+    "sessionId": "2025-ws:row-162"
+  },
+  {
+    "row": 163,
+    "code": "IE6-OSL/03",
+    "moduleId": "os",
+    "componentId": "os.lab",
+    "groupId": "2025-ws:os:os.lab:03",
+    "sessionId": "2025-ws:row-163"
+  },
+  {
+    "row": 164,
+    "code": "IE6-BU",
+    "moduleId": "bu",
+    "componentId": "bu.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-164"
+  },
+  {
+    "row": 165,
+    "code": "IE6-BUL/01",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:01",
+    "sessionId": "2025-ws:row-165"
+  },
+  {
+    "row": 166,
+    "code": "IE6-BUL/01",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:01",
+    "sessionId": "2025-ws:row-166"
+  },
+  {
+    "row": 167,
+    "code": "IE6-BUL/02",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:02",
+    "sessionId": "2025-ws:row-167"
+  },
+  {
+    "row": 168,
+    "code": "IE6-BUL/02",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:02",
+    "sessionId": "2025-ws:row-168"
+  },
+  {
+    "row": 169,
+    "code": "IE6-BUL/03",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:03",
+    "sessionId": "2025-ws:row-169"
+  },
+  {
+    "row": 170,
+    "code": "IE6-BUL/03",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:03",
+    "sessionId": "2025-ws:row-170"
+  },
+  {
+    "row": 171,
+    "code": "IE6-BUL/04",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:04",
+    "sessionId": "2025-ws:row-171"
+  },
+  {
+    "row": 172,
+    "code": "IE6-BUL/04",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:04",
+    "sessionId": "2025-ws:row-172"
+  },
+  {
+    "row": 173,
+    "code": "IE6-BUL/04",
+    "moduleId": "bu",
+    "componentId": "bu.lab",
+    "groupId": "2025-ws:bu:bu.lab:04",
+    "sessionId": "2025-ws:row-173"
+  },
+  {
+    "row": 174,
+    "code": "IE6-DP",
+    "moduleId": "dp",
+    "componentId": "dp.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-174"
+  },
+  {
+    "row": 175,
+    "code": "IE6-DPL/01",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:01",
+    "sessionId": "2025-ws:row-175"
+  },
+  {
+    "row": 176,
+    "code": "IE6-DPL/01",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:01",
+    "sessionId": "2025-ws:row-176"
+  },
+  {
+    "row": 177,
+    "code": "IE6-DPL/02",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:02",
+    "sessionId": "2025-ws:row-177"
+  },
+  {
+    "row": 178,
+    "code": "IE6-DPL/02",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:02",
+    "sessionId": "2025-ws:row-178"
+  },
+  {
+    "row": 179,
+    "code": "IE6-DPL/03",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:03",
+    "sessionId": "2025-ws:row-179"
+  },
+  {
+    "row": 180,
+    "code": "IE6-DPL/03",
+    "moduleId": "dp",
+    "componentId": "dp.lab",
+    "groupId": "2025-ws:dp:dp.lab:03",
+    "sessionId": "2025-ws:row-180"
+  },
+  {
+    "row": 181,
+    "code": "IE6-DC",
+    "moduleId": "dc",
+    "componentId": "dc.exam",
+    "groupId": null,
+    "sessionId": "2025-ws:row-181"
+  },
+  {
+    "row": 182,
+    "code": "IE6-DCL/01",
+    "moduleId": "dc",
+    "componentId": "dc.lab",
+    "groupId": "2025-ws:dc:dc.lab:01",
+    "sessionId": "2025-ws:row-182"
+  },
+  {
+    "row": 183,
+    "code": "IE6-DCL/01",
+    "moduleId": "dc",
+    "componentId": "dc.lab",
+    "groupId": "2025-ws:dc:dc.lab:01",
+    "sessionId": "2025-ws:row-183"
+  },
+  {
+    "row": 184,
+    "code": "IE6-DCL/02",
+    "moduleId": "dc",
+    "componentId": "dc.lab",
+    "groupId": "2025-ws:dc:dc.lab:02",
+    "sessionId": "2025-ws:row-184"
+  },
+  {
+    "row": 185,
+    "code": "IE6-DCL/02",
+    "moduleId": "dc",
+    "componentId": "dc.lab",
+    "groupId": "2025-ws:dc:dc.lab:02",
+    "sessionId": "2025-ws:row-185"
+  },
+  {
+    "row": 186,
+    "code": "E7-WP13-Winzenick",
+    "moduleId": "elective-elektroenergiesysteme",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-186"
+  },
+  {
+    "row": 187,
+    "code": "E7-WPP13-Winzenick",
+    "moduleId": "elective-elektroenergiesysteme",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-187"
+  },
+  {
+    "row": 188,
+    "code": "E7-WP22-Schulz",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-188"
+  },
+  {
+    "row": 189,
+    "code": "E7-WP22-Schulz",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-189"
+  },
+  {
+    "row": 190,
+    "code": "E7-WP22-Schulz",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-190"
+  },
+  {
+    "row": 191,
+    "code": "E7-WPP22-Schulz",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-191"
+  },
+  {
+    "row": 192,
+    "code": "E7-WPP22-Schulz",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-192"
+  },
+  {
+    "row": 193,
+    "code": "E7-WP25-Titova",
+    "moduleId": "elective-solar-energy",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-193"
+  },
+  {
+    "row": 194,
+    "code": "E7-WPP25-Titova",
+    "moduleId": "elective-solar-energy",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-194"
+  },
+  {
+    "row": 195,
+    "code": "E7-WP33-Buczek",
+    "moduleId": "elective-on-board-data-handling-for-highly-autonomous-systems",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-195"
+  },
+  {
+    "row": 196,
+    "code": "E7-WPP33-Buczek",
+    "moduleId": "elective-on-board-data-handling",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-196"
+  },
+  {
+    "row": 197,
+    "code": "E7-WP34-Radt",
+    "moduleId": "elective-peer-leaders",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-197"
+  },
+  {
+    "row": 198,
+    "code": "E7-WPP34-Radt",
+    "moduleId": "elective-peer-leaders",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-198"
+  },
+  {
+    "row": 199,
+    "code": "E7-WPP34-Radt",
+    "moduleId": "elective-peer-leaders",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-199"
+  },
+  {
+    "row": 200,
+    "code": "E7-WP36-Noack",
+    "moduleId": "elective-led-technik",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-200"
+  },
+  {
+    "row": 201,
+    "code": "E7-WPP36-Noack",
+    "moduleId": "elective-led-technik",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-201"
+  },
+  {
+    "row": 202,
+    "code": "E7-WP37-Neumann",
+    "moduleId": "elective-introduction-to-cryptography",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-202"
+  },
+  {
+    "row": 203,
+    "code": "E7-WPP37-Neumann",
+    "moduleId": "elective-introduction-to-cryptography",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-203"
+  },
+  {
+    "row": 204,
+    "code": "E7-WPJ01-Gottfried",
+    "moduleId": "elective-entwicklung-einer-partysimulation",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-204"
+  },
+  {
+    "row": 205,
+    "code": "E7-WPJ02-Noack",
+    "moduleId": "elective-raspberry-pi",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-205"
+  },
+  {
+    "row": 206,
+    "code": "E7-WPJ03-Meiners",
+    "moduleId": "elective-automatisierung-eines-stuckgutprozesses",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-206"
+  },
+  {
+    "row": 207,
+    "code": "E7-WPJ11-Heß",
+    "moduleId": "elective-hydroponics",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-207"
+  },
+  {
+    "row": 208,
+    "code": "E7-WPJ15-Conjeti",
+    "moduleId": "elective-generative-and-agentic-ai",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-208"
+  },
+  {
+    "row": 209,
+    "code": "E7-WPJ16-Schoenen",
+    "moduleId": "elective-one-world-engineering",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-209"
+  },
+  {
+    "row": 210,
+    "code": "E7-WPJ17-Ginzel",
+    "moduleId": "elective-automatic-code-generation-using-matlab-simulink",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-210"
+  },
+  {
+    "row": 211,
+    "code": "E7-WPJ18-Trivedi",
+    "moduleId": "elective-cosmic-discoveries-their-techniques",
+    "componentId": null,
+    "groupId": null,
+    "sessionId": "2025-ws:row-211"
+  }
+]

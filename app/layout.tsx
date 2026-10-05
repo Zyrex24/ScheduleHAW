@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "@/Components/app/Providers";
+import { Shell } from "@/Components/app/Shell";
 
 export const metadata: Metadata = {
-  title: "Schedule HAW",
-  description: "HAW Hamburg Schedule Management System",
+  title: "ScheduleHAW — plan your degree",
+  description:
+    "Local academic progress, deterministic semester planning and exact HAW Hamburg Information Engineering timetables.",
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
@@ -13,8 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <Shell>{children}</Shell>
+        </Providers>
+      </body>
     </html>
   );
 }
-

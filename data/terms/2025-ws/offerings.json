@@ -1,0 +1,2319 @@
+[
+  {
+    "id": "2025-ws:ma1",
+    "termId": "2025-ws",
+    "moduleId": "ma1",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ma1.exercise",
+        "state": "offered"
+      },
+      {
+        "componentId": "ma1.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-0",
+      "2025-ws:row-1"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ma1:ma1.exercise",
+        "componentIds": [
+          "ma1.exercise"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ma1:ma1.exercise:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-MAE1/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-2"
+            ]
+          },
+          {
+            "id": "2025-ws:ma1:ma1.exercise:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-MAE1/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-3"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ee1",
+    "termId": "2025-ws",
+    "moduleId": "ee1",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ee1.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ee1.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-4"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ee1:ee1.lab",
+        "componentIds": [
+          "ee1.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ee1:ee1.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-EEL1/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-5",
+              "2025-ws:row-6"
+            ]
+          },
+          {
+            "id": "2025-ws:ee1:ee1.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-EEL1/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-7",
+              "2025-ws:row-8"
+            ]
+          },
+          {
+            "id": "2025-ws:ee1:ee1.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE1-EEL1/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-9",
+              "2025-ws:row-10"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:so1",
+    "termId": "2025-ws",
+    "moduleId": "so1",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "so1.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "so1.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-11"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:so1:so1.lab",
+        "componentIds": [
+          "so1.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:so1:so1.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-SOL1/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-12"
+            ]
+          },
+          {
+            "id": "2025-ws:so1:so1.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-SOL1/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-13"
+            ]
+          },
+          {
+            "id": "2025-ws:so1:so1.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE1-SOL1/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-14"
+            ]
+          },
+          {
+            "id": "2025-ws:so1:so1.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE1-SOL1/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-15"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ge",
+    "termId": "2025-ws",
+    "moduleId": "ge",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ge.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ge:ge.exam",
+        "componentIds": [],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ge:ge.exam:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-GE/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-16"
+            ]
+          },
+          {
+            "id": "2025-ws:ge:ge.exam:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-GE/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-17"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ls",
+    "termId": "2025-ws",
+    "moduleId": "ls",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ls.study",
+        "state": "offered"
+      },
+      {
+        "componentId": "ls.presentation1",
+        "state": "offered"
+      },
+      {
+        "componentId": "ls.presentation2",
+        "state": "offered"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-25",
+      "2025-ws:row-26",
+      "2025-ws:row-27",
+      "2025-ws:row-28",
+      "2025-ws:row-29",
+      "2025-ws:row-30",
+      "2025-ws:row-31"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ls:ls.study",
+        "componentIds": [
+          "ls.study"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ls:ls.study:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-LSE/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-18",
+              "2025-ws:row-19"
+            ]
+          },
+          {
+            "id": "2025-ws:ls:ls.study:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-LSE/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-20"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-ws:ls:ls.presentation1",
+        "componentIds": [
+          "ls.presentation1"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ls:ls.presentation1:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE1-LSL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-21"
+            ]
+          },
+          {
+            "id": "2025-ws:ls:ls.presentation1:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE1-LSL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-22"
+            ]
+          },
+          {
+            "id": "2025-ws:ls:ls.presentation1:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE1-LSL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-23"
+            ]
+          },
+          {
+            "id": "2025-ws:ls:ls.presentation1:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE1-LSL/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-24"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ma2",
+    "termId": "2025-ws",
+    "moduleId": "ma2",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ma2.exercise",
+        "state": "offered"
+      },
+      {
+        "componentId": "ma2.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-32",
+      "2025-ws:row-33"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ma2:ma2.exercise",
+        "componentIds": [
+          "ma2.exercise"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ma2:ma2.exercise:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE2-MAE2/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-34"
+            ]
+          },
+          {
+            "id": "2025-ws:ma2:ma2.exercise:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE2-MAE2/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-35"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:so2",
+    "termId": "2025-ws",
+    "moduleId": "so2",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "so2.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "so2.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-36",
+      "2025-ws:row-37"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:so2:so2.lab",
+        "componentIds": [
+          "so2.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:so2:so2.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE2-SOL2/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-38",
+              "2025-ws:row-39"
+            ]
+          },
+          {
+            "id": "2025-ws:so2:so2.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE2-SOL2/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-40",
+              "2025-ws:row-41"
+            ]
+          },
+          {
+            "id": "2025-ws:so2:so2.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE2-SOL2/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-42",
+              "2025-ws:row-43"
+            ]
+          },
+          {
+            "id": "2025-ws:so2:so2.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE2-SOL2/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-44",
+              "2025-ws:row-45",
+              "2025-ws:row-46"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ee2",
+    "termId": "2025-ws",
+    "moduleId": "ee2",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ee2.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ee2.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-47",
+      "2025-ws:row-48"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ee2:ee2.lab",
+        "componentIds": [
+          "ee2.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ee2:ee2.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE2-EEL2/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-49",
+              "2025-ws:row-50"
+            ]
+          },
+          {
+            "id": "2025-ws:ee2:ee2.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE2-EEL2/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-51",
+              "2025-ws:row-52"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:el1",
+    "termId": "2025-ws",
+    "moduleId": "el1",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "el1.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "el1.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-53",
+      "2025-ws:row-54"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:el1:el1.lab",
+        "componentIds": [
+          "el1.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:el1:el1.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE2-ELL1/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-55",
+              "2025-ws:row-56"
+            ]
+          },
+          {
+            "id": "2025-ws:el1:el1.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE2-ELL1/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-57",
+              "2025-ws:row-58"
+            ]
+          },
+          {
+            "id": "2025-ws:el1:el1.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE2-ELL1/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-59",
+              "2025-ws:row-60"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ic",
+    "termId": "2025-ws",
+    "moduleId": "ic",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ic.presentation",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ic:ic.presentation",
+        "componentIds": [],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ic:ic.presentation:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE2-IC/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-61",
+              "2025-ws:row-62",
+              "2025-ws:row-63"
+            ]
+          },
+          {
+            "id": "2025-ws:ic:ic.presentation:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE2-IC/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-64",
+              "2025-ws:row-65",
+              "2025-ws:row-66"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:lab-practice",
+    "termId": "2025-ws",
+    "moduleId": "lab-practice",
+    "availability": "offered",
+    "componentAvailability": [],
+    "sharedSessionIds": [
+      "2025-ws:row-67",
+      "2025-ws:row-68",
+      "2025-ws:row-69",
+      "2025-ws:row-70",
+      "2025-ws:row-71",
+      "2025-ws:row-72",
+      "2025-ws:row-73",
+      "2025-ws:row-74",
+      "2025-ws:row-75",
+      "2025-ws:row-76",
+      "2025-ws:row-77"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ss1",
+    "termId": "2025-ws",
+    "moduleId": "ss1",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ss1.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ss1.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-78"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ss1:ss1.lab",
+        "componentIds": [
+          "ss1.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ss1:ss1.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE3-SSL1/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-79",
+              "2025-ws:row-80"
+            ]
+          },
+          {
+            "id": "2025-ws:ss1:ss1.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE3-SSL1/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-81",
+              "2025-ws:row-82"
+            ]
+          },
+          {
+            "id": "2025-ws:ss1:ss1.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE3-SSL1/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-83",
+              "2025-ws:row-84"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:el2",
+    "termId": "2025-ws",
+    "moduleId": "el2",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "el2.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "el2.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-85"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:el2:el2.lab",
+        "componentIds": [
+          "el2.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:el2:el2.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE3-ELL2/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-86",
+              "2025-ws:row-87"
+            ]
+          },
+          {
+            "id": "2025-ws:el2:el2.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE3-ELL2/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-88",
+              "2025-ws:row-89"
+            ]
+          },
+          {
+            "id": "2025-ws:el2:el2.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE3-ELL2/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-90",
+              "2025-ws:row-91"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:di",
+    "termId": "2025-ws",
+    "moduleId": "di",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "di.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "di.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-92"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:di:di.lab",
+        "componentIds": [
+          "di.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:di:di.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE3-DIL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-93",
+              "2025-ws:row-94"
+            ]
+          },
+          {
+            "id": "2025-ws:di:di.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE3-DIL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-95",
+              "2025-ws:row-96"
+            ]
+          },
+          {
+            "id": "2025-ws:di:di.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE3-DIL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-97",
+              "2025-ws:row-98"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ad",
+    "termId": "2025-ws",
+    "moduleId": "ad",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ad.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ad.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-99"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ad:ad.lab",
+        "componentIds": [
+          "ad.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ad:ad.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE3-ADL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-100",
+              "2025-ws:row-101"
+            ]
+          },
+          {
+            "id": "2025-ws:ad:ad.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE3-ADL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-102",
+              "2025-ws:row-103"
+            ]
+          },
+          {
+            "id": "2025-ws:ad:ad.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE3-ADL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-104",
+              "2025-ws:row-105"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:em",
+    "termId": "2025-ws",
+    "moduleId": "em",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "em.exercise",
+        "state": "offered"
+      },
+      {
+        "componentId": "em.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-106"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:em:em.exercise",
+        "componentIds": [
+          "em.exercise"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:em:em.exercise:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE3-EME/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-107"
+            ]
+          },
+          {
+            "id": "2025-ws:em:em.exercise:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE3-EME/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-108"
+            ]
+          },
+          {
+            "id": "2025-ws:em:em.exercise:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE3-EME/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-109"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ss2",
+    "termId": "2025-ws",
+    "moduleId": "ss2",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ss2.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ss2.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-110"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ss2:ss2.lab",
+        "componentIds": [
+          "ss2.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ss2:ss2.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE4-SSL2/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-111",
+              "2025-ws:row-112"
+            ]
+          },
+          {
+            "id": "2025-ws:ss2:ss2.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE4-SSL2/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-113",
+              "2025-ws:row-114"
+            ]
+          },
+          {
+            "id": "2025-ws:ss2:ss2.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE4-SSL2/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-115",
+              "2025-ws:row-116"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:ds",
+    "termId": "2025-ws",
+    "moduleId": "ds",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "ds.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "ds.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-117"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:ds:ds.lab",
+        "componentIds": [
+          "ds.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:ds:ds.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE4-DSL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-118",
+              "2025-ws:row-119"
+            ]
+          },
+          {
+            "id": "2025-ws:ds:ds.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE4-DSL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-120",
+              "2025-ws:row-121"
+            ]
+          },
+          {
+            "id": "2025-ws:ds:ds.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE4-DSL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-122",
+              "2025-ws:row-123"
+            ]
+          },
+          {
+            "id": "2025-ws:ds:ds.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE4-DSL/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-124",
+              "2025-ws:row-125",
+              "2025-ws:row-126"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:mc",
+    "termId": "2025-ws",
+    "moduleId": "mc",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "mc.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "mc.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-127"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:mc:mc.lab",
+        "componentIds": [
+          "mc.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:mc:mc.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE4-MCL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-128",
+              "2025-ws:row-129"
+            ]
+          },
+          {
+            "id": "2025-ws:mc:mc.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE4-MCL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-130",
+              "2025-ws:row-131"
+            ]
+          },
+          {
+            "id": "2025-ws:mc:mc.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE4-MCL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-132",
+              "2025-ws:row-133"
+            ]
+          },
+          {
+            "id": "2025-ws:mc:mc.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE4-MCL/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-134"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:se",
+    "termId": "2025-ws",
+    "moduleId": "se",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "se.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "se.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-135"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:se:se.lab",
+        "componentIds": [
+          "se.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:se:se.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE4-SEL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-136",
+              "2025-ws:row-137"
+            ]
+          },
+          {
+            "id": "2025-ws:se:se.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE4-SEL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-138",
+              "2025-ws:row-139"
+            ]
+          },
+          {
+            "id": "2025-ws:se:se.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE4-SEL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-140",
+              "2025-ws:row-141"
+            ]
+          },
+          {
+            "id": "2025-ws:se:se.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE4-SEL/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-142",
+              "2025-ws:row-143",
+              "2025-ws:row-144"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:db",
+    "termId": "2025-ws",
+    "moduleId": "db",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "db.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "db.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-145"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:db:db.lab",
+        "componentIds": [
+          "db.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:db:db.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE4-DBL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-146",
+              "2025-ws:row-147"
+            ]
+          },
+          {
+            "id": "2025-ws:db:db.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE4-DBL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-148",
+              "2025-ws:row-149"
+            ]
+          },
+          {
+            "id": "2025-ws:db:db.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE4-DBL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-150",
+              "2025-ws:row-151"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:sp",
+    "termId": "2025-ws",
+    "moduleId": "sp",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "sp.presentation",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-152",
+      "2025-ws:row-153"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-architectures-of-digital-signal-processing",
+    "termId": "2025-ws",
+    "moduleId": "elective-architectures-of-digital-signal-processing",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-architectures-of-digital-signal-processing.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-154",
+      "2025-ws:row-155"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:os",
+    "termId": "2025-ws",
+    "moduleId": "os",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "os.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "os.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-156",
+      "2025-ws:row-157"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:os:os.lab",
+        "componentIds": [
+          "os.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:os:os.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE6-OSL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-158",
+              "2025-ws:row-159"
+            ]
+          },
+          {
+            "id": "2025-ws:os:os.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE6-OSL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-160",
+              "2025-ws:row-161"
+            ]
+          },
+          {
+            "id": "2025-ws:os:os.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE6-OSL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-162",
+              "2025-ws:row-163"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:bu",
+    "termId": "2025-ws",
+    "moduleId": "bu",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "bu.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "bu.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-164"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:bu:bu.lab",
+        "componentIds": [
+          "bu.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:bu:bu.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE6-BUL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-165",
+              "2025-ws:row-166"
+            ]
+          },
+          {
+            "id": "2025-ws:bu:bu.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE6-BUL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-167",
+              "2025-ws:row-168"
+            ]
+          },
+          {
+            "id": "2025-ws:bu:bu.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE6-BUL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-169",
+              "2025-ws:row-170"
+            ]
+          },
+          {
+            "id": "2025-ws:bu:bu.lab:04",
+            "label": "04",
+            "sourceCodes": [
+              "IE6-BUL/04"
+            ],
+            "sessionIds": [
+              "2025-ws:row-171",
+              "2025-ws:row-172",
+              "2025-ws:row-173"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:dp",
+    "termId": "2025-ws",
+    "moduleId": "dp",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "dp.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "dp.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-174"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:dp:dp.lab",
+        "componentIds": [
+          "dp.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:dp:dp.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE6-DPL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-175",
+              "2025-ws:row-176"
+            ]
+          },
+          {
+            "id": "2025-ws:dp:dp.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE6-DPL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-177",
+              "2025-ws:row-178"
+            ]
+          },
+          {
+            "id": "2025-ws:dp:dp.lab:03",
+            "label": "03",
+            "sourceCodes": [
+              "IE6-DPL/03"
+            ],
+            "sessionIds": [
+              "2025-ws:row-179",
+              "2025-ws:row-180"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:dc",
+    "termId": "2025-ws",
+    "moduleId": "dc",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "dc.lab",
+        "state": "offered"
+      },
+      {
+        "componentId": "dc.exam",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-181"
+    ],
+    "groupChoices": [
+      {
+        "id": "2025-ws:dc:dc.lab",
+        "componentIds": [
+          "dc.lab"
+        ],
+        "min": 1,
+        "max": 1,
+        "options": [
+          {
+            "id": "2025-ws:dc:dc.lab:01",
+            "label": "01",
+            "sourceCodes": [
+              "IE6-DCL/01"
+            ],
+            "sessionIds": [
+              "2025-ws:row-182",
+              "2025-ws:row-183"
+            ]
+          },
+          {
+            "id": "2025-ws:dc:dc.lab:02",
+            "label": "02",
+            "sourceCodes": [
+              "IE6-DCL/02"
+            ],
+            "sessionIds": [
+              "2025-ws:row-184",
+              "2025-ws:row-185"
+            ]
+          }
+        ]
+      }
+    ],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-elektroenergiesysteme",
+    "termId": "2025-ws",
+    "moduleId": "elective-elektroenergiesysteme",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-elektroenergiesysteme.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-186",
+      "2025-ws:row-187"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-embedded-systems-verification-and-test",
+    "termId": "2025-ws",
+    "moduleId": "elective-embedded-systems-verification-and-test",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-embedded-systems-verification-and-test.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-188",
+      "2025-ws:row-189",
+      "2025-ws:row-190",
+      "2025-ws:row-191",
+      "2025-ws:row-192"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-solar-energy",
+    "termId": "2025-ws",
+    "moduleId": "elective-solar-energy",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-solar-energy.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-193",
+      "2025-ws:row-194"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-on-board-data-handling-for-highly-autonomous-systems",
+    "termId": "2025-ws",
+    "moduleId": "elective-on-board-data-handling-for-highly-autonomous-systems",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-on-board-data-handling-for-highly-autonomous-systems.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-195"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-on-board-data-handling",
+    "termId": "2025-ws",
+    "moduleId": "elective-on-board-data-handling",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-on-board-data-handling.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-196"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-peer-leaders",
+    "termId": "2025-ws",
+    "moduleId": "elective-peer-leaders",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-peer-leaders.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-197",
+      "2025-ws:row-198",
+      "2025-ws:row-199"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-led-technik",
+    "termId": "2025-ws",
+    "moduleId": "elective-led-technik",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-led-technik.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-200",
+      "2025-ws:row-201"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-introduction-to-cryptography",
+    "termId": "2025-ws",
+    "moduleId": "elective-introduction-to-cryptography",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-introduction-to-cryptography.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-202",
+      "2025-ws:row-203"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-entwicklung-einer-partysimulation",
+    "termId": "2025-ws",
+    "moduleId": "elective-entwicklung-einer-partysimulation",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-entwicklung-einer-partysimulation.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-204"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-raspberry-pi",
+    "termId": "2025-ws",
+    "moduleId": "elective-raspberry-pi",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-raspberry-pi.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-205"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-automatisierung-eines-stuckgutprozesses",
+    "termId": "2025-ws",
+    "moduleId": "elective-automatisierung-eines-stuckgutprozesses",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-automatisierung-eines-stuckgutprozesses.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-206"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-hydroponics",
+    "termId": "2025-ws",
+    "moduleId": "elective-hydroponics",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-hydroponics.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-207"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-generative-and-agentic-ai",
+    "termId": "2025-ws",
+    "moduleId": "elective-generative-and-agentic-ai",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-generative-and-agentic-ai.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-208"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-one-world-engineering",
+    "termId": "2025-ws",
+    "moduleId": "elective-one-world-engineering",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-one-world-engineering.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-209"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-automatic-code-generation-using-matlab-simulink",
+    "termId": "2025-ws",
+    "moduleId": "elective-automatic-code-generation-using-matlab-simulink",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-automatic-code-generation-using-matlab-simulink.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-210"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "2025-ws:elective-cosmic-discoveries-their-techniques",
+    "termId": "2025-ws",
+    "moduleId": "elective-cosmic-discoveries-their-techniques",
+    "availability": "offered",
+    "componentAvailability": [
+      {
+        "componentId": "elective-cosmic-discoveries-their-techniques.project",
+        "state": "unknown"
+      }
+    ],
+    "sharedSessionIds": [
+      "2025-ws:row-211"
+    ],
+    "groupChoices": [],
+    "compatibility": [],
+    "registration": null,
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  }
+]

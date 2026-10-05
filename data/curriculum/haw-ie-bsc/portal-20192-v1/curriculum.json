@@ -1,0 +1,3563 @@
+{
+  "schemaVersion": 1,
+  "id": "haw-ie-bsc",
+  "version": "portal-20192-v1",
+  "regulationLabel": "Portal 20192 — historical/advisory; verify your examination regulations",
+  "sources": [
+    {
+      "id": "repo-4cae649",
+      "title": "Historical portal curriculum 20192 and WS 2025/26 timetable",
+      "uri": "https://github.com/Zyrex24/ScheduleHAW/tree/4cae649bc821a9486623cea08aef5cbdbc42bb87",
+      "publishedOn": null,
+      "accessedOn": "2026-10-05"
+    },
+    {
+      "id": "haw-handbook-2024",
+      "title": "HAW module handbook 01.04.2024",
+      "uri": "https://www.haw-hamburg.de/fileadmin/International/PDF/PDFs_Ingrid/modulehandbook-IE_2024.pdf",
+      "publishedOn": "2024-04-01",
+      "accessedOn": "2026-10-05"
+    }
+  ],
+  "modules": [
+    {
+      "id": "ma1",
+      "officialCodes": [
+        "M-01-P",
+        "MA1"
+      ],
+      "aliases": [
+        "Mathematics 1",
+        "MA1",
+        "M-01-P",
+        "moduleM-01-P"
+      ],
+      "name": {
+        "en": "Mathematics 1",
+        "de": "Mathematics 1"
+      },
+      "credits": 8,
+      "recommendedSemester": 1,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ma1.exam",
+        "ma1.exercise"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ma1.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ma1.exercise"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ma2",
+      "officialCodes": [
+        "M-02-P",
+        "MA2"
+      ],
+      "aliases": [
+        "Mathematics 2",
+        "MA2",
+        "M-02-P",
+        "moduleM-02-P"
+      ],
+      "name": {
+        "en": "Mathematics 2",
+        "de": "Mathematics 2"
+      },
+      "credits": 8,
+      "recommendedSemester": 2,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ma2.exam",
+        "ma2.exercise"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ma2.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ma2.exercise"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee1",
+      "officialCodes": [
+        "M-03-P",
+        "EE1"
+      ],
+      "aliases": [
+        "Electrical Engineering 1",
+        "EE1",
+        "M-03-P",
+        "moduleM-03-P"
+      ],
+      "name": {
+        "en": "Electrical Engineering 1",
+        "de": "Electrical Engineering 1"
+      },
+      "credits": 6,
+      "recommendedSemester": 1,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ee1.exam",
+        "ee1.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ee1.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ee1.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee2",
+      "officialCodes": [
+        "M-04-P",
+        "EE2"
+      ],
+      "aliases": [
+        "Electrical Engineering 2",
+        "EE2",
+        "M-04-P",
+        "moduleM-04-P"
+      ],
+      "name": {
+        "en": "Electrical Engineering 2",
+        "de": "Electrical Engineering 2"
+      },
+      "credits": 6,
+      "recommendedSemester": 2,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ee2.exam",
+        "ee2.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ee2.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ee2.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el1",
+      "officialCodes": [
+        "M-05-P",
+        "EL1"
+      ],
+      "aliases": [
+        "Electronics 1",
+        "EL1",
+        "M-05-P",
+        "moduleM-05-P"
+      ],
+      "name": {
+        "en": "Electronics 1",
+        "de": "Electronics 1"
+      },
+      "credits": 6,
+      "recommendedSemester": 2,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "el1.exam",
+        "el1.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "el1.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "el1.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so1",
+      "officialCodes": [
+        "M-06",
+        "SO1"
+      ],
+      "aliases": [
+        "Software Construction 1",
+        "SO1",
+        "M-06",
+        "moduleM-06"
+      ],
+      "name": {
+        "en": "Software Construction 1",
+        "de": "Software Construction 1"
+      },
+      "credits": 7,
+      "recommendedSemester": 1,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "so1.exam",
+        "so1.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "so1.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "so1.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so2",
+      "officialCodes": [
+        "M-07",
+        "SO2"
+      ],
+      "aliases": [
+        "Software Construction 2",
+        "SO2",
+        "M-07",
+        "moduleM-07"
+      ],
+      "name": {
+        "en": "Software Construction 2",
+        "de": "Software Construction 2"
+      },
+      "credits": 6,
+      "recommendedSemester": 2,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "so2.exam",
+        "so2.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "so2.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "so2.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ge",
+      "officialCodes": [
+        "M-08-P",
+        "GE"
+      ],
+      "aliases": [
+        "German",
+        "GE",
+        "M-08-P",
+        "moduleM-08-P"
+      ],
+      "name": {
+        "en": "German",
+        "de": "German"
+      },
+      "credits": 4,
+      "recommendedSemester": 1,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ge.exam"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ge.exam"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ic",
+      "officialCodes": [
+        "M-09-P",
+        "IC"
+      ],
+      "aliases": [
+        "Intercultural Competence",
+        "IC",
+        "M-09-P",
+        "moduleM-09-P"
+      ],
+      "name": {
+        "en": "Intercultural Competence",
+        "de": "Intercultural Competence"
+      },
+      "credits": 3,
+      "recommendedSemester": 2,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ic.presentation"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ic.presentation"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ls",
+      "officialCodes": [
+        "M-10-P",
+        "LSE"
+      ],
+      "aliases": [
+        "Learning and Study Methods",
+        "LSE",
+        "M-10-P",
+        "moduleM-10-P"
+      ],
+      "name": {
+        "en": "Learning and Study Methods",
+        "de": "Learning and Study Methods"
+      },
+      "credits": 6,
+      "recommendedSemester": 1,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ls.study",
+        "ls.presentation1",
+        "ls.presentation2"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "study-methods-review"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss1",
+      "officialCodes": [
+        "M-11-P",
+        "SS1"
+      ],
+      "aliases": [
+        "Signals and Systems 1",
+        "SS1",
+        "M-11-P",
+        "moduleM-11-P"
+      ],
+      "name": {
+        "en": "Signals and Systems 1",
+        "de": "Signals and Systems 1"
+      },
+      "credits": 6,
+      "recommendedSemester": 3,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ss1.exam",
+        "ss1.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ss1.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ss1.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss2",
+      "officialCodes": [
+        "M-12-P",
+        "SS2"
+      ],
+      "aliases": [
+        "Signals and Systems 2",
+        "SS2",
+        "M-12-P",
+        "moduleM-12-P"
+      ],
+      "name": {
+        "en": "Signals and Systems 2",
+        "de": "Signals and Systems 2"
+      },
+      "credits": 6,
+      "recommendedSemester": 4,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ss2.exam",
+        "ss2.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ss2.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ss2.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el2",
+      "officialCodes": [
+        "M-13-P",
+        "EL2"
+      ],
+      "aliases": [
+        "Electronics 2",
+        "EL2",
+        "M-13-P",
+        "moduleM-13-P"
+      ],
+      "name": {
+        "en": "Electronics 2",
+        "de": "Electronics 2"
+      },
+      "credits": 7,
+      "recommendedSemester": 3,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "el2.exam",
+        "el2.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "el2.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "el2.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "di",
+      "officialCodes": [
+        "M-14-P",
+        "DI"
+      ],
+      "aliases": [
+        "Digital Circuits",
+        "DI",
+        "M-14-P",
+        "moduleM-14-P"
+      ],
+      "name": {
+        "en": "Digital Circuits",
+        "de": "Digital Circuits"
+      },
+      "credits": 6,
+      "recommendedSemester": 3,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "di.exam",
+        "di.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "di.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "di.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ds",
+      "officialCodes": [
+        "M-15-P",
+        "DS"
+      ],
+      "aliases": [
+        "Digital Systems",
+        "DS",
+        "M-15-P",
+        "moduleM-15-P"
+      ],
+      "name": {
+        "en": "Digital Systems",
+        "de": "Digital Systems"
+      },
+      "credits": 6,
+      "recommendedSemester": 4,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ds.exam",
+        "ds.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ds.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ds.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "mc",
+      "officialCodes": [
+        "M-16-P",
+        "MC"
+      ],
+      "aliases": [
+        "Microcontrollers",
+        "MC",
+        "M-16-P",
+        "moduleM-16-P"
+      ],
+      "name": {
+        "en": "Microcontrollers",
+        "de": "Microcontrollers"
+      },
+      "credits": 7,
+      "recommendedSemester": 4,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "mc.exam",
+        "mc.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "mc.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "mc.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ad",
+      "officialCodes": [
+        "M-17-P",
+        "AD"
+      ],
+      "aliases": [
+        "Algorithms and Data Structures",
+        "AD",
+        "M-17-P",
+        "moduleM-17-P"
+      ],
+      "name": {
+        "en": "Algorithms and Data Structures",
+        "de": "Algorithms and Data Structures"
+      },
+      "credits": 6,
+      "recommendedSemester": 3,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "ad.exam",
+        "ad.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ad.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "ad.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "se",
+      "officialCodes": [
+        "M-18-P",
+        "SE"
+      ],
+      "aliases": [
+        "Software Engineering",
+        "SE",
+        "M-18-P",
+        "moduleM-18-P"
+      ],
+      "name": {
+        "en": "Software Engineering",
+        "de": "Software Engineering"
+      },
+      "credits": 6,
+      "recommendedSemester": 4,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "se.exam",
+        "se.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "se.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "se.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "officialCodes": [
+        "M-19-P",
+        "DB"
+      ],
+      "aliases": [
+        "Databases",
+        "DB",
+        "M-19-P",
+        "moduleM-19-P"
+      ],
+      "name": {
+        "en": "Databases",
+        "de": "Databases"
+      },
+      "credits": 6,
+      "recommendedSemester": 4,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "db.exam",
+        "db.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "db.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "db.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "em",
+      "officialCodes": [
+        "M-20-P",
+        "EM"
+      ],
+      "aliases": [
+        "Economics and Management",
+        "EM",
+        "M-20-P",
+        "moduleM-20-P"
+      ],
+      "name": {
+        "en": "Economics and Management",
+        "de": "Economics and Management"
+      },
+      "credits": 6,
+      "recommendedSemester": 3,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "em.exam",
+        "em.exercise"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "em.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "em.exercise"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "sp",
+      "officialCodes": [
+        "M-21-P",
+        "SP"
+      ],
+      "aliases": [
+        "Scientific and Project Work",
+        "SP",
+        "M-21-P",
+        "moduleM-21-P"
+      ],
+      "name": {
+        "en": "Scientific and Project Work",
+        "de": "Scientific and Project Work"
+      },
+      "credits": 4,
+      "recommendedSemester": 5,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "sp.presentation"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "sp.presentation"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "officialCodes": [
+        "M-22-P",
+        "IP"
+      ],
+      "aliases": [
+        "Internship",
+        "IP",
+        "M-22-P",
+        "moduleM-22-P"
+      ],
+      "name": {
+        "en": "Internship",
+        "de": "Internship"
+      },
+      "credits": 25,
+      "recommendedSemester": 5,
+      "type": "internship",
+      "theme": "general",
+      "componentIds": [
+        "ip.project"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "ip.project"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "bu",
+      "officialCodes": [
+        "M-23-P",
+        "BU"
+      ],
+      "aliases": [
+        "Bus Systems and Sensors",
+        "BU",
+        "M-23-P",
+        "moduleM-23-P"
+      ],
+      "name": {
+        "en": "Bus Systems and Sensors",
+        "de": "Bus Systems and Sensors"
+      },
+      "credits": 6,
+      "recommendedSemester": 6,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "bu.exam",
+        "bu.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "bu.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "bu.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "officialCodes": [
+        "M-24-P",
+        "OS"
+      ],
+      "aliases": [
+        "Operating Systems",
+        "OS",
+        "M-24-P",
+        "moduleM-24-P"
+      ],
+      "name": {
+        "en": "Operating Systems",
+        "de": "Operating Systems"
+      },
+      "credits": 6,
+      "recommendedSemester": 6,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "os.exam",
+        "os.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "os.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "os.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dp",
+      "officialCodes": [
+        "M-25-P",
+        "DP"
+      ],
+      "aliases": [
+        "Digital Signal Processing",
+        "DP",
+        "M-25-P",
+        "moduleM-25-P"
+      ],
+      "name": {
+        "en": "Digital Signal Processing",
+        "de": "Digital Signal Processing"
+      },
+      "credits": 6,
+      "recommendedSemester": 6,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "dp.exam",
+        "dp.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "dp.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "dp.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dc",
+      "officialCodes": [
+        "M-26-P",
+        "DC"
+      ],
+      "aliases": [
+        "Digital Communication Systems",
+        "DC",
+        "M-26-P",
+        "moduleM-26-P"
+      ],
+      "name": {
+        "en": "Digital Communication Systems",
+        "de": "Digital Communication Systems"
+      },
+      "credits": 6,
+      "recommendedSemester": 6,
+      "type": "required",
+      "theme": "general",
+      "componentIds": [
+        "dc.exam",
+        "dc.lab"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "dc.exam"
+          },
+          {
+            "kind": "component",
+            "componentId": "dc.lab"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "cj1",
+      "officialCodes": [
+        "CJ1",
+        "CJ1"
+      ],
+      "aliases": [
+        "Elective Project 1",
+        "CJ1",
+        "CJ1",
+        "moduleCJ1"
+      ],
+      "name": {
+        "en": "Elective Project 1",
+        "de": "Elective Project 1"
+      },
+      "credits": 5,
+      "recommendedSemester": 6,
+      "type": "project",
+      "theme": "general",
+      "componentIds": [
+        "cj1.project"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "cj1.project"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "cj2",
+      "officialCodes": [
+        "CJ2",
+        "CJ2"
+      ],
+      "aliases": [
+        "Elective Project 2",
+        "CJ2",
+        "CJ2",
+        "moduleCJ2"
+      ],
+      "name": {
+        "en": "Elective Project 2",
+        "de": "Elective Project 2"
+      },
+      "credits": 5,
+      "recommendedSemester": 7,
+      "type": "project",
+      "theme": "general",
+      "componentIds": [
+        "cj2.project"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "cj2.project"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "thesis",
+      "officialCodes": [
+        "AB",
+        "AB"
+      ],
+      "aliases": [
+        "Bachelor Thesis and Colloquium",
+        "AB",
+        "AB",
+        "moduleAB"
+      ],
+      "name": {
+        "en": "Bachelor Thesis and Colloquium",
+        "de": "Bachelor Thesis and Colloquium"
+      },
+      "credits": 15,
+      "recommendedSemester": 7,
+      "type": "thesis",
+      "theme": "general",
+      "componentIds": [
+        "thesis.project"
+      ],
+      "completion": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "component",
+            "componentId": "thesis.project"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-architectures-of-digital-signal-processing",
+      "officialCodes": [
+        "WP-Rust"
+      ],
+      "aliases": [
+        "Elective: Architectures of Digital Signal Processing"
+      ],
+      "name": {
+        "en": "Elective: Architectures of Digital Signal Processing",
+        "de": "Elective: Architectures of Digital Signal Processing"
+      },
+      "credits": null,
+      "recommendedSemester": 5,
+      "type": "elective",
+      "theme": "signals",
+      "componentIds": [
+        "elective-architectures-of-digital-signal-processing.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-elektroenergiesysteme",
+      "officialCodes": [
+        "WP13-Winzenick"
+      ],
+      "aliases": [
+        "Elektroenergiesysteme"
+      ],
+      "name": {
+        "en": "Elektroenergiesysteme",
+        "de": "Elektroenergiesysteme"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "electronics",
+      "componentIds": [
+        "elective-elektroenergiesysteme.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-embedded-systems-verification-and-test",
+      "officialCodes": [
+        "WP22-Schulz"
+      ],
+      "aliases": [
+        "Embedded Systems Verification and Test"
+      ],
+      "name": {
+        "en": "Embedded Systems Verification and Test",
+        "de": "Embedded Systems Verification and Test"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-embedded-systems-verification-and-test.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-solar-energy",
+      "officialCodes": [
+        "WP25-Titova"
+      ],
+      "aliases": [
+        "Solar Energy"
+      ],
+      "name": {
+        "en": "Solar Energy",
+        "de": "Solar Energy"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "electronics",
+      "componentIds": [
+        "elective-solar-energy.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-on-board-data-handling-for-highly-autonomous-systems",
+      "officialCodes": [
+        "WP33-Buczek"
+      ],
+      "aliases": [
+        "On-board Data Handling for Highly Autonomous Systems"
+      ],
+      "name": {
+        "en": "On-board Data Handling for Highly Autonomous Systems",
+        "de": "On-board Data Handling for Highly Autonomous Systems"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-on-board-data-handling-for-highly-autonomous-systems.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-on-board-data-handling",
+      "officialCodes": [
+        "WP33-Buczek"
+      ],
+      "aliases": [
+        "On-board Data Handling Lab"
+      ],
+      "name": {
+        "en": "On-board Data Handling",
+        "de": "On-board Data Handling"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-on-board-data-handling.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-peer-leaders",
+      "officialCodes": [
+        "WP34-Radt"
+      ],
+      "aliases": [
+        "Peer Leaders"
+      ],
+      "name": {
+        "en": "Peer Leaders",
+        "de": "Peer Leaders"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "intercultural",
+      "componentIds": [
+        "elective-peer-leaders.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-led-technik",
+      "officialCodes": [
+        "WP36-Noack"
+      ],
+      "aliases": [
+        "LED Technik"
+      ],
+      "name": {
+        "en": "LED Technik",
+        "de": "LED Technik"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "electronics",
+      "componentIds": [
+        "elective-led-technik.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-introduction-to-cryptography",
+      "officialCodes": [
+        "WP37-Neumann"
+      ],
+      "aliases": [
+        "Introduction to Cryptography"
+      ],
+      "name": {
+        "en": "Introduction to Cryptography",
+        "de": "Introduction to Cryptography"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-introduction-to-cryptography.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-entwicklung-einer-partysimulation",
+      "officialCodes": [
+        "WPJ01-Gottfried"
+      ],
+      "aliases": [
+        "Projekt: Entwicklung einer Partysimulation"
+      ],
+      "name": {
+        "en": "Projekt: Entwicklung einer Partysimulation",
+        "de": "Projekt: Entwicklung einer Partysimulation"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-entwicklung-einer-partysimulation.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-raspberry-pi",
+      "officialCodes": [
+        "WPJ02-Noack"
+      ],
+      "aliases": [
+        "Projekt: Raspberry Pi"
+      ],
+      "name": {
+        "en": "Projekt: Raspberry Pi",
+        "de": "Projekt: Raspberry Pi"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "electronics",
+      "componentIds": [
+        "elective-raspberry-pi.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-automatisierung-eines-stuckgutprozesses",
+      "officialCodes": [
+        "WPJ03-Meiners"
+      ],
+      "aliases": [
+        "Projekt: Automatisierung eines Stückgutprozesses"
+      ],
+      "name": {
+        "en": "Projekt: Automatisierung eines Stückgutprozesses",
+        "de": "Projekt: Automatisierung eines Stückgutprozesses"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "electronics",
+      "componentIds": [
+        "elective-automatisierung-eines-stuckgutprozesses.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-hydroponics",
+      "officialCodes": [
+        "WPJ11-Heß"
+      ],
+      "aliases": [
+        "Projekt: Hydroponics"
+      ],
+      "name": {
+        "en": "Projekt: Hydroponics",
+        "de": "Projekt: Hydroponics"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "intercultural",
+      "componentIds": [
+        "elective-hydroponics.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-generative-and-agentic-ai",
+      "officialCodes": [
+        "WPJ15-Conjeti"
+      ],
+      "aliases": [
+        "Projekt: Generative and Agentic AI"
+      ],
+      "name": {
+        "en": "Projekt: Generative and Agentic AI",
+        "de": "Projekt: Generative and Agentic AI"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-generative-and-agentic-ai.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-one-world-engineering",
+      "officialCodes": [
+        "WPJ16-Schoenen"
+      ],
+      "aliases": [
+        "Projekt: One World Engineering"
+      ],
+      "name": {
+        "en": "Projekt: One World Engineering",
+        "de": "Projekt: One World Engineering"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "intercultural",
+      "componentIds": [
+        "elective-one-world-engineering.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-automatic-code-generation-using-matlab-simulink",
+      "officialCodes": [
+        "WPJ17-Ginzel"
+      ],
+      "aliases": [
+        "Projekt: Automatic Code Generation using MATLAB/Simulink"
+      ],
+      "name": {
+        "en": "Projekt: Automatic Code Generation using MATLAB/Simulink",
+        "de": "Projekt: Automatic Code Generation using MATLAB/Simulink"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "software",
+      "componentIds": [
+        "elective-automatic-code-generation-using-matlab-simulink.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-cosmic-discoveries-their-techniques",
+      "officialCodes": [
+        "WPJ18-Trivedi"
+      ],
+      "aliases": [
+        "Projekt: Cosmic Discoveries & their Techniques"
+      ],
+      "name": {
+        "en": "Projekt: Cosmic Discoveries & their Techniques",
+        "de": "Projekt: Cosmic Discoveries & their Techniques"
+      },
+      "credits": null,
+      "recommendedSemester": 7,
+      "type": "elective",
+      "theme": "intercultural",
+      "componentIds": [
+        "elective-cosmic-discoveries-their-techniques.project"
+      ],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "elective-mapping"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "lab-practice",
+      "officialCodes": [
+        "LP"
+      ],
+      "aliases": [],
+      "name": {
+        "en": "Lab Practice Week",
+        "de": "Lab Practice Week"
+      },
+      "credits": null,
+      "recommendedSemester": 2,
+      "type": "elective",
+      "theme": "general",
+      "componentIds": [],
+      "completion": {
+        "kind": "unknown",
+        "issueId": "practice-week"
+      },
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "ma1.exam",
+      "moduleId": "ma1",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ma1.exercise",
+      "moduleId": "ma1",
+      "name": {
+        "en": "exercise",
+        "de": "exercise"
+      },
+      "kind": "exercise",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ma2.exam",
+      "moduleId": "ma2",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ma2.exercise",
+      "moduleId": "ma2",
+      "name": {
+        "en": "exercise",
+        "de": "exercise"
+      },
+      "kind": "exercise",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee1.exam",
+      "moduleId": "ee1",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee1.lab",
+      "moduleId": "ee1",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee2.exam",
+      "moduleId": "ee2",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ee2.lab",
+      "moduleId": "ee2",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el1.exam",
+      "moduleId": "el1",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el1.lab",
+      "moduleId": "el1",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so1.exam",
+      "moduleId": "so1",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so1.lab",
+      "moduleId": "so1",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so2.exam",
+      "moduleId": "so2",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "so2.lab",
+      "moduleId": "so2",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ge.exam",
+      "moduleId": "ge",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ic.presentation",
+      "moduleId": "ic",
+      "name": {
+        "en": "presentation",
+        "de": "presentation"
+      },
+      "kind": "presentation",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss1.exam",
+      "moduleId": "ss1",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss1.lab",
+      "moduleId": "ss1",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss2.exam",
+      "moduleId": "ss2",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ss2.lab",
+      "moduleId": "ss2",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el2.exam",
+      "moduleId": "el2",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "el2.lab",
+      "moduleId": "el2",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "di.exam",
+      "moduleId": "di",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "di.lab",
+      "moduleId": "di",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ds.exam",
+      "moduleId": "ds",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ds.lab",
+      "moduleId": "ds",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "mc.exam",
+      "moduleId": "mc",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "mc.lab",
+      "moduleId": "mc",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ad.exam",
+      "moduleId": "ad",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ad.lab",
+      "moduleId": "ad",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "se.exam",
+      "moduleId": "se",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "se.lab",
+      "moduleId": "se",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "db.exam",
+      "moduleId": "db",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "db.lab",
+      "moduleId": "db",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "em.exam",
+      "moduleId": "em",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "em.exercise",
+      "moduleId": "em",
+      "name": {
+        "en": "exercise",
+        "de": "exercise"
+      },
+      "kind": "exercise",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "sp.presentation",
+      "moduleId": "sp",
+      "name": {
+        "en": "presentation",
+        "de": "presentation"
+      },
+      "kind": "presentation",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ip.project",
+      "moduleId": "ip",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "bu.exam",
+      "moduleId": "bu",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "bu.lab",
+      "moduleId": "bu",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "os.exam",
+      "moduleId": "os",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "os.lab",
+      "moduleId": "os",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dp.exam",
+      "moduleId": "dp",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dp.lab",
+      "moduleId": "dp",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dc.exam",
+      "moduleId": "dc",
+      "name": {
+        "en": "exam",
+        "de": "exam"
+      },
+      "kind": "exam",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "dc.lab",
+      "moduleId": "dc",
+      "name": {
+        "en": "lab",
+        "de": "lab"
+      },
+      "kind": "lab",
+      "isPVL": true,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "cj1.project",
+      "moduleId": "cj1",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "cj2.project",
+      "moduleId": "cj2",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "thesis.project",
+      "moduleId": "thesis",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "product_default",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ls.study",
+      "moduleId": "ls",
+      "name": {
+        "en": "LSE",
+        "de": "LSE"
+      },
+      "kind": "other_pvl",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ls.presentation1",
+      "moduleId": "ls",
+      "name": {
+        "en": "LSL",
+        "de": "LSL"
+      },
+      "kind": "presentation",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "ls.presentation2",
+      "moduleId": "ls",
+      "name": {
+        "en": "LSL2",
+        "de": "LSL2"
+      },
+      "kind": "presentation",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-architectures-of-digital-signal-processing.project",
+      "moduleId": "elective-architectures-of-digital-signal-processing",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-elektroenergiesysteme.project",
+      "moduleId": "elective-elektroenergiesysteme",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-embedded-systems-verification-and-test.project",
+      "moduleId": "elective-embedded-systems-verification-and-test",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-solar-energy.project",
+      "moduleId": "elective-solar-energy",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-on-board-data-handling-for-highly-autonomous-systems.project",
+      "moduleId": "elective-on-board-data-handling-for-highly-autonomous-systems",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-on-board-data-handling.project",
+      "moduleId": "elective-on-board-data-handling",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-peer-leaders.project",
+      "moduleId": "elective-peer-leaders",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-led-technik.project",
+      "moduleId": "elective-led-technik",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-introduction-to-cryptography.project",
+      "moduleId": "elective-introduction-to-cryptography",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-entwicklung-einer-partysimulation.project",
+      "moduleId": "elective-entwicklung-einer-partysimulation",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-raspberry-pi.project",
+      "moduleId": "elective-raspberry-pi",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-automatisierung-eines-stuckgutprozesses.project",
+      "moduleId": "elective-automatisierung-eines-stuckgutprozesses",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-hydroponics.project",
+      "moduleId": "elective-hydroponics",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-generative-and-agentic-ai.project",
+      "moduleId": "elective-generative-and-agentic-ai",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-one-world-engineering.project",
+      "moduleId": "elective-one-world-engineering",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-automatic-code-generation-using-matlab-simulink.project",
+      "moduleId": "elective-automatic-code-generation-using-matlab-simulink",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "elective-cosmic-discoveries-their-techniques.project",
+      "moduleId": "elective-cosmic-discoveries-their-techniques",
+      "name": {
+        "en": "project",
+        "de": "project"
+      },
+      "kind": "project",
+      "isPVL": false,
+      "estimatedRemainingHours": null,
+      "estimateSource": "unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "recommended-ma2",
+      "curriculumVersion": "portal-20192-v1",
+      "target": {
+        "kind": "module",
+        "id": "ma2"
+      },
+      "appliesTo": "participation",
+      "timing": "before_term",
+      "strength": "recommended",
+      "requirement": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "module",
+            "moduleId": "ma1"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "haw-handbook-2024",
+          "locator": "module descriptions; advisory cross-version knowledge guidance",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "recommended-ee2",
+      "curriculumVersion": "portal-20192-v1",
+      "target": {
+        "kind": "module",
+        "id": "ee2"
+      },
+      "appliesTo": "participation",
+      "timing": "before_term",
+      "strength": "recommended",
+      "requirement": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "module",
+            "moduleId": "ee1"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "haw-handbook-2024",
+          "locator": "module descriptions; advisory cross-version knowledge guidance",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "recommended-el1",
+      "curriculumVersion": "portal-20192-v1",
+      "target": {
+        "kind": "module",
+        "id": "el1"
+      },
+      "appliesTo": "participation",
+      "timing": "before_term",
+      "strength": "recommended",
+      "requirement": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "module",
+            "moduleId": "ee1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ma1"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "haw-handbook-2024",
+          "locator": "module descriptions; advisory cross-version knowledge guidance",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    },
+    {
+      "id": "recommended-el2",
+      "curriculumVersion": "portal-20192-v1",
+      "target": {
+        "kind": "module",
+        "id": "el2"
+      },
+      "appliesTo": "participation",
+      "timing": "before_term",
+      "strength": "recommended",
+      "requirement": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "module",
+            "moduleId": "ee1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ee2"
+          },
+          {
+            "kind": "module",
+            "moduleId": "el1"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "sourceId": "haw-handbook-2024",
+          "locator": "module descriptions; advisory cross-version knowledge guidance",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "id": "internship-eligibility",
+      "name": {
+        "en": "First-year completion / internship readiness",
+        "de": "Erstes Studienjahr / Praxissemester"
+      },
+      "requirement": {
+        "kind": "all",
+        "items": [
+          {
+            "kind": "module",
+            "moduleId": "ma1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ma2"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ee1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ee2"
+          },
+          {
+            "kind": "module",
+            "moduleId": "el1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "so1"
+          },
+          {
+            "kind": "module",
+            "moduleId": "so2"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ge"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ic"
+          },
+          {
+            "kind": "module",
+            "moduleId": "ls"
+          }
+        ]
+      },
+      "ruleIds": [],
+      "effect": "internship",
+      "exceptionNoteKey": "milestone.exception",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ]
+    }
+  ],
+  "degreeSlots": [],
+  "firstYearModuleIds": [
+    "ma1",
+    "ma2",
+    "ee1",
+    "ee2",
+    "el1",
+    "so1",
+    "so2",
+    "ge",
+    "ic",
+    "ls"
+  ],
+  "dataIssues": [
+    {
+      "id": "version-review",
+      "entityIds": [
+        "ls",
+        "sp",
+        "cj1",
+        "cj2"
+      ],
+      "severity": "warning",
+      "code": "curriculum_version_review",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "study-methods-review",
+      "entityIds": [
+        "ls"
+      ],
+      "severity": "warning",
+      "code": "completion_requires_regulation_review",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "elective-mapping",
+      "entityIds": [
+        "elective-architectures-of-digital-signal-processing",
+        "elective-elektroenergiesysteme",
+        "elective-embedded-systems-verification-and-test",
+        "elective-solar-energy",
+        "elective-on-board-data-handling-for-highly-autonomous-systems",
+        "elective-on-board-data-handling",
+        "elective-peer-leaders",
+        "elective-led-technik",
+        "elective-introduction-to-cryptography",
+        "elective-entwicklung-einer-partysimulation",
+        "elective-raspberry-pi",
+        "elective-automatisierung-eines-stuckgutprozesses",
+        "elective-hydroponics",
+        "elective-generative-and-agentic-ai",
+        "elective-one-world-engineering",
+        "elective-automatic-code-generation-using-matlab-simulink",
+        "elective-cosmic-discoveries-their-techniques",
+        "lab-practice"
+      ],
+      "severity": "warning",
+      "code": "elective_credit_and_slot_unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ],
+      "resolution": null
+    },
+    {
+      "id": "practice-week",
+      "entityIds": [
+        "lab-practice"
+      ],
+      "severity": "warning",
+      "code": "completion_unknown",
+      "evidence": [
+        {
+          "sourceId": "repo-4cae649",
+          "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+          "checkedOn": "2026-10-05",
+          "state": "provisional"
+        }
+      ],
+      "resolution": null
+    }
+  ]
+}

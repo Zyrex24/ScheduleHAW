@@ -1,0 +1,65 @@
+[
+  {
+    "id": "internship-eligibility",
+    "name": {
+      "en": "First-year completion / internship readiness",
+      "de": "Erstes Studienjahr / Praxissemester"
+    },
+    "requirement": {
+      "kind": "all",
+      "items": [
+        {
+          "kind": "module",
+          "moduleId": "ma1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ma2"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ee1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ee2"
+        },
+        {
+          "kind": "module",
+          "moduleId": "el1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "so1"
+        },
+        {
+          "kind": "module",
+          "moduleId": "so2"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ge"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ic"
+        },
+        {
+          "kind": "module",
+          "moduleId": "ls"
+        }
+      ]
+    },
+    "ruleIds": [],
+    "effect": "internship",
+    "exceptionNoteKey": "milestone.exception",
+    "evidence": [
+      {
+        "sourceId": "repo-4cae649",
+        "locator": "Entities/ScheduleBlock.ts / public timetable rows",
+        "checkedOn": "2026-10-05",
+        "state": "provisional"
+      }
+    ]
+  }
+]
