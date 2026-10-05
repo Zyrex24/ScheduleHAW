@@ -44,7 +44,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-`npm run start` serves the built app; `TEST_BASE_URL` selects an already running local/deployed build. Tests use invented local data and do not submit community votes. GitHub Actions runs the validation gate. Next.js 16 explicitly uses webpack for the planner worker; postinstall copies the PDF worker and postbuild creates the public offline cache.
+`npm run start` serves the built app; `TEST_BASE_URL` selects an already running local/deployed build. Tests use invented local data and do not submit community votes. GitHub Actions runs the validation gate. Next.js 16 explicitly uses webpack for the planner worker; postinstall copies the PDF worker and the production compiler hook creates the public offline cache before hosting output packaging.
 
 ## Optional Community Pulse
 

@@ -10,6 +10,8 @@ No inference API, analytics, transcript upload, academic server action or profil
 
 ## Data and implementation decisions
 
+Production browser verification caught a hosting-only offline packaging bug: npm postbuild generated the worker after Vercel had captured public outputs, leaving uploaded local chunk names in production. Generation now runs through Next's [production compiler hook](https://nextjs.org/docs/architecture/nextjs-compiler), using the same build ID assigned to Next before output packaging. Browser tests additionally verify every cache-listed asset exists, so a stale worker fails with exact missing paths instead of hanging installation.
+
 Linux CI/Vercel initially rejected a Windows-derived lockfile because optional WASM dependency entries were missing. The lock was regenerated without installed-package state, followed by a clean Windows install and successful npm 10 Linux-resolution dry run; final remote gate results are recorded in the release verification section.
 
 The public historical package accounts for all 212 source rows/123 codes, 47 module/teaching-opportunity identities, 69 components, 212 session series and 877 actual occurrences. Migration reads allowlisted public timetable fields, never personal markdown outcomes. Five same-code overlap pairs yield seven dated review cases; affected bundles are excluded from ready plans and inspectable manually. No current 2026/27 timetable was available.

@@ -1,6 +1,7 @@
 const fs = require("node:fs"),
   path = require("node:path");
-const build = fs.readFileSync(".next/BUILD_ID", "utf8").trim(),
+const build =
+    process.argv[2] || fs.readFileSync(".next/BUILD_ID", "utf8").trim(),
   assets = [];
 function scan(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

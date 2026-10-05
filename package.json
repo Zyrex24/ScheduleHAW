@@ -13,8 +13,7 @@
     "test:e2e": "playwright test",
     "validate:data": "node scripts/validate-data.cjs",
     "validate:i18n": "node scripts/validate-i18n.cjs",
-    "postinstall": "node scripts/copy-pdf-worker.cjs",
-    "postbuild": "node scripts/build-offline.cjs"
+    "postinstall": "node scripts/copy-pdf-worker.cjs"
   },
   "dependencies": {
     "@js-temporal/polyfill": "0.5.1",

@@ -331,6 +331,20 @@ test("offline full reload keeps local progress and coherent public assets withou
     .first()
     .blur();
   await historical(page);
+  const missingAssets = await page.evaluate(async () => {
+    const worker = await (await fetch("/sw.js", { cache: "no-store" })).text();
+    const paths = JSON.parse(
+      worker.match(/ASSETS=(\[[^;]+\]);/)![1],
+    ) as string[];
+    return (
+      await Promise.all(
+        paths.map(async (path) => ({ path, ok: (await fetch(path)).ok })),
+      )
+    )
+      .filter((r) => !r.ok)
+      .map((r) => r.path);
+  });
+  expect(missingAssets).toEqual([]);
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });

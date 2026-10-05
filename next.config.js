@@ -1,7 +1,21 @@
+const { randomUUID } = require("node:crypto");
+const { execFileSync } = require("node:child_process");
+const buildId = randomUUID();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  generateBuildId: async () => buildId,
+  compiler: {
+    runAfterProductionCompile: async ({ projectDir }) => {
+      // Vercel packages outputs before npm postbuild. Generate the public worker
+      // from this compilation, with the same ID returned to Next, before packaging.
+      execFileSync(process.execPath, ["scripts/build-offline.cjs", buildId], {
+        cwd: projectDir,
+        stdio: "inherit",
+      });
+    },
+  },
   async headers() {
     return [
       {

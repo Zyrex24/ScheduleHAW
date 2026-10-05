@@ -7,11 +7,12 @@ function harness(failInstall = false) {
   let source = "";
   // Exercise the actual generator and worker with an isolated fake build/cache.
   vm.runInNewContext(readFileSync("scripts/build-offline.cjs", "utf8"), {
+    process: { argv: ["node", "build-offline.cjs", "release-new"] },
     require: (id: string) =>
       id === "node:path"
         ? path
         : {
-            readFileSync: () => "release-new",
+            readFileSync: () => "obsolete-build",
             readdirSync: () => [{ name: "abc.js", isDirectory: () => false }],
             writeFileSync: (_file: string, value: string) => {
               source = value;
